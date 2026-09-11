@@ -20,7 +20,7 @@ import idiomverseImage from "../images/Screenshot (615).png";
 import langosphereImage from "../images/Screenshot (616).png";
 import bondlyIcon from "../images/bondly-icon.png";
 import realmoraIcon from "../images/realmora-icon.png";
-import fracturedselfImage from "../images/Screenshot (619).png";
+import fracturedselfIcon from "../images/fracturedself-icon.png";
 import corezenImage from "../images/Screenshot (620).png";
 import artysseyImage from "../images/Screenshot (621).png";
 import geoclueImage from "../images/Screenshot (622).png";
@@ -292,27 +292,41 @@ export const projectsData = [
   {
     id: "fractured-self",
     title: "Fractured Self",
-    subtitle: "Interactive Psychological Visual Novel",
+    subtitle: "The Fall of Nader: Psychological Visual Novel & Cinematic Narrative Engine",
     category: "novels",
     categoryLabel: "Interactive Visual Novels",
-    isPwa: false,
+    isPwa: true,
     featured: true,
-    image: fracturedselfImage,
+    image: fracturedselfIcon,
     liveUrl: "https://rswarke1972-art.github.io/FracturedSelf/",
     githubUrl: "https://github.com/rswarke1972-art/FracturedSelf",
-    tags: ["Visual Novel", "Psychological Fiction", "Branching Narrative", "Cinematic Experience"],
-    shortDescription: "An atmospheric visual novel where an emotional narrative unfolds scene by scene through cinematic imagery, introspective dialogue, and branching player choices.",
+    tags: ["PWA", "Visual Novel", "Psychological Drama", "Branching Narrative", "Cinematic Engine", "Web Audio", "CG Gallery", "Autosave Vault"],
+    shortDescription: "An atmospheric 731-scene psychological visual novel tracking the dramatic fall, moral hubris, and redemption of Nader, featuring branching dialogue, dynamic character flags, ambient Web Audio, and CG collections.",
     details: {
-      generalIdea: "Fractured Self is an interactive narrative exploring psychological vulnerability, fractured memories, and identity conflict. Players navigate dramatic encounters, uncovering layers of emotional truth through choice-driven dialogue that alters character relationships and narrative climaxes.",
+      generalIdea: "Fractured Self: The Fall of Nader is an emotionally raw, cinematic psychological visual novel exploring the depths of human arrogance, fractured identity, and the agonizing path toward moral redemption. The story chronicles Nader, a three-time national boxing champion and sole heir to a sprawling travel conglomerate, whose supreme hubris and unyielding pride set off a devastating downward spiral. Across 731 high-tension scenes spanning the Prologue, Chapter 1, and Chapter 2, readers navigate intense confrontations between Nader, his unbending father Fawzy al-Damanhouri, and Sabah, whose quiet devotion challenges his decaying soul. Through branching player decisions, psychological flag tracking, dynamic environmental particle physics, and adaptive musical soundscapes, every choice reflects a crack in the protagonist's fragile self-image.",
       keyFeatures: [
-        "Cinematic scene-by-scene visual progression with immersive audio cues",
-        "Branching dialogue options influencing protagonist psychological state",
-        "Character relationship meters and memory fragment collection",
-        "Multiple story pathways leading to distinct emotional resolutions",
-        "Auto-save checkpoint system and dialogue backlog log"
+        "731-Scene Episodic Psychological Journey: A sweeping dramatic narrative across Prologue ('The Arrow and the Dark', 35 scenes), Chapter 1 ('The Fall from Grace', 191 scenes), and Chapter 2 ('The Trial of Conscience', 505 scenes)",
+        "Dynamic Psychological Flag Matrix: Tracks 5 core emotional dimensions in real time: Trust, Guilt, Hope, Fear, and Character Relationship affinity",
+        "Branching Dialogue & Consequence Engine: Crucial narrative crossroads where player decisions alter dialogue tone, character reactions, and ultimate moral resolutions",
+        "Comprehensive CG Illustration Gallery: High-resolution artwork vault with 89 collectible CG illustrations and fullscreen lightbox inspection",
+        "Synthesized Web Audio Ambient Soundscapes: Custom procedural Web Audio synthesizer delivering evocative dark atmospheric music without heavy external audio payloads",
+        "Interactive Transcript & Dialogue History: Instant-access conversational backlog allowing readers to review previous exchanges, speech attributions, and narrative text",
+        "Multi-Slot Save & State Checkpoint System: Robust client-side persistence with 3 manual save/load slots alongside real-time automatic progress checkpoints",
+        "Reading Accessibility & Aesthetic Customization: Four reading modes (Dark, Light, Sepia, High Contrast), 4 typography styles (Cinzel, Georgia, Lora, Playfair Display), and adjustable text speed",
+        "Rich Analytics & Statistics Console: Real-time reader telemetry measuring total playtime, story completion percentage, choice distribution, and gallery unlock rates",
+        "Progressive Web App Architecture: Offline caching for script, styling, and core scene assets, home screen install prompt, and orientation-adaptive viewport"
       ],
-      working: "Engineered using a structured JSON narrative script engine. The game controller coordinates image transitions, text typewriter effects, soundtrack cues, and conditional flag triggers.",
-      highlights: "Atmospheric visual pacing designed to evoke deep psychological introspection and cinematic tension."
+      working: "Fractured Self is built with lightweight vanilla ES6 JavaScript and HTML5 Canvas with zero runtime dependencies. The narrative runs on a declarative JSON state machine (stories.json) containing 731 branching scene nodes. The engine orchestrates smooth cross-fading scene graphics, typewriter text pacing, auto-advance timers, and real-time audio ducking. An environmental particle canvas simulates floating gold dust, rain, and moody atmospheric fog. Player progress, flags, unlocked CGs, and reader settings are synchronized with LocalStorage, while a custom Service Worker implements offline asset caching with a fail-safe Promise.allSettled mechanism and standard Web App Manifest installation.",
+      highlights: "Features a 731-scene psychological narrative, 5-variable dynamic flag engine (Trust, Guilt, Hope, Fear, Relationship), procedural Web Audio soundscapes, an 89-illustration CG gallery, and full PWA offline installation.",
+      labs: [
+        { name: "Branching Narrative Decision Engine", desc: "Interactive story controller coordinating 731 dramatic scenes with choice trees and multi-character dialogue." },
+        { name: "Psychological Flag & Affinity Tracker", desc: "Dynamic state machine calculating live scores for Trust, Guilt, Hope, Fear, and Relationship affinity." },
+        { name: "Adaptive Typography & Ambience Lab", desc: "Customizable reading environment with 4 visual themes, 4 serif/display typefaces, and adjustable typewriter speeds." },
+        { name: "Transcript Backlog & History Viewer", desc: "Full dialogue review archive providing instant retrospective access to past narrative beats and speaker text." },
+        { name: "Synthesized Web Audio Studio", desc: "Procedural browser audio engine generating dark ambient tones, melancholic chords, and atmospheric cues." },
+        { name: "CG Illustration Gallery & Lightbox", desc: "Unlockable visual art repository showcasing 89 high-resolution story illustrations with fullscreen zooming." },
+        { name: "Multi-Slot Save & State Vault", desc: "Triple-slot persistent state manager tracking chapter checkpoints, timestamps, and autosave restore points." }
+      ]
     }
   },
   {
@@ -1997,37 +2011,6 @@ export const projectsData = [
         ],
         working: "Built as a static website with vanilla JavaScript. Features modular HTML structure with separate pages for exercises, anatomy, yoga, planner, diet, and machines. Implements clean, modern design with feature cards and responsive layout. Uses script.js for basic interactivity.",
         highlights: "Comprehensive wellness platform combining fitness, yoga, anatomy, nutrition, and equipment guidance in one unified experience for complete physical and mental well-being."
-      }
-    },
-    {
-      id: "fracturedself",
-      title: "Fractured Self",
-      subtitle: "The Fall of Nader - Definitive Edition",
-      category: "game",
-      categoryLabel: "Games & Entertainment",
-      isPwa: true,
-      featured: false,
-      image: indieflowImage,
-      liveUrl: "https://rswarke1972-art.github.io/FracturedSelf/",
-      githubUrl: "https://github.com/rswarke1972-art/FracturedSelf",
-      tags: ["PWA", "Visual Novel", "Story", "Drama", "Cinematic"],
-      shortDescription: "A gripping tale of wealth, pride, and redemption. Nader, a three-time national boxing champion and heir to a vast travel empire, loses himself in a downward spiral of arrogance and indulgence.",
-      details: {
-        generalIdea: "Fractured Self: The Fall of Nader is a cinematic visual novel telling the story of Nader, a three-time national boxing champion and heir to a vast travel empire who loses himself in arrogance and indulgence. The Definitive Edition features enhanced cinematic story engine, chapter select (Prologue, Chapter 1, Chapter 2), gallery with CG collection, scene replay, music room, statistics tracking, character flags and relationships, comprehensive settings with themes and accessibility options, and PWA installation.",
-        keyFeatures: [
-          "Cinematic visual novel with 731 scenes across 3 chapters",
-          "Chapter select with progress tracking and unlock system",
-          "Gallery with 89 CGs and fullscreen lightbox viewer",
-          "Scene replay for revisiting key moments",
-          "Music room with ambient soundtrack and volume controls",
-          "Statistics tracking with play time, completion, and choices",
-          "Character flags and relationship tracking (Trust, Guilt, Hope, Fear, Relationship)",
-          "Comprehensive settings with 4 themes, font selection, text size, speed, auto-play delay",
-          "Audio controls for music and sound effects",
-          "PWA with offline capabilities and install prompt"
-        ],
-        working: "Built as a Progressive Web App with enhanced cinematic story engine. Uses localStorage for settings, stats, flags, autosave, gallery unlocks, and progress. Features modular JavaScript with separate handling for menu, settings, gallery, statistics, and story navigation. Implements premium visual design with cinematic backgrounds, particle effects, and multiple font options.",
-        highlights: "Premium cinematic visual novel with comprehensive save system, gallery, music room, statistics, and accessibility options for complete story immersion."
       }
     },
     {
