@@ -1,6 +1,7 @@
 import gameImage from "../images/Screenshot (592).png";
 import calcImage from "../images/Screenshot (593).png";
 import indieflowImage from "../images/Screenshot (599).png";
+import indieflowIcon from "../images/indieflow-icon.png";
 import unityscriptImage from "../images/Screenshot (600).png";
 import fridge2foodImage from "../images/Screenshot (601).png";
 import japaneseflowImage from "../images/Screenshot (602).png";
@@ -332,27 +333,41 @@ export const projectsData = [
   {
     id: "indieflow",
     title: "IndieFlow",
-    subtitle: "Indian Language Learning Ecosystem",
+    subtitle: "Pan-Indian Language Learning Ecosystem & 15-Script Matrix",
     category: "language",
     categoryLabel: "Language & Linguistics",
-    isPwa: false,
+    isPwa: true,
     featured: true,
-    image: indieflowImage,
+    image: indieflowIcon,
     liveUrl: "https://rswarke1972-art.github.io/IndieFlow/",
     githubUrl: "https://github.com/rswarke1972-art/IndieFlow",
-    tags: ["Language Learning", "Indian Languages", "Interactive Quizzes", "Cultural Stories"],
-    shortDescription: "An interactive Indian language learning platform supporting Hindi, Marathi, Gujarati, Tamil, Bengali, and Sanskrit through character drawing, stories, and quizzes.",
+    tags: ["PWA", "Language Learning", "Indic Scripts", "SM-2 Spaced Repetition", "15 Languages", "Sentence Builder", "Audio Pronunciation", "Comparative Linguistics"],
+    shortDescription: "A comprehensive Indian language learning ecosystem across 15 Indic languages featuring SM-2 flashcards, interactive script tracing, sentence builders, cultural storybooks, and a 15-language comparative matrix.",
     details: {
-      generalIdea: "IndieFlow celebrates the linguistic diversity of India by providing a single cohesive learning hub for major Indic languages. It guides learners from script identification and pronunciation to conversational fluency through culturally rich stories and sentence constructors.",
+      generalIdea: "IndieFlow is a unified, progressive language learning ecosystem and linguistic comparative workbench celebrating India's rich multilingual heritage. Spanning 15 major constitutionally recognized and classical Indian languages (Hindi, Sanskrit, Marathi, Bengali, Gujarati, Punjabi, Kannada, Telugu, Tamil, Malayalam, Odia, Assamese, Nepali, Sindhi, and Urdu), IndieFlow provides a complete educational pathway from script literacy to conversational reading fluency. Learners master unique Brahmic writing systems through phonetic character visualizers, build retention via the SuperMemo SM-2 spaced repetition algorithm, assemble grammatically accurate Indic sentences, and explore bilingual folklore stories. The platform uniquely features a pan-Indian comparative matrix that maps cognates, idioms, and phrases side-by-side across all 15 languages simultaneously.",
       keyFeatures: [
-        "Support for 6 major Indic languages (Hindi, Marathi, Gujarati, Tamil, Bengali, Sanskrit)",
-        "Interactive alphabet & conjunct character learning with pronunciation guides",
-        "Story reading mode with clickable word meanings and grammatical notes",
-        "Sentence-building drag-and-drop exercises and tense conjugations",
-        "Gamified quiz system with accuracy metrics and daily practice goals"
+        "15 Major Indian Languages: Deep curriculum and dedicated datasets for Hindi, Sanskrit, Marathi, Bengali, Gujarati, Punjabi, Kannada, Telugu, Tamil, Malayalam, Odia, Assamese, Nepali, Sindhi, and Urdu",
+        "SuperMemo SM-2 Spaced Repetition: Scientifically-grounded flashcard review algorithm calculating optimal repetition intervals, ease factors, and recall retention scores",
+        "Interactive Letters & Script Visualizer: Detailed breakdown of Vowels (Swar), Consonants (Vyanjan), Matras (diacritics), and conjunct ligatures with authentic native audio",
+        "Interactive Sentence Constructor: Drag-and-drop word tile syntax engine teaching Subject-Object-Verb (SOV) sentence structure, case markers, and postpositions with immediate grammatical validation",
+        "Adaptive Audio & Reading Quiz Studio: Multi-format quizzes with listening comprehension, character recognition, English-to-Indic translation, streak multipliers, and instant feedback",
+        "Synchronized Bilingual Cultural Storybook: Native folktales and literature with line-by-line synchronized English translations, tap-to-listen pronunciations, and contextual glossaries",
+        "4-Tier Vocabulary Mastery Matrix: Tracks words dynamically across New, Learning, Known, and Mastered stages with real-time progress calculations",
+        "15-Language Multilingual Comparison Matrix: Side-by-side linguistic comparison engine displaying common greetings, numbers, and cultural idioms across all 15 scripts simultaneously to showcase shared linguistic heritage",
+        "Habit Streaks & Milestone Badges: Gamified consistency tracker recording daily learning streaks, letters visited, words mastered, and unlockable achievement trophies (Scholar, Polyglot, Master)",
+        "Offline-First Progressive Web App: Service worker asset caching, dynamic manifest injection, responsive mobile-first dark slate glassmorphism, and home screen install capability"
       ],
-      working: "Utilizes unicode-aware string manipulation and modular language data packs. Audio pronunciation is integrated with speech synthesis and sound libraries for authentic phonetics.",
-      highlights: "Bridges multiple Indian scripts through shared phonetic roots and comparative vocabulary charts."
+      working: "IndieFlow is architected with modular vanilla JavaScript and optimized client-side JSON datasets without heavy framework dependencies. Language state is orchestrated through a centralized config.js controller that dynamically loads modular JSON packs (~100KB each) based on the user's active language selection. The spaced repetition engine implements the mathematical SuperMemo SM-2 formula storing interval days, repetition counts, and ease factors in LocalStorage. Progress telemetry (progress.js) computes weighted mastery percentages across character, vocabulary, and story modules. The application features a Service Worker with dynamic manifest injection for offline accessibility and an adaptive responsive interface optimized for Indic font rendering across diverse scripts.",
+      highlights: "Features comprehensive coverage of 15 Indian languages, an SM-2 spaced repetition flashcard engine, interactive sentence syntax builders, and an unprecedented 15-script comparative linguistic matrix.",
+      labs: [
+        { name: "15-Script Character & Phonetics Lab", desc: "Interactive alphabet engine exploring vowels, consonants, matras, and conjuncts with phonetic guides and native audio." },
+        { name: "SM-2 Spaced Repetition Studio", desc: "Algorithmic flashcard trainer scheduling optimal reviews based on difficulty ratings, ease factors, and interval scaling." },
+        { name: "Indic Sentence Construction Lab", desc: "Interactive syntax workbench assembling word tiles into grammatically correct Subject-Object-Verb (SOV) sentences." },
+        { name: "Audio Listening & Recall Quiz", desc: "Adaptive assessment module testing reading comprehension, script recognition, and auditory word matching." },
+        { name: "Bilingual Cultural Storybook", desc: "Line-by-line parallel reader with contextual translations, cultural lore, and sentence-level audio playback." },
+        { name: "15-Language Comparative Matrix", desc: "Pan-Indian comparative workbench contrasting phrases, greetings, and cognates across 15 Indic scripts in parallel." },
+        { name: "Vocabulary Tier Mastery Vault", desc: "Four-stage lexical progression tracker organizing vocabulary across New, Learning, Known, and Mastered tiers." }
+      ]
     }
   },
   {
