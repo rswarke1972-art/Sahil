@@ -35,7 +35,7 @@ import threadoraImage from "../images/Screenshot (630).png";
 import gateforgeImage from "../images/Screenshot (631).png";
 import linguawarImage from "../images/Screenshot (632).png";
 import neuropsyImage from "../images/Screenshot (633).png";
-import memoraImage from "../images/Screenshot (634).png";
+import memoraIcon from "../images/memora-icon.png";
 import prompticaImage from "../images/Screenshot (635).png";
 import audioleafImage from "../images/Screenshot (636).png";
 import conjecturaImage from "../images/conjectura.png";
@@ -177,22 +177,36 @@ export const projectsData = [
     categoryLabel: "Web App & PWA",
     isPwa: true,
     featured: true,
-    image: memoraImage,
+    image: memoraIcon,
     liveUrl: "https://rswarke1972-art.github.io/memora/",
     githubUrl: "https://github.com/rswarke1972-art/Memora",
-    tags: ["PWA", "Mindfulness", "Mood Analytics", "Offline-First", "Journaling"],
-    shortDescription: "A mindful Progressive Web App diary that tracks mood trends, creates dynamic emotional prompts, builds writing streaks, and secures personal reflections in a searchable memory vault.",
+    tags: ["PWA", "Mindfulness", "Mood Analytics", "Offline-First", "Sentiment Prompts", "Habit Tracker", "Local Storage"],
+    shortDescription: "A peaceful late-night journaling PWA featuring a 10-mood emotional check-in, 12 sentiment feeling tags, dynamic contextual prompt generator, 28-day habit streak tracker, and encrypted local memory vault.",
     details: {
-      generalIdea: "Memora helps users cultivate emotional self-awareness and sustainable journaling habits. Rather than facing a blank page, users receive sentiment-tailored prompts that encourage thoughtful reflection on gratitude, anxiety relief, emotional growth, and daily victories.",
+      generalIdea: "Memora is a mindful Progressive Web App diary and emotional memory vault designed for peaceful evening reflection and emotional self-awareness. Created to eliminate the intimidating friction of a blank page, Memora guides users through a calm two-step ritual: checking in with their core emotional state across 10 distinct moods and 12 nuanced feeling tags, and receiving intelligent, psychology-grounded reflection prompts tailored directly to their current sentiment. With local-first encrypted storage, zero telemetry tracking, and serene dark violet twilight aesthetics, Memora transforms daily journaling into a private sanctuary for healing, gratitude, self-discovery, and consistency.",
       keyFeatures: [
-        "Mood tracking with emotional tag clouds and sentiment trend analytics",
-        "Contextual AI-inspired prompt generation based on user's selected emotional state",
-        "Encrypted LocalStorage memory vault with instant keyword and date search",
-        "Writing streak counter, milestone badges, and consistency tracking",
-        "Progressive Web App installation with full offline entry creation"
+        "10-State Emotional Mood Spectrum: Intuitive single-choice mood selector spanning Happy (😊), Calm (😌), Sad (😔), Stressed (😰), Frustrated (😤), Tired (😴), Excited (😍), Confused (😕), Empty (😶), and Peaceful (🤍)",
+        "12-Point Granular Feeling Matrix: Multi-select emotional tag cloud enabling users to articulate complex interior states including Gratitude, Anxiety, Hope, Reflection, Regret, Motivation, Loneliness, Love, Anger, Growth, and Stress",
+        "Context-Aware Sentiment Prompt Engine: Intelligent heuristic mapping that cross-references chosen moods and feeling tags to dispatch tailored reflection prompts across 10 psychological categories from a 100+ prompt repository",
+        "Dynamic Shuffling & Inspiration: Instant one-click prompt refresh ('New prompt ✨') allowing users to explore different angles of self-reflection without losing their emotional check-in context",
+        "Real-Time Keystroke Autosave: Instant draft preservation to LocalStorage on every input event, preventing accidental data loss from browser closing, battery death, or tab switching",
+        "Memory Vault & Multi-Dimensional Search: Private client-side searchable archive indexing all journal entries with real-time substring filtering across body content, prompts, mood labels, and date stamps",
+        "28-Day Consistency Calendar & Streaks: Algorithmic streak computation tracking current consecutive journaling days, all-time record streaks, and a visual 28-day consistency strip with 'Did I write today?' status",
+        "Customizable Notification Ritual: Timed reminder scheduler with Web Notification API integration, dispatching gentle evening prompts at user-configured hours with custom vibration patterns",
+        "Full-Screen Modal Memory Reader: Distraction-free native HTML5 dialog reader displaying complete diary pages with mood emojis, prompt contexts, timestamps, and one-click entry management",
+        "Zero-Telemetry Privacy & Offline PWA: Complete offline capability powered by a dedicated Service Worker caching app shell assets and zero external tracking for total personal privacy"
       ],
-      working: "Built with a service-worker caching layer and an offline-first storage engine. Entries are indexed in local storage with JSON metadata for quick filtering, statistical mood aggregation, and instant export.",
-      highlights: "Designed with a calming minimalist UI, gentle dark mode tones, and zero external tracking for complete privacy."
+      working: "Memora is architected using zero-framework vanilla JavaScript with modular state management and an offline-first storage engine. User profiles, mood preferences, active drafts, and journal entries persist entirely on the client device inside LocalStorage using structured JSON schemas. The streak calculation engine implements a date-difference normalization algorithm that accurately handles midnight rollovers and leap years. Background reminders are scheduled via precision delay timers linked to the Service Worker Notification API with custom deep-linking payloads. The UI leverages modern CSS glassmorphism, soft ambient glow animations, and CSS Keyframe tactile feedback for invalid inputs, while the Service Worker pre-caches all HTML routes, stylesheets, and prompt datasets for seamless offline reliability.",
+      highlights: "Features an intelligent 10-mood sentiment prompt generator, real-time keystroke draft autosaving, a 28-day consistency streak tracker, and an encrypted memory vault with full PWA offline capabilities.",
+      labs: [
+        { name: "10-State Mood Check-in", desc: "Interactive emotional check-in selector mapping 10 primary emotional states with tactile feedback." },
+        { name: "12-Tag Feeling Cloud", desc: "Granular emotional tag matrix capturing nuanced feelings like Gratitude, Anxiety, Hope, and Growth." },
+        { name: "Sentiment Prompt Engine", desc: "Contextual heuristic algorithm selecting psychology-grounded reflection questions from 10 thematic categories." },
+        { name: "Autosave Journal Editor", desc: "Distraction-free writing canvas with live word counts, real-time keystroke draft saving, and date stamps." },
+        { name: "Memory Vault & Search", desc: "Encrypted client-side archive with instant multi-field keyword search across memories, moods, and prompts." },
+        { name: "28-Day Habit & Streak Matrix", desc: "Algorithmic consistency tracker computing active streaks, personal records, and a 28-day visual calendar." },
+        { name: "Scheduled Evening Ritual", desc: "Background Web Notification scheduler dispatching gentle personalized evening reminders with deep links." }
+      ]
     }
   },
   {
