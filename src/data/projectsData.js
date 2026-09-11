@@ -22,7 +22,7 @@ import langosphereImage from "../images/Screenshot (616).png";
 import bondlyIcon from "../images/bondly-icon.png";
 import realmoraIcon from "../images/realmora-icon.png";
 import fracturedselfIcon from "../images/fracturedself-icon.png";
-import corezenImage from "../images/Screenshot (620).png";
+import corezenIcon from "../images/corezen-icon.png";
 import artysseyImage from "../images/Screenshot (621).png";
 import geoclueImage from "../images/Screenshot (622).png";
 import dateyumeiImage from "../images/Screenshot (623).png";
@@ -413,27 +413,41 @@ export const projectsData = [
   {
     id: "corezen",
     title: "CoreZen",
-    subtitle: "Complete Kinesiology, Workout Planning & Fitness Academy",
+    subtitle: "Holistic Fitness Architecture, Muscle Anatomy, Yoga Sanctuary & Training Systems",
     category: "pwa",
     categoryLabel: "Web App & PWA",
     isPwa: true,
     featured: true,
-    image: corezenImage,
+    image: corezenIcon,
     liveUrl: "https://rswarke1972-art.github.io/CoreZen/",
     githubUrl: "https://github.com/rswarke1972-art/CoreZen",
-    tags: ["Fitness Platform", "Exercise Library", "Anatomy Guide", "Workout Planner"],
-    shortDescription: "A fitness and kinesiology platform featuring muscle-targeted exercise tutorials, gym machine guides, yoga flows, workout routines, and diet recommendations.",
+    tags: ["PWA", "Fitness Architecture", "Muscle Anatomy", "Exercise Library", "Yoga Sanctuary", "Workout Planner", "Nutrition & Diet", "Gym Equipment Guide"],
+    shortDescription: "An all-in-one fitness and wellness PWA integrating kinesiological muscle anatomy, categorized exercise biomechanics, yoga sanctuary flows, personalized workout routine generation, nutritional guidance, and gym machine safety manuals.",
     details: {
-      generalIdea: "CoreZen eliminates workout guesswork by connecting human anatomy with proper exercise form. Users can explore muscle groups on an interactive body map, study step-by-step biomechanical execution, and build customized routines suited for home or gym training.",
+      generalIdea: "CoreZen is a unified fitness, kinesiology, and wellness platform engineered around the guiding philosophy: Strong Body. Calm Mind. Rather than isolating strength training from recovery and mindfulness, CoreZen synthesizes high-performance physical conditioning with functional anatomical understanding and restorative yoga. Athletes and fitness enthusiasts can explore an interactive dual-view human anatomy map, investigate categorized exercise libraries with concentric/eccentric cues and common form pitfalls, generate personalized multi-day training splits calibrated to individual experience levels, practice structured yoga flows with breath tempo cadence, master gym equipment mechanics, and adopt science-backed nutritional meal structures. Fully enabled as an offline-first Progressive Web App, CoreZen provides an ad-free, accessible, and scientifically grounded physical training companion anywhere.",
       keyFeatures: [
-        "Interactive anatomical muscle group explorer (Chest, Back, Legs, Core, Arms, Delts)",
-        "Comprehensive exercise library with step-by-step form cues and safety precautions",
-        "Gym machine breakdown detailing proper seat adjustments and biomechanics",
-        "Guided yoga sequences, mobility drills, and post-workout stretching routines",
-        "Nutritional calculator calculating BMR, TDEE, and macro splits for cutting/bulking"
+        "Biomechanical Exercise Library: Multi-category movement directory with primary/secondary muscle activation, step-by-step execution cues, common form pitfalls, and coaching tips",
+        "Interactive Dual-View Anatomy Explorer: Interactive anterior and posterior human body maps detailing muscle origins, kinesiological functions, and target exercises",
+        "Mindful Yoga Sanctuary: Progressive asana library spanning Beginner, Flexibility, Strength, Balance, and Pranayama breathing routines with breath tempo indicators",
+        "Adaptive Multi-Day Workout Planner: Intelligent routine generator designing structured 2-to-6 day training splits calibrated for Strength, Hypertrophy, Fat Loss, and Mobility",
+        "Comprehensive Nutrition & Diet Guide: Macro breakdown strategies, vegetarian and lean protein directories, meal architectures, and nutrient timing principles",
+        "Complete Gym Machine Manual: Equipment reference detailing mechanical levers, seat and cable pin adjustments, safety catch locks, and proper muscle recruitment patterns",
+        "Form Precision & Injury Prevention Engine: Step-by-step cueing system detailing common mistakes (e.g. elbow flaring, lumbar hyperextension) with corrective biomechanical tips",
+        "Dynamic Search & Multi-Filter Console: Real-time filtering across difficulty levels (Beginner, Intermediate, Advanced), muscle groups, and equipment setups",
+        "Modern Glassmorphism & Micro-Interactions: Glowing emerald and cyan UI with subtle hover physics, intersection observer scroll reveals, and high-contrast typography",
+        "Offline-First Progressive Web App: Service worker caching (sw.js), standalone PWA manifest, interactive device-specific install modal dialog, and home screen launch capability"
       ],
-      working: "Organized around structured JSON exercise datasets filtered by equipment (Barbell, Dumbbell, Cables, Bodyweight). Features responsive video embedding and workout timer state tracking.",
-      highlights: "Provides visual muscle activation diagrams showing primary and secondary target zones for every movement."
+      working: "CoreZen is architected as an offline-first Progressive Web App utilizing modular vanilla JavaScript and structured JSON databases (data.json) without heavy frontend framework overhead. Biomechanical movement datasets are organized hierarchically by target muscle groups and equipment modalities. The interactive anatomy viewer maps anterior and posterior anatomical nodes to relational exercise queries, rendering immediate biomechanical cues on selection. The workout planner dynamically computes split architectures and exercise pairings across 2-to-6 day schedules using algorithmic volume distribution. A dedicated service worker leverages Promise.allSettled() pre-caching and Network-First routing for navigation requests, ensuring instant loading even without internet connectivity, while custom beforeinstallprompt event hooks manage cross-platform PWA installation states.",
+      highlights: "Features an interactive dual-view muscle anatomy map, a multi-category exercise biomechanics library with form cues, a dynamic 2-to-6 day workout planner, a mindful yoga sanctuary, and a comprehensive gym machine manual with full PWA offline support.",
+      labs: [
+        { name: "Interactive Anatomy & Muscle Activation Lab", desc: "Dual-perspective body map highlighting anterior and posterior muscle groups with primary and secondary recruitment pathways." },
+        { name: "Exercise Biomechanics & Form Lab", desc: "Interactive movement analyzer detailing step-by-step concentric/eccentric phases, joint alignments, and common execution mistakes." },
+        { name: "Dynamic Split Generator & Routine Lab", desc: "Algorithmic workout builder generating structured weekly training splits tailored to goal, experience level, and training days." },
+        { name: "Mindful Yoga & Pranayama Studio", desc: "Asana flow and breathwork trainer with categorized poses for flexibility, balance, core stability, and diaphragmatic breathing." },
+        { name: "Gym Equipment & Machine Calibration Lab", desc: "Virtual machine setup guide detailing seat positions, cable pulley heights, safety stops, and resistance profiles." },
+        { name: "Nutritional Architecture & Macro Studio", desc: "Daily protein calculator, vegetarian fuel directory, and pre/post-workout nutritional timing guide." },
+        { name: "Progressive Overload & Volume Tracker", desc: "Training volume and recovery workbench balancing weekly sets per muscle group to prevent overtraining and optimize hypertrophy." }
+      ]
     }
   },
   {
@@ -2009,37 +2023,6 @@ export const projectsData = [
         ],
         working: "Built as a static website with vanilla JavaScript. Uses localStorage for progress tracking and story history. Features modular JavaScript with app.js handling navigation, quizzes, and data management. Implements clean, simple design focused on content accessibility.",
         highlights: "Contextual idiom learning through storytelling, making phrase acquisition natural and engaging rather than rote memorization of lists."
-      }
-    },
-    {
-      id: "corezen",
-      title: "CoreZen",
-      subtitle: "Strong Body. Calm Mind.",
-      category: "health",
-      categoryLabel: "Health & Wellness",
-      isPwa: false,
-      featured: false,
-      image: indieflowImage,
-      liveUrl: "https://rswarke1972-art.github.io/CoreZen/",
-      githubUrl: "https://github.com/rswarke1972-art/CoreZen",
-      tags: ["Fitness", "Yoga", "Anatomy", "Nutrition", "Wellness"],
-      shortDescription: "Comprehensive fitness platform combining strength training, yoga, anatomy education, nutrition, and wellness. Features exercise library, anatomy explorer, yoga section, workout planner, diet guide, and machine guide.",
-      details: {
-        generalIdea: "CoreZen is a comprehensive fitness and wellness platform that combines strength training, yoga, anatomy education, nutrition, and wellness into one unified experience. The app features an exercise library with proper form and difficulty levels, an interactive muscle anatomy explorer, yoga poses and breathing techniques, a workout planner for generating routines, a diet guide with healthy nutrition strategies, and a gym machine guide for equipment understanding.",
-        keyFeatures: [
-          "Exercise library for every muscle group with proper form guidance",
-          "Interactive muscle anatomy explorer for understanding body movement",
-          "Yoga section with poses, breathing techniques, and mindfulness",
-          "Workout planner for generating personalized routines",
-          "Diet guide with healthy nutrition strategies and meal ideas",
-          "Gym machine guide for equipment, target muscles, and safety",
-          "Responsive design for all devices",
-          "Clean, organized navigation",
-          "Visual feature cards for easy access",
-          "Comprehensive wellness approach"
-        ],
-        working: "Built as a static website with vanilla JavaScript. Features modular HTML structure with separate pages for exercises, anatomy, yoga, planner, diet, and machines. Implements clean, modern design with feature cards and responsive layout. Uses script.js for basic interactivity.",
-        highlights: "Comprehensive wellness platform combining fitness, yoga, anatomy, nutrition, and equipment guidance in one unified experience for complete physical and mental well-being."
       }
     },
     {
