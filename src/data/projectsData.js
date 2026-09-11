@@ -4,7 +4,7 @@ import indieflowImage from "../images/Screenshot (599).png";
 import indieflowIcon from "../images/indieflow-icon.png";
 import unityscriptImage from "../images/Screenshot (600).png";
 import fridge2foodImage from "../images/Screenshot (601).png";
-import japaneseflowImage from "../images/Screenshot (602).png";
+import japaneseflowIcon from "../images/japaneseflow-icon.png";
 import codemasteryImage from "../images/Screenshot (603).png";
 import arabicflowImage from "../images/Screenshot (604).png";
 import strokeflowImage from "../images/Screenshot (605).png";
@@ -373,27 +373,41 @@ export const projectsData = [
   {
     id: "japaneseflow",
     title: "JapaneseFlow",
-    subtitle: "Comprehensive Japanese Mastery & Kanji Animation Suite",
+    subtitle: "Complete Japanese Mastery, Kana Systems, JLPT Kanji & SRS Engine",
     category: "language",
     categoryLabel: "Language & Linguistics",
-    isPwa: false,
+    isPwa: true,
     featured: true,
-    image: japaneseflowImage,
+    image: japaneseflowIcon,
     liveUrl: "https://rswarke1972-art.github.io/JapaneseFlow/",
     githubUrl: "https://github.com/rswarke1972-art/JapaneseFlow",
-    tags: ["Japanese Learning", "Kanji Animations", "Hiragana & Katakana", "Audio Stories"],
-    shortDescription: "A multimedia Japanese learning platform featuring Hiragana, Katakana, and Kanji systems with stroke animations, audio pronunciation, quizzes, and JLPT tools.",
+    tags: ["PWA", "Japanese Learning", "Hiragana & Katakana", "JLPT Kanji", "SM-2 Spaced Repetition", "Japanese Grammar", "Furigana Reader", "Mnemonic Audio"],
+    shortDescription: "A comprehensive Japanese language learning PWA covering Hiragana, Katakana, JLPT N5-N1 Kanji, SM-2 spaced repetition review queues, particle grammar, and bilingual cultural storybooks.",
     details: {
-      generalIdea: "JapaneseFlow offers an intuitive pathway to mastering Japanese. From Kana fundamentals to complex Kanji stroke orders, the platform provides interactive visual feedback, audio-integrated stories, and JLPT N5–N3 vocabulary roadmaps.",
+      generalIdea: "JapaneseFlow is a holistic, offline-ready Japanese language mastery ecosystem designed to guide learners seamlessly from introductory Kana literacy up to advanced JLPT Kanji and complex grammar structures. Built around a cognitive learning architecture, the platform combines complete Hiragana and Katakana syllabaries, multi-tier JLPT Kanji roadmaps (N5 through N1) with stroke orders and onyomi/kunyomi readings, and a dedicated Japanese grammar laboratory covering particles and essential verb conjugations. A built-in SuperMemo SM-2 spaced repetition system schedules dynamic review queues based on individual memory decay, while interactive mnemonic songs and bilingual cultural literature (such as Kenji Miyazawa's classic tales) provide authentic immersion. With daily streak tracking, XP milestones, and offline PWA capabilities, JapaneseFlow makes mastering the intricacies of Japanese structured, engaging, and accessible anywhere.",
       keyFeatures: [
-        "Animated stroke order diagrams for Hiragana, Katakana, and essential Kanji",
-        "Native audio pronunciation playback for individual syllables and words",
-        "Clickable bilingual story reader with furigana toggle and grammar notes",
-        "JLPT level-based vocabulary drills and spaced repetition practice",
-        "Smart Kanji radical search and meaning lookup engine"
+        "Complete Dual Kana Syllabaries: Interactive character explorers for all 46 basic Hiragana and Katakana, plus dakuten, handakuten, and combined yōon diphthongs with authentic native audio",
+        "JLPT Kanji Mastery (N5 to N1): Progressive Kanji curriculum organized by official JLPT levels, displaying radicals, stroke counts, Onyomi (Chinese) and Kunyomi (Japanese) readings, and high-frequency compounds",
+        "SuperMemo SM-2 Spaced Repetition Engine: Scientifically schedules reviews for Kana, Kanji, and vocabulary based on retention ease factors, interval scaling, and quality response scores",
+        "Comprehensive Japanese Grammar Hub: Detailed breakdowns of essential particles (wa, ga, o, ni, de, e, to, mo, kara, made) and systematic verb conjugation matrices (Masu, Te, Nai, Ta, Potential, Passive)",
+        "Bilingual Story Mode with Furigana Annotations: Interactive classical Japanese literature reader featuring toggleable furigana ruby text, romaji transliterations, instant word definitions, and parallel English glosses",
+        "Mnemonic Kana Audio Songs: Integrated melodic mnemonic songs for Hiragana and Katakana memorization, accompanied by serene traditional shakuhachi flute ambient audio",
+        "Adaptive Multi-Format Quiz Studio: Interactive assessments testing script recognition, audio listening recall, English-to-Japanese vocabulary matching, and Romaji conversions",
+        "Gamified Progress & JLPT Readiness Telemetry: Live dashboard tracking level advancement, XP accumulation, daily study goals, active day streaks, accuracy rates, and JLPT N5 readiness percentages",
+        "Instant Dictionary & Radical Search: High-speed search engine across the Japanese lexicon, allowing instant lookups by English meaning, Romaji, Kana, or Kanji radical",
+        "Offline-First Progressive Web App: Service worker caching for data.json, audio assets, and lessons, paired with web app manifest shortcuts and fullscreen desktop/mobile installation"
       ],
-      working: "Features SVG vector path stroke animations rendered sequentially with CSS stroke-dashoffset transitions. Sound elements are handled through the Web Audio API for zero latency.",
-      highlights: "Includes curated YouTube-integrated video lessons, background music playback, and interactive furigana toggles."
+      working: "JapaneseFlow is engineered with vanilla modular JavaScript, utilizing optimized client-side JSON databases (data.json and wildcat.json totaling over 700KB of rich linguistic data) without external framework dependencies. The spaced repetition engine (srs.js) implements the mathematical SuperMemo SM-2 algorithm, persisting card ease factors, review intervals, and next-review timestamps in LocalStorage. Dynamic dashboard analytics (dashboard.js) analyze mastery queues in real time to recommend the user's optimal next learning step. The bilingual story viewer utilizes custom DOM tokenizers to bind interactive lookup listeners to individual Japanese tokens with synchronized furigana ruby tags. A service worker caches core scripts, audio files, and data tables to provide a completely responsive, offline-first learning experience.",
+      highlights: "Features dual Kana syllabaries with mnemonic songs, JLPT N5-N1 Kanji with dual readings, an SM-2 spaced repetition review engine, Japanese particle grammar guides, and an interactive furigana story reader with full PWA offline support.",
+      labs: [
+        { name: "Dual Kana Syllabary Explorer", desc: "Interactive phonetics grid for all Hiragana and Katakana characters, diacritics, and combinations with native audio." },
+        { name: "JLPT Kanji Progression Studio", desc: "Level-based Kanji laboratory detailing Onyomi/Kunyomi readings, radical classifications, and vocabulary compounds." },
+        { name: "SM-2 Spaced Repetition Review Queue", desc: "Algorithmic review workbench optimizing flashcard retention through difficulty ratings and adaptive review schedules." },
+        { name: "Japanese Particle & Grammar Lab", desc: "Structured guide covering particle usage rules, sentence patterns, and multi-form verb conjugation tables." },
+        { name: "Furigana Cultural Story Reader", desc: "Interactive bilingual story viewer with clickable vocabulary lookups, furigana ruby text toggles, and parallel English translations." },
+        { name: "Kana Mnemonic Melodic Studio", desc: "Musical learning player with Hiragana and Katakana mnemonic songs and relaxing traditional Japanese ambient flute music." },
+        { name: "Adaptive Assessment & Quiz Console", desc: "Dynamic testing suite featuring listening recall, Kana transcription, Romaji-to-script drills, and instant feedback." }
+      ]
     }
   },
   {
