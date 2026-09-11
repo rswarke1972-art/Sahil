@@ -18,7 +18,7 @@ import kurdishflowImage from "../images/Screenshot (613).png";
 import farsiflowImage from "../images/Screenshot (614).png";
 import idiomverseImage from "../images/Screenshot (615).png";
 import langosphereImage from "../images/Screenshot (616).png";
-import bondlyImage from "../images/Screenshot (617).png";
+import bondlyIcon from "../images/bondly-icon.png";
 import realmoraImage from "../images/Screenshot (618).png";
 import fracturedselfImage from "../images/Screenshot (619).png";
 import corezenImage from "../images/Screenshot (620).png";
@@ -212,27 +212,41 @@ export const projectsData = [
   {
     id: "bondly",
     title: "Bondly",
-    subtitle: "Global Social Network & Language Exchange Community",
+    subtitle: "Meaningful Friendship & Language Exchange Network",
     category: "tools",
     categoryLabel: "AI & Productivity Tools",
-    isPwa: false,
+    isPwa: true,
     featured: true,
-    image: bondlyImage,
+    image: bondlyIcon,
     liveUrl: "https://rswarke1972-art.github.io/Bondly/",
     githubUrl: "https://github.com/rswarke1972-art/Bondly",
-    tags: ["Firebase", "Real-Time Chat", "Social Network", "Language Partners", "Media Sharing"],
-    shortDescription: "A social networking platform to discover friends, language partners, and study peers worldwide featuring real-time messaging, voice notes, and media sharing.",
+    tags: ["PWA", "Firebase", "Real-Time Chat", "Language Exchange", "Smart Matching", "Voice Notes", "Audio Waveforms"],
+    shortDescription: "A meaningful friendship and language exchange PWA featuring real-time messaging, voice notes, weighted compatibility matching, cross-language practice, and Deep Mode conversations.",
     details: {
-      generalIdea: "Bondly enables meaningful international connections by pairing learners and conversationalists according to shared interests, native languages, and target languages. It fosters cultural exchange without the noise of commercial social media algorithms.",
+      generalIdea: "Bondly is a mobile-first friendship and language exchange network built to foster authentic, high-empathy connections without commercial social media toxicity, follower metrics, or algorithmic outrage. Engineered around mutual learning and intentional dialogue, Bondly connects people globally based on complementary language goals, shared passions, and conversational depth. Users can find dedicated tandem language partners, exchange voice notes with live audio visualizers, engage in structured 'Deep Mode' philosophical discussions, and track cross-cultural friendship milestones in a safe, moderated ecosystem.",
       keyFeatures: [
-        "Real-time one-on-one messaging with delivery receipts and typing indicators",
-        "Audio voice message recording, photo uploads, and document sharing",
-        "Interest-based discovery feed and mutual language partner matching",
-        "User profiles with bio, language proficiency badges, and learning goals",
-        "Friend request system and active status indicators"
+        "Multi-Factor Smart Compatibility Matching: Algorithmic compatibility scoring weighted across shared interests (30%), bidirectional language exchange potential (25%), timezone proximity (20%), personality traits (15%), and friendship goals (10%)",
+        "Full-Featured Real-Time Messaging: Production-ready chat powered by Firestore and Realtime Database with sub-second message delivery, unread counters, typing indicators, read receipts, and message delivery states",
+        "Integrated Voice Note Studio: Built-in MediaRecorder audio engine capturing crystal-clear voice notes with dynamic playback waveforms, pause/resume scrubbing, and hold-to-record gesture controls",
+        "Rich Message Interactions: Contextual long-press menus supporting direct reply quoting, multi-emoji reactions, message forwarding to friend lists, text copying, and soft deletions",
+        "Tandem Language Exchange Hub: Bidirectional matching connecting native speakers with learners, complete with language proficiency badges, target language filtering, and vocabulary practice tools",
+        "Curated 'Deep Mode' Conversation Lab: Structured dialogue accelerator offering categorized icebreakers, philosophical dilemmas, cultural inquiries, and psychological reflection prompts to bypass superficial small talk",
+        "Granular Discovery & Filtering Engine: Search and discover peers across multi-dimensional criteria including country, native tongue, target language, shared hobbies, timezone offsets, and online presence",
+        "Comprehensive Trust & Safety Framework: User blocking, silent muting, structured report categorization, and client-side content moderation enforcing respectful community interaction",
+        "Interactive Friendship Categorization: Organize connections into customized tiers including Close Friends, Language Partners, Study Buddies, and Casual Connections",
+        "Progressive Web App & Offline Shell: Mobile-optimized PWA with touch gesture navigation, swipe interactions, manifest shortcuts, and offline service worker asset caching"
       ],
-      working: "Integrated with Firebase Realtime Database and Firestore for synchronized messaging. Media uploads are processed via cloud storage with client-side image compression for optimal mobile performance.",
-      highlights: "Seamless live chat UX with instant optimistic UI updates and responsive mobile-first layout."
+      working: "Bondly is built with modular vanilla JavaScript adhering to strict separation of concerns across dedicated controllers (messaging, matching, discovery, language, presence, and safety). Real-time communication utilizes dual Firebase services: Cloud Firestore for persistent message threads and user profiles, combined with Firebase Realtime Database for ephemeral state synchronization including typing status, presence heartbeats, and read receipts. Audio voice notes are captured via the native MediaStream Recording API and encoded into compact blobs for immediate transmission. The matching engine implements a weighted multi-factor heuristic normalizing timezone offsets and interest vectors into a 0-100 compatibility index. Touch gestures, bottom sheets, and responsive viewports are orchestrated through custom touch event listeners and hardware-accelerated CSS transformations.",
+      highlights: "Features an algorithmic 5-factor compatibility matcher, real-time voice messaging with waveform rendering, a dedicated Language Exchange hub, and a curated Deep Mode conversation engine.",
+      labs: [
+        { name: "Multi-Factor Matching Engine", desc: "Interactive algorithm computing compatibility scores based on shared interests, language goals, and timezone proximity." },
+        { name: "Real-Time Chat & Voice Studio", desc: "Low-latency messaging console with MediaRecorder voice notes, typing indicators, and message reactions." },
+        { name: "Tandem Language Exchange Hub", desc: "Cross-cultural learning desk matching native speakers with learners with proficiency level badges." },
+        { name: "Deep Mode Dialogue Lab", desc: "Structured conversation accelerator offering curated philosophical prompts, cultural dilemmas, and icebreakers." },
+        { name: "Global Discovery Sandbox", desc: "Multi-parameter filter engine exploring worldwide profiles by country, language, hobby, and active status." },
+        { name: "Trust & Moderation Suite", desc: "Safety command center featuring one-click user blocking, quiet muting, and structured conduct reporting." },
+        { name: "Friendship Milestone Tracker", desc: "Visual relationship dashboard tracking shared conversation streaks, milestone badges, and interaction stats." }
+      ]
     }
   },
   {
