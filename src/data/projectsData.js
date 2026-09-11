@@ -23,7 +23,7 @@ import bondlyIcon from "../images/bondly-icon.png";
 import realmoraIcon from "../images/realmora-icon.png";
 import fracturedselfIcon from "../images/fracturedself-icon.png";
 import corezenIcon from "../images/corezen-icon.png";
-import artysseyImage from "../images/Screenshot (621).png";
+import artysseyIcon from "../images/artyssey-icon.png";
 import geoclueImage from "../images/Screenshot (622).png";
 import dateyumeiImage from "../images/Screenshot (623).png";
 import mindhavenImage from "../images/Screenshot (624).png";
@@ -456,24 +456,38 @@ export const projectsData = [
     subtitle: "Masterpiece Art Analysis, Semiotics & Symbolism Decoder",
     category: "philosophy",
     categoryLabel: "Philosophy & Culture",
-    isPwa: false,
+    isPwa: true,
     featured: true,
-    image: artysseyImage,
+    image: artysseyIcon,
     liveUrl: "https://rswarke1972-art.github.io/Artyssey/",
     githubUrl: "https://github.com/rswarke1972-art/Artyssey",
-    tags: ["Art Analysis", "Semiotics", "Visual Storytelling", "Cultural Education"],
-    shortDescription: "Decode famous world masterpieces beyond their visual surface through in-depth analysis of hidden symbolism, lighting, color palettes, and historical context.",
+    tags: ["PWA", "Masterpiece Art Analysis", "Semiotics & Symbolism", "Art History", "Chiaroscuro & Lighting", "Visual Storytelling", "Cultural Education", "Museum Curation"],
+    shortDescription: "An immersive museum art analysis PWA decoding 21 world masterpieces across 10 analytical dimensions including semiotics, hidden symbolism, facial micro-expressions, golden ratio geometry, and historical context.",
     details: {
-      generalIdea: "Artyssey is an interactive art museum and educational platform that teaches users how to read paintings like literature. It analyzes artistic masterpieces by decoding hidden symbols, facial expressions, chiaroscuro lighting, color harmony, and socio-political backdrops.",
+      generalIdea: "Artyssey is an immersive museum education and semiotic art analysis platform designed to transform classical art viewing from passive aesthetic observation into rigorous hermeneutic decryption: teaching users to read master paintings like literature. Centered around 21 curated world masterpieces spanning the High Renaissance, Romanticism, Victorian Academicism, Pre-Raphaelite Brotherhood, Vienna Secession, and Ukiyo-e woodblock printing, Artyssey breaks down each canvas across 10 rigorous analytical dimensions: Historical Context, Facial Micro-Expressions, Postural Kinesics, Semiotic Symbolism, Material Object Culture, Compositional Geometry, Chiaroscuro Lighting, Emotional Atmosphere, Historiographical Impact, and Biographical Lore. By unveiling the hidden allegories behind works like Vasily Pukirev's The Unequal Marriage, Leonardo da Vinci's The Last Supper, and Friedrich Retzsch's Checkmate, Artyssey resurrects the cultural controversies and visual mysteries embedded in centuries of human creativity.",
       keyFeatures: [
-        "Detailed artwork deconstruction (Composition, Color Palette, Lighting, Symbolism)",
-        "Interactive hotspot annotations highlighting concealed details on famous canvases",
-        "Curated art movements timeline (Renaissance, Baroque, Impressionism, Surrealism)",
-        "Artist biographies detailing personal struggles, philosophy, and breakthrough techniques",
-        "Searchable database by artist, movement, theme, emotion, and subject matter"
+        "10-Dimensional Masterpiece Deconstruction: Systematic analysis of Context, Facial Features, Body Language, Symbolism, Object Details, Composition, Lighting/Color, Mood, Significance, and Painter Lore",
+        "Semiotic Symbolism & Hidden Allegory Decoder: Unraveling esoteric and theological allegories such as Mephistopheles' chess pieces in Checkmate, severed ribbons in The Unequal Marriage, and magical ritual herbs in Waterhouse's canvases",
+        "Facial Expression & Micro-Physiognomy Analysis: Scientific breakdown of pupil dilation, facial muscle tension, moral agony, and subtle emotional nuance across painted historical figures",
+        "Postural Kinesics & Body Language Mapping: Spatial orientation, directional gaze vectors, defensive postures, and somatic tension indicators across dramatic human interactions",
+        "Geometrical Composition & Golden Ratio Vectors: Deconstructing pyramidal arrangements, triangular sightlines, golden spirals, and orthogonal vanishing points in masterpiece architecture",
+        "Chiaroscuro & Chromatic Palette Decoding: Investigating tonal contrast, dramatic chiaroscuro tenebrism, pigment selection, emotional color harmonies, and luminous focal points",
+        "High-Resolution Interactive Canvas Viewer: Fullscreen zoomable inspection allowing users to examine fine craquelure, oil glazing layers, delicate brushstrokes, and background details",
+        "Dynamic Multi-Tag Autocomplete Search: Instant keyword and thematic filtering across art movements, emotional moods, mythological subjects, historical eras, and genres",
+        "Curated Historical Context & Archival Lore: Exhaustive historiographical narratives placing each work within its socio-political landscape, academic controversies, and artist biographies",
+        "Offline-First Progressive Web App: Service worker caching (sw.js), standalone PWA manifest, custom installation modal with device-specific instructions, and home screen launch capability"
       ],
-      working: "Utilizes interactive image mapping with zooming capabilities to inspect high-resolution canvas textures, accompanied by synchronized descriptive commentary layers.",
-      highlights: "Transforms classical art history into an engaging visual mystery waiting to be unraveled."
+      working: "Artyssey is engineered as an offline-first Progressive Web App utilizing modular vanilla JavaScript and an exhaustive client-side dataset (data.json exceeding 1MB of curated art historical monographs) without heavy framework overhead. The client architecture parses painting records into structured DOM components, binding dynamic tag indexes to an auto-completing search filter. Clicking any painting preserves viewport scroll positions via sessionStorage before navigating to the deep dossier viewer (information.html). High-resolution image assets are managed through a custom lightbox overlay with smooth backdrop blur transitions. A dedicated service worker leverages Promise.allSettled() pre-caching and Network-First routing for navigation requests, ensuring instant museum-grade performance even when offline, while custom beforeinstallprompt event hooks manage cross-platform PWA installation states.",
+      highlights: "Features exhaustive 10-dimensional deconstructions of 21 world masterpieces, semiotic symbolism decoding, facial expression and postural kinesics mapping, compositional geometry analysis, and full PWA offline support.",
+      labs: [
+        { name: "Semiotic Symbolism & Iconography Decoder", desc: "Interactive allegory workbench decoding hidden theological, mythological, and political symbols embedded across canvases." },
+        { name: "Golden Ratio & Compositional Geometry Lab", desc: "Virtual overlay analyzing perspective vanishing points, triangular focal groupings, and golden spiral vector lines." },
+        { name: "Chiaroscuro & Chromatic Palette Analyzer", desc: "Tonal density and spectral color analyzer isolating dominant pigments, shadows, and dramatic light trajectories." },
+        { name: "Physiognomy & Micro-Expression Studio", desc: "Emotional kinesics tool examining eye gazes, mouth tension, and psychological states of depicted historical figures." },
+        { name: "Curated Masterpiece Timeline & Historical Era Matrix", desc: "Chronological art historical roadmap spanning High Renaissance, Victorian Romanticism, Pre-Raphaelite, and Ukiyo-e eras." },
+        { name: "Art Movement & Stylistic Taxonomy Workbench", desc: "Comparative explorer contrasting academic realism, symbolism, neoclassicism, and aesthetic movement philosophies." },
+        { name: "High-Resolution Loupe & Texture Magnification Studio", desc: "Virtual museum magnifying loupe inspecting micro brushwork, pigment glazes, canvas textures, and fine details." }
+      ]
     }
   },
   {
