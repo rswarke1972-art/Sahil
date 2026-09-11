@@ -19,7 +19,7 @@ import farsiflowImage from "../images/Screenshot (614).png";
 import idiomverseImage from "../images/Screenshot (615).png";
 import langosphereImage from "../images/Screenshot (616).png";
 import bondlyIcon from "../images/bondly-icon.png";
-import realmoraImage from "../images/Screenshot (618).png";
+import realmoraIcon from "../images/realmora-icon.png";
 import fracturedselfImage from "../images/Screenshot (619).png";
 import corezenImage from "../images/Screenshot (620).png";
 import artysseyImage from "../images/Screenshot (621).png";
@@ -252,27 +252,41 @@ export const projectsData = [
   {
     id: "realmora",
     title: "Realmora",
-    subtitle: "Multiplayer Kingdom Strategy & Diplomatic Simulation",
+    subtitle: "Dark Strategy Kingdom Simulator & Geopolitical Engine",
     category: "games",
     categoryLabel: "Games & Simulations",
-    isPwa: false,
+    isPwa: true,
     featured: true,
-    image: realmoraImage,
+    image: realmoraIcon,
     liveUrl: "https://rswarke1972-art.github.io/Realmora/",
     githubUrl: "https://github.com/rswarke1972-art/Realmora",
-    tags: ["Strategy Game", "Multiplayer Simulation", "Diplomacy Engine", "Economy System"],
-    shortDescription: "A deep kingdom strategy game where players manage economies, forge alliances, dispatch spies for sabotage, and wage military campaigns in a dynamic political world.",
+    tags: ["PWA", "Strategy Game", "Multiplayer", "Diplomacy Engine", "Territory Map", "Espionage", "World Senate", "Firebase"],
+    shortDescription: "A dark fantasy political strategy simulator and kingdom engine featuring 4-pillar stat equilibrium, foreign NPC kingdoms, territory conquest, espionage sabotage, and multiplayer senate voting.",
     details: {
-      generalIdea: "Realmora puts players at the helm of a burgeoning kingdom. Success requires balancing food, gold, military strength, diplomatic trust, and internal public morale while navigating unpredictable external political events, rival kingdom treaties, and clandestine espionage.",
+      generalIdea: "Realmora is an immersive dark fantasy geopolitical strategy simulator where players ascend the imperial throne to govern an empire on the brink of turmoil. As sovereign ruler, players must maintain delicate equilibrium across four foundational pillars of royal authority: Economy, Trust, War, and Diplomacy. Every royal decree, foreign embassy interaction, and military skirmish creates cascading consequences. Featuring deep narrative decision decks, distinct foreign AI empires, clandestine espionage operations, an interactive provincial territory map, and real multiplayer federation mechanics, Realmora challenges rulers to survive shifting alliances, betrayal, and political intrigue.",
       keyFeatures: [
-        "Deep resource management system (Gold, Food, Iron, Population, Morale)",
-        "Diplomatic treaty negotiations (Non-Aggression Pacts, Trade Routes, Vassalage)",
-        "Covert espionage operations (Intelligence gathering, Sabotage, Infiltration)",
-        "Turn-based and real-time tactical combat mechanics with army composition strategy",
-        "Dynamic world event generator causing droughts, rebellions, economic booms, and plagues"
+        "Four Foundational Pillars of Power: Dynamic equilibrium balancing Economy (treasury reserves and trade tariffs), Trust (civil loyalty and religious morale), War (garrison defense and legion readiness), and Diplomacy (foreign standing and pact integrity)",
+        "Sovereign Decision Deck & Consequence Engine: Hundreds of contextual dilemma cards with dynamic predictive consequence previews, risk indicators, and branching narrative outcomes",
+        "Four Unique Royal House Specialties: Choose your founding lineage: Merchant Guild (+20 starting Economy), Iron Guard (+20 starting War Defense), Scholar Embassy (+20 starting Diplomacy), or Sacred Order (+20 starting Civil Trust)",
+        "Distinct Foreign NPC Kingdoms: Interact with four sophisticated AI empires featuring dynamic relationship meters: Iron Vanguard (militaristic legionnaires), Gilded Syndicate (mercantile magnates), Sylvan Conclave (isolationist druidic guardians), and Celestia Hegemony (zealous solar theocracy)",
+        "Bilateral Diplomacy Suite: Negotiate non-aggression pacts, establish lucrative trade routes, send lavish royal tributes, sign mutual defense treaties, or demand vassalage",
+        "Covert Espionage & Sabotage Network: Dispatch royal spies to infiltrate rival courts, steal military intelligence, sabotage food granaries, incite peasant rebellions, or stage high-stakes assassinations",
+        "Interactive Provincial Territory Map: Strategic continent map displaying conquered fiefdoms, border garrisons, economic output nodes, and regional unrest levels",
+        "Tactical Warfare & Siege Mechanics: Frontline battlefield calculations determining army casualties, siege weapon effectiveness, garrison defense thresholds, and territorial spoils",
+        "Global World Senate & Politics: Universal council where rulers vote on global senate bills, continental trade embargoes, military sanctions, and collective geopolitical declarations",
+        "Real Multiplayer Empire Network & PWA: Live player presence and alliance federations powered by Firebase, coupled with full offline PWA capabilities, gold theme styling, and install prompt"
       ],
-      working: "Powered by a state machine that calculates turn economics, diplomatic AI decision weights, probability-based spy outcomes, and combat casualty matrices.",
-      highlights: "Features multi-kingdom AI personalities with varying traits such as militaristic, mercantile, pacifist, and deceitful."
+      working: "Realmora is engineered using modular vanilla JavaScript with zero framework overhead, structured around clean functional controllers including diplomacy.js, war.js, espionage.js, politics.js, and events.js. The economic and political simulation runs on a reactive state engine that computes turn deltas, failure boundary conditions (peasant uprisings, military coups, or treasury collapse), and relationship matrices. Real-time multiplayer synchronization is handled through Firebase Authentication, Cloud Firestore, and Realtime Database, enabling live ruler presence, player kingdom interactions, and global leaderboard rankings. The client interface employs high-performance CSS glassmorphism, hardware-accelerated starfield and gold particle dust, sound ambience controllers, and an offline-resilient Service Worker with standard Web App Manifest installation.",
+      highlights: "Features a 4-pillar equilibrium simulation, four distinct NPC AI empires, interactive territory warfare, covert espionage operations, real-time multiplayer alliances, and full PWA installability.",
+      labs: [
+        { name: "Sovereign Decision Deck", desc: "Interactive dilemma engine with branching narrative cards, consequence previews, and multi-variable stat impacts." },
+        { name: "4-Pillar Stat Equilibrium Engine", desc: "Dynamic systemic model balancing Economy, Trust, War, and Diplomacy against catastrophic failure thresholds." },
+        { name: "Foreign Kingdom AI & Treaties", desc: "Diplomatic simulation desk managing dynamic relationship meters, trade pacts, and tributes with 4 distinct NPC empires." },
+        { name: "Covert Espionage & Sabotage Console", desc: "Clandestine operations center for deploying spies, gathering intelligence, and orchestrating sabotage missions." },
+        { name: "Territorial Province Conquest Map", desc: "Interactive continent grid visualizing sovereign borders, garrisons, provincial outputs, and expansion fronts." },
+        { name: "Global Senate & World Politics", desc: "Universal legislative chamber for tabulating multi-kingdom votes, imperial embargoes, and international sanctions." },
+        { name: "Reign Chronicle & Hall of Kings", desc: "Chronological royal ledger tracking reign longevity, historical decrees, milestone achievements, and global rankings." }
+      ]
     }
   },
   {
@@ -1859,38 +1873,6 @@ export const projectsData = [
         ],
         working: "Built as a static website with vanilla JavaScript. Uses script.js for prompt data, search functionality, and filtering. No backend required, all data is client-side. Implements clean, minimal design focused on content accessibility and quick copying.",
         highlights: "Focused, distraction-free prompt learning platform with proven patterns and copy-ready starters for immediate ChatGPT improvement."
-      }
-    },
-    {
-      id: "realmora",
-      title: "Realmora",
-      subtitle: "Dark Strategy Kingdom Simulator",
-      category: "game",
-      categoryLabel: "Games & Entertainment",
-      isPwa: true,
-      featured: false,
-      image: indieflowImage,
-      liveUrl: "https://rswarke1972-art.github.io/Realmora/",
-      githubUrl: "https://github.com/rswarke1972-art/Realmora",
-      tags: ["PWA", "Strategy Game", "Kingdom Management", "Politics", "Multiplayer"],
-      shortDescription: "Govern, negotiate, and survive in this immersive dark fantasy political strategy simulator. Manage economy, trust, war, and diplomacy while navigating relationships with foreign kingdoms.",
-      details: {
-        generalIdea: "Realmora is a dark fantasy political strategy simulator where players govern a kingdom, negotiate alliances, and survive political intrigue. Players manage four core stats: Economy, Trust, War, and Diplomacy. The game features decision cards with branching choices, relationship management with NPC kingdoms (Iron Vanguard, Gilded Syndicate, Sylvan Conclave, Celestia Hegemony), real multiplayer kingdom interactions, alliance creation, world politics voting, territory map, achievements, and a reign chronicle.",
-        keyFeatures: [
-          "Four core stat management: Economy, Trust, War, Diplomacy",
-          "Decision cards with branching choices and consequence predictions",
-          "Relationship system with 4 NPC kingdoms and real multiplayer players",
-          "Alliance creation and management between kingdoms",
-          "World politics voting system for global decisions",
-          "Territory map showing conquered lands",
-          "Achievement system for milestones",
-          "Reign chronicle tracking all decisions and events",
-          "Kingdom setup with ruler name, kingdom name, and royal house specialty",
-          "Firebase integration for real multiplayer features",
-          "PWA with offline capabilities and install prompt"
-        ],
-        working: "Built as a Progressive Web App with Firebase backend for real multiplayer features. Uses localStorage for single-player progress, stats, and settings. Features modular JavaScript with firebase.js for multiplayer and app.js for game logic. Implements premium glassmorphic UI with gold accents and ambient sound effects.",
-        highlights: "Immersive political strategy simulator combining single-player decision-making with real multiplayer kingdom interactions in a dark fantasy setting."
       }
     },
     {
