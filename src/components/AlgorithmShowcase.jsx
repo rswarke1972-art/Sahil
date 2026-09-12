@@ -41,7 +41,7 @@ export default function AlgorithmShowcase() {
             Autonomous Systems &amp; Streaming Algorithms
           </h2>
           <p className="text-slate-300 text-base sm:text-lg leading-relaxed">
-            Six production-grade architectures attacking foundational systems bottlenecks: wall-clock latency in AI agent workflows, memory bloat in high-velocity cyber-telemetry streams, O(N) KV-cache memory exhaustion in long-context LLM inference, the freezing robot problem in dynamic autonomous mobile robotics, streaming temporal graph motif detection in financial cyber-forensics, and certified safety-constrained multi-agent fleet logistics.
+            Seven production-grade architectures attacking foundational systems bottlenecks: wall-clock latency in AI agent workflows, memory bloat in high-velocity cyber-telemetry streams, O(N) KV-cache memory exhaustion in long-context LLM inference, the freezing robot problem in dynamic autonomous mobile robotics, streaming temporal graph motif detection in financial cyber-forensics, certified safety-constrained multi-agent fleet logistics, and dual-path speculative 1-RTT Byzantine consensus with ephemeral MVCC rollback for geo-distributed replicated databases.
           </p>
         </div>
 
@@ -1403,6 +1403,222 @@ export default function AlgorithmShowcase() {
               <h4 className="text-sm font-bold text-white mb-1">Anti-Freezing Robot</h4>
               <p className="text-xs text-slate-400 leading-relaxed">
                 Continuous transverse velocity deflection smoothly negotiates bidirectional aisle bottlenecks, eliminating the static deadlocks of rule-based bubbles.
+              </p>
+            </div>
+          </div>
+        </div>
+
+          {/* ALGORITHM 7: AETHERBFT */}
+        <div className="space-y-6 pt-12 border-t border-slate-900">
+          <div className="flex items-center gap-3">
+            <div className="px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-300 font-mono-code text-xs font-bold uppercase tracking-wider">
+              Algorithm 07 · Distributed Systems &amp; Byzantine Consensus
+            </div>
+            <div className="h-px flex-1 bg-gradient-to-r from-cyan-500/30 to-transparent"></div>
+          </div>
+
+          <div className="glass-card rounded-3xl p-6 sm:p-10 lg:p-12 border border-cyan-500/30 shadow-2xl shadow-cyan-950/40 relative overflow-hidden">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+              
+              {/* Left Column: Theory & Invariants */}
+              <div className="lg:col-span-7 space-y-6">
+                <div>
+                  <h3 className="text-2xl sm:text-3xl font-extrabold text-white font-heading">
+                    AetherBFT: <span className="bg-gradient-to-r from-cyan-400 via-teal-300 to-blue-500 bg-clip-text text-transparent">Dual-Path Consensus &amp; MVCC Rollback</span>
+                  </h3>
+                  <p className="text-slate-300 text-sm mt-1 leading-relaxed">
+                    Eliminating the 2-3 RTT consensus penalty in geo-distributed state machines via optimistic unanimous fast quorums ($3f+1$), certified dependency contexts, and qualified $O(1)$ logical version-tree rollback.
+                  </p>
+                </div>
+
+                {/* Problem vs Innovation */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  <div className="p-4 rounded-2xl bg-slate-900/80 border border-rose-500/20">
+                    <span className="text-[11px] font-bold text-rose-400 uppercase tracking-wider block mb-1">Standard Geo-BFT Bottleneck</span>
+                    <p className="text-xs text-slate-300 leading-relaxed">
+                      Classical PBFT and modern HotStuff serialize proposals through 2 to 3 sequential RTTs per commit:
+                      <code className="block mt-1 text-[11px] text-rose-300 font-mono-code bg-slate-950 p-1.5 rounded border border-rose-500/20">
+                        T_commit = 3 &times; RTT &ge; 300ms - 570ms
+                      </code>
+                    </p>
+                  </div>
+
+                  <div className="p-4 rounded-2xl bg-slate-900/80 border border-cyan-500/30">
+                    <span className="text-[11px] font-bold text-cyan-400 uppercase tracking-wider block mb-1">AetherBFT Innovation</span>
+                    <p className="text-xs text-slate-300 leading-relaxed">
+                      Dual-path routing grants 1-RTT commits to non-conflicting proposals, with ephemeral MVCC branch trees for instant rollback:
+                      <code className="block mt-1 text-[11px] text-cyan-300 font-mono-code bg-slate-950 p-1.5 rounded border border-cyan-500/20">
+                        Q_fast = 3f+1 &rarr; 1 RTT (3.0x Speedup)
+                      </code>
+                    </p>
+                  </div>
+                </div>
+
+                {/* Safety Invariant */}
+                <div className="p-4 sm:p-5 rounded-2xl bg-cyan-950/20 border border-cyan-500/30 relative">
+                  <div className="flex items-center gap-2 text-cyan-300 text-xs font-semibold uppercase tracking-wider mb-1">
+                    <ShieldCheck className="w-4 h-4 text-cyan-400" />
+                    <span>The Fundamental Safety Invariant</span>
+                  </div>
+                  <p className="text-slate-200 text-sm font-mono-code leading-relaxed">
+                    Unconditional Safety Under Asynchrony: |Q_fast &cap; Q_slow| &ge; f + 1 honest nodes, mathematically precluding concurrent conflicting finality under arbitrary delay (n &ge; 3f + 1). Liveness guaranteed after GST under partial synchrony.
+                  </p>
+                  <p className="text-slate-400 text-xs mt-2 leading-relaxed">
+                    Speculative execution results returned during 1-RTT flight windows are explicitly tagged <code className="text-cyan-300">TENTATIVE</code>; linearizable client reads query strictly the canonical finalized state tree.
+                  </p>
+                </div>
+
+                {/* Complete 4-Button Suite */}
+                <div className="flex flex-wrap items-center gap-3 pt-2">
+                  <a
+                    href="https://rswarke1972-art.github.io/AetherBFT/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-cyan-400 via-teal-400 to-emerald-400 hover:from-cyan-300 hover:to-emerald-300 text-slate-950 font-bold text-xs sm:text-sm shadow-md shadow-cyan-500/25 hover:shadow-cyan-500/40 hover:-translate-y-0.5 active:translate-y-0 transition flex items-center gap-2 group"
+                  >
+                    <Activity className="w-4 h-4" />
+                    <span>Launch 60 FPS Simulation</span>
+                    <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition" />
+                  </a>
+
+                  <a
+                    href="https://github.com/rswarke1972-art/AetherBFT/blob/main/paper/IEEE_AetherBFT_Manuscript.md"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-4 py-2.5 rounded-xl glass-button text-slate-200 hover:text-cyan-300 text-xs sm:text-sm font-medium flex items-center gap-2 border border-slate-700/80 hover:border-cyan-500/40 transition"
+                  >
+                    <FileText className="w-4 h-4 text-cyan-400" />
+                    <span>IEEE Manuscript</span>
+                    <ExternalLink className="w-3 h-3 text-slate-400" />
+                  </a>
+
+                  <a
+                    href="https://github.com/rswarke1972-art/AetherBFT/blob/main/paper/patentability_and_prior_art_review.md"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-4 py-2.5 rounded-xl glass-button text-slate-200 hover:text-cyan-300 text-xs sm:text-sm font-medium flex items-center gap-2 border border-slate-700/80 hover:border-cyan-500/40 transition"
+                  >
+                    <Sparkles className="w-4 h-4 text-emerald-400" />
+                    <span>Prior Art &amp; Claims</span>
+                    <ExternalLink className="w-3 h-3 text-slate-400" />
+                  </a>
+
+                  <a
+                    href="https://github.com/rswarke1972-art/AetherBFT"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-4 py-2.5 rounded-xl glass-button text-slate-200 hover:text-cyan-300 text-xs sm:text-sm font-medium flex items-center gap-2 border border-slate-700/80 hover:border-cyan-500/40 transition"
+                  >
+                    <GitBranch className="w-4 h-4 text-slate-400" />
+                    <span>GitHub (v1.0.0)</span>
+                    <ExternalLink className="w-3 h-3 text-slate-400" />
+                  </a>
+                </div>
+              </div>
+
+              {/* Right Column: Telemetry & Invariants Gauges */}
+              <div className="lg:col-span-5 space-y-4">
+                <div className="p-5 rounded-2xl bg-slate-900/90 border border-slate-800 shadow-xl">
+                  <div className="flex items-center justify-between mb-4">
+                    <span className="text-xs font-mono-code text-slate-400 uppercase tracking-wider flex items-center gap-2">
+                      <Terminal className="w-3.5 h-3.5 text-cyan-400" />
+                      Empirical Consensus Telemetry
+                    </span>
+                    <span className="text-[10px] font-mono-code px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-300 border border-emerald-500/30">
+                      Linearizability Certified
+                    </span>
+                  </div>
+
+                  <div className="grid grid-cols-2 gap-3 mb-4">
+                    <div className="p-3 rounded-xl bg-slate-950/70 border border-slate-800/80">
+                      <span className="text-[10px] text-slate-400 block font-mono-code">Fast Success F(C)</span>
+                      <span className="text-xl font-extrabold text-emerald-400 font-mono-code">100.0%</span>
+                      <span className="text-[10px] text-slate-400 block mt-0.5">95.0% at C=10%</span>
+                    </div>
+                    <div className="p-3 rounded-xl bg-slate-950/70 border border-slate-800/80">
+                      <span className="text-[10px] text-slate-400 block font-mono-code">Speedup vs PBFT</span>
+                      <span className="text-xl font-extrabold text-cyan-400 font-mono-code">3.00x</span>
+                      <span className="text-[10px] text-slate-400 block mt-0.5">100ms vs 300ms</span>
+                    </div>
+                    <div className="p-3 rounded-xl bg-slate-950/70 border border-slate-800/80">
+                      <span className="text-[10px] text-slate-400 block font-mono-code">Global WAN Latency</span>
+                      <span className="text-xl font-extrabold text-teal-300 font-mono-code">188 ms</span>
+                      <span className="text-[10px] text-slate-400 block mt-0.5">vs 570 ms HotStuff</span>
+                    </div>
+                    <div className="p-3 rounded-xl bg-slate-950/70 border border-slate-800/80">
+                      <span className="text-[10px] text-slate-400 block font-mono-code">Safety Violations</span>
+                      <span className="text-xl font-extrabold text-white font-mono-code">0</span>
+                      <span className="text-[10px] text-slate-400 block mt-0.5">33 PoE Quarantines</span>
+                    </div>
+                  </div>
+
+                  <div className="space-y-2 pt-2 border-t border-slate-800/80 font-mono-code text-[11px]">
+                    <div className="flex justify-between text-slate-300">
+                      <span>Optimistic Fast Quorum</span>
+                      <span className="text-emerald-400 font-bold">Q_fast = 3f + 1 (1 RTT)</span>
+                    </div>
+                    <div className="flex justify-between text-slate-300">
+                      <span>2-Phase Fallback Quorum</span>
+                      <span className="text-amber-400 font-bold">Q_slow = 2f + 1 (2 RTT)</span>
+                    </div>
+                    <div className="flex justify-between text-slate-300">
+                      <span>Ephemeral Rollback Cost</span>
+                      <span className="text-cyan-400 font-bold">O(1) Pointer Redirection</span>
+                    </div>
+                    <div className="flex justify-between text-slate-300">
+                      <span>Pacemaker View Change</span>
+                      <span className="text-teal-400 font-bold">O(n) Authenticated High-QC</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="p-4 rounded-2xl bg-cyan-500/5 border border-cyan-500/20 text-xs text-cyan-200/90 leading-relaxed">
+                  <strong>Geo-Replication Benchmark:</strong> Built and benchmarked across 4 multi-region network topologies (LAN, WAN-Regional, WAN-Transatlantic, WAN-Global); validated against Classical PBFT, Modern HotStuff, and Raft CFT ceiling with 15/15 unit test verification.
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          {/* 4 Pillars for AetherBFT */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div className="glass-panel p-5 rounded-2xl border border-slate-800 hover:border-cyan-500/40 transition">
+              <div className="w-9 h-9 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 mb-3">
+                <Network className="w-5 h-5" />
+              </div>
+              <h4 className="text-sm font-bold text-white mb-1">Certified Dependency Context</h4>
+              <p className="text-xs text-slate-400 leading-relaxed">
+                Deterministic read/write set collision classifier intercepts conflicting in-flight transactions prior to fast-path dispatch.
+              </p>
+            </div>
+
+            <div className="glass-panel p-5 rounded-2xl border border-slate-800 hover:border-emerald-500/40 transition">
+              <div className="w-9 h-9 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 mb-3">
+                <GitBranch className="w-5 h-5" />
+              </div>
+              <h4 className="text-sm font-bold text-white mb-1">Ephemeral MVCC Tree DAG</h4>
+              <p className="text-xs text-slate-400 leading-relaxed">
+                Isolates tentative state frames in branching version trees, enabling instant O(1) pointer-reset rollback without global pipeline freezes.
+              </p>
+            </div>
+
+            <div className="glass-panel p-5 rounded-2xl border border-slate-800 hover:border-teal-500/40 transition">
+              <div className="w-9 h-9 rounded-xl bg-teal-500/10 border border-teal-500/20 flex items-center justify-center text-teal-400 mb-3">
+                <Shield className="w-5 h-5" />
+              </div>
+              <h4 className="text-sm font-bold text-white mb-1">Proof of Equivocation (PoE)</h4>
+              <p className="text-xs text-slate-400 leading-relaxed">
+                Autonomous cryptographic verification of conflicting signatures for identical slots, instantly quarantining malicious peers.
+              </p>
+            </div>
+
+            <div className="glass-panel p-5 rounded-2xl border border-slate-800 hover:border-blue-500/40 transition">
+              <div className="w-9 h-9 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400 mb-3">
+                <ShieldCheck className="w-5 h-5" />
+              </div>
+              <h4 className="text-sm font-bold text-white mb-1">Non-Linearizable Barrier</h4>
+              <p className="text-xs text-slate-400 leading-relaxed">
+                Formal API separation returning tentative state exclusively under explicit non-linearizable flags, protecting ACID query consistency.
               </p>
             </div>
           </div>
