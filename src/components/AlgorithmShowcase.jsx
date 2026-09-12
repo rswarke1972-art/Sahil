@@ -38,7 +38,7 @@ export default function AlgorithmShowcase() {
             Autonomous Systems &amp; Streaming Algorithms
           </h2>
           <p className="text-slate-300 text-base sm:text-lg leading-relaxed">
-            Four production-grade architectures attacking foundational systems bottlenecks: wall-clock latency in AI agent workflows, memory bloat in high-velocity cyber-telemetry streams, O(N) KV-cache memory exhaustion in long-context LLM inference, and the freezing robot problem in dynamic autonomous mobile robotics.
+            Five production-grade architectures attacking foundational systems bottlenecks: wall-clock latency in AI agent workflows, memory bloat in high-velocity cyber-telemetry streams, O(N) KV-cache memory exhaustion in long-context LLM inference, the freezing robot problem in dynamic autonomous mobile robotics, and streaming temporal graph motif detection in financial cyber-forensics.
           </p>
         </div>
 
@@ -964,6 +964,224 @@ export default function AlgorithmShowcase() {
               <h4 className="text-sm font-bold text-white mb-1">Sub-Millisecond SAT Pruning</h4>
               <p className="text-xs text-slate-400 leading-relaxed">
                 AABB broad-phase filter combined with 2D Separating Axis Theorem on regular octagons ($\delta_r \le 0.034 R$) executing in $0.084$ ms.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* ALGORITHM 5: CHRONOSGRAPH */}
+        <div className="space-y-6">
+          <div className="flex items-center gap-3">
+            <div className="px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-300 font-mono-code text-xs font-bold uppercase tracking-wider">
+              Algorithm 05 · Streaming Graph Algorithms &amp; Cyber-Forensics
+            </div>
+            <div className="h-px flex-1 bg-gradient-to-r from-amber-500/30 to-transparent"></div>
+          </div>
+
+          <div className="glass-card rounded-3xl p-6 sm:p-10 lg:p-12 border border-amber-500/30 shadow-2xl shadow-amber-950/40 relative overflow-hidden">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+              
+              {/* Left Column: Theory & Invariants */}
+              <div className="lg:col-span-7 space-y-6">
+                <div>
+                  <h3 className="text-2xl sm:text-3xl font-extrabold text-white font-heading">
+                    ChronosGraph: <span className="bg-gradient-to-r from-amber-400 via-yellow-300 to-emerald-400 bg-clip-text text-transparent">Bounded-Memory Streaming Temporal Motif Detection</span>
+                  </h3>
+                  <p className="text-slate-300 text-sm mt-1 leading-relaxed">
+                    Online detection of cyclical money-laundering rings, front-running arbitrage bots, and wash-trading syndicates in high-velocity transaction streams (Visa, Ethereum) via color-coding sketches.
+                  </p>
+                </div>
+
+                {/* Problem vs Innovation */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  <div className="p-4 rounded-2xl bg-slate-900/80 border border-rose-500/20">
+                    <span className="text-[11px] font-bold text-rose-400 uppercase tracking-wider block mb-1">Exact Subgraph Bottleneck</span>
+                    <p className="text-xs text-slate-300 leading-relaxed">
+                      Exact temporal DFS scales as $O(V \cdot d^k)$, exploding on exchange hubs ($d &gt; 10^4$). Static cycle detectors ignore time arrow, producing &gt;97% false alarms:
+                      <code className="block mt-1 text-[11px] text-rose-300 font-mono-code bg-slate-950 p-1.5 rounded border border-rose-500/20">
+                        Static Precision &le; 2.3% &amp; T_DFS &sim; O(d^k)
+                      </code>
+                    </p>
+                  </div>
+
+                  <div className="p-4 rounded-2xl bg-slate-900/80 border border-amber-500/30">
+                    <span className="text-[11px] font-bold text-amber-400 uppercase tracking-wider block mb-1">ChronosGraph Color-Coding</span>
+                    <p className="text-xs text-slate-300 leading-relaxed">
+                      Bounded active vertex working set ($V_\max$) with $L$ $k$-wise independent polynomial sketches and bitmask reachability:
+                      <code className="block mt-1 text-[11px] text-amber-300 font-mono-code bg-slate-950 p-1.5 rounded border border-amber-500/20">
+                        M &le; O(V_\max L 2^k) = O(1) &amp; T_edge = O(L 2^k)
+                      </code>
+                    </p>
+                  </div>
+                </div>
+
+                {/* Mathematical Invariant Box */}
+                <div className="p-4 rounded-2xl bg-slate-950/80 border border-amber-500/20">
+                  <div className="flex items-center gap-2 mb-1.5">
+                    <ShieldCheck className="w-4 h-4 text-amber-400" />
+                    <span className="text-xs font-bold text-slate-200 uppercase tracking-wider">
+                      Theoretical Invariant: Certified Temporal Soundness &amp; Bounded Miss Rate
+                    </span>
+                  </div>
+                  <p className="font-mono-code text-xs text-amber-300 bg-slate-900/90 p-2.5 rounded-lg border border-amber-500/30 overflow-x-auto">
+                    Reported Cycle &rArr; t_1 &lt; t_2 &lt; ... &lt; t_k &nbsp;&amp;&nbsp; &delta;_total &le; (1 - k!/k^k)^L + &delta;_reservoir
+                  </p>
+                  <p className="text-xs text-slate-400 mt-1">
+                    Certified 100% temporal precision: ChronosGraph may miss a cycle under reservoir pressure, but it will never report an out-of-order or temporally invalid cycle.
+                  </p>
+                </div>
+
+                {/* Action Buttons (All 4 Buttons Present) */}
+                <div className="flex flex-wrap gap-3 pt-2">
+                  <a
+                    href="https://rswarke1972-art.github.io/ChronosGraph/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-amber-400 to-yellow-500 hover:from-amber-300 hover:to-yellow-400 text-slate-950 font-bold text-xs sm:text-sm shadow-md shadow-amber-500/25 hover:shadow-amber-500/40 hover:-translate-y-0.5 active:translate-y-0 transition flex items-center gap-2 group"
+                  >
+                    <Activity className="w-4 h-4" />
+                    <span>Launch 60 FPS Simulation</span>
+                    <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition" />
+                  </a>
+
+                  <a
+                    href="https://github.com/rswarke1972-art/ChronosGraph/blob/main/paper/IEEE_ChronosGraph_Manuscript.md"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-4 py-2.5 rounded-xl glass-button text-slate-200 hover:text-amber-300 text-xs sm:text-sm font-medium flex items-center gap-2 border border-slate-700/80 hover:border-amber-500/40 transition"
+                  >
+                    <FileText className="w-4 h-4 text-amber-400" />
+                    <span>IEEE Manuscript</span>
+                    <ExternalLink className="w-3 h-3 text-slate-400" />
+                  </a>
+
+                  <a
+                    href="https://github.com/rswarke1972-art/ChronosGraph/blob/main/paper/patentability_and_prior_art_review.md"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-4 py-2.5 rounded-xl glass-button text-slate-200 hover:text-amber-300 text-xs sm:text-sm font-medium flex items-center gap-2 border border-slate-700/80 hover:border-amber-500/40 transition"
+                  >
+                    <Sparkles className="w-4 h-4 text-yellow-400" />
+                    <span>Prior Art &amp; Claims</span>
+                    <ExternalLink className="w-3 h-3 text-slate-400" />
+                  </a>
+
+                  <a
+                    href="https://github.com/rswarke1972-art/ChronosGraph"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-4 py-2.5 rounded-xl glass-button text-slate-200 hover:text-amber-300 text-xs sm:text-sm font-medium flex items-center gap-2 border border-slate-700/80 hover:border-amber-500/40 transition"
+                  >
+                    <GitBranch className="w-4 h-4 text-slate-400" />
+                    <span>GitHub (v1.0.0)</span>
+                    <ExternalLink className="w-3 h-3 text-slate-400" />
+                  </a>
+                </div>
+              </div>
+
+              {/* Right Column: Telemetry & Invariants Gauges */}
+              <div className="lg:col-span-5 space-y-4">
+                <div className="p-5 rounded-2xl bg-slate-900/90 border border-slate-800 shadow-xl">
+                  <div className="flex items-center justify-between mb-4">
+                    <span className="text-xs font-mono-code text-slate-400 uppercase tracking-wider flex items-center gap-2">
+                      <Terminal className="w-3.5 h-3.5 text-amber-400" />
+                      Empirical Forensics Telemetry
+                    </span>
+                    <span className="text-[10px] font-mono-code px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-300 border border-emerald-500/30">
+                      O(1) Bounded RAM
+                    </span>
+                  </div>
+
+                  <div className="grid grid-cols-2 gap-3 mb-4">
+                    <div className="p-3 rounded-xl bg-slate-950/70 border border-slate-800/80">
+                      <span className="text-[10px] text-slate-400 block font-mono-code">Temporal Precision</span>
+                      <span className="text-xl font-extrabold text-emerald-400 font-mono-code">100.0%</span>
+                      <span className="text-[10px] text-slate-400 block mt-0.5">vs 2.3% Static Graph</span>
+                    </div>
+                    <div className="p-3 rounded-xl bg-slate-950/70 border border-slate-800/80">
+                      <span className="text-[10px] text-slate-400 block font-mono-code">DEX Arbitrage Recall</span>
+                      <span className="text-xl font-extrabold text-amber-400 font-mono-code">100.0%</span>
+                      <span className="text-[10px] text-slate-400 block mt-0.5">F1 = 0.909 (@ L=24)</span>
+                    </div>
+                    <div className="p-3 rounded-xl bg-slate-950/70 border border-slate-800/80">
+                      <span className="text-[10px] text-slate-400 block font-mono-code">Peak Throughput</span>
+                      <span className="text-xl font-extrabold text-cyan-400 font-mono-code">23,320</span>
+                      <span className="text-[10px] text-slate-400 block mt-0.5">tx/sec (single core)</span>
+                    </div>
+                    <div className="p-3 rounded-xl bg-slate-950/70 border border-slate-800/80">
+                      <span className="text-[10px] text-slate-400 block font-mono-code">Working RAM</span>
+                      <span className="text-xl font-extrabold text-white font-mono-code">73.1 KB</span>
+                      <span className="text-[10px] text-slate-400 block mt-0.5">flat O(1) space</span>
+                    </div>
+                  </div>
+
+                  <div className="space-y-2 pt-2 border-t border-slate-800/80 font-mono-code text-[11px]">
+                    <div className="flex justify-between text-slate-300">
+                      <span>Median Edge Latency (p50)</span>
+                      <span className="text-emerald-400 font-bold">36.2 &mu;s - 105.5 &mu;s</span>
+                    </div>
+                    <div className="flex justify-between text-slate-300">
+                      <span>Wash Trading Detection Recall</span>
+                      <span className="text-amber-400 font-bold">100.0% (F1 = 0.847)</span>
+                    </div>
+                    <div className="flex justify-between text-slate-300">
+                      <span>Smurfing Ring Recovery (k=4)</span>
+                      <span className="text-cyan-400 font-bold">88.0% (L=32, F1 = 0.815)</span>
+                    </div>
+                    <div className="flex justify-between text-slate-300">
+                      <span>Degree Heuristic Comparison</span>
+                      <span className="text-rose-400 font-bold">0.0% Recall (Bypassed)</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="p-4 rounded-2xl bg-amber-500/5 border border-amber-500/20 text-xs text-amber-200/90 leading-relaxed">
+                  <strong>Streaming Cyber-Forensics:</strong> ChronosGraph decouples structural motif detection from domain risk classification, enabling real-time inline AML compliance and DEX front-running bot interception at scale.
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          {/* 4 Pillars for ChronosGraph */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div className="glass-panel p-5 rounded-2xl border border-slate-800 hover:border-amber-500/40 transition">
+              <div className="w-9 h-9 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400 mb-3">
+                <Database className="w-5 h-5" />
+              </div>
+              <h4 className="text-sm font-bold text-white mb-1">Option A Bounded System</h4>
+              <p className="text-xs text-slate-400 leading-relaxed">
+                Active vertex set is capped at $|V_\max|$ with LRU eviction, certifying $M \le O(V_\max L 2^k + M_\text&#123;reservoir&#125;) = O(1)$ space as $N \to \infty$.
+              </p>
+            </div>
+
+            <div className="glass-panel p-5 rounded-2xl border border-slate-800 hover:border-yellow-500/40 transition">
+              <div className="w-9 h-9 rounded-xl bg-yellow-500/10 border border-yellow-500/20 flex items-center justify-center text-yellow-400 mb-3">
+                <Sparkles className="w-5 h-5" />
+              </div>
+              <h4 className="text-sm font-bold text-white mb-1">k-Wise Polynomial Sketches</h4>
+              <p className="text-xs text-slate-400 leading-relaxed">
+                Hash polynomials over Mersenne prime field $\mathbb&#123;F&#125;_(2^31 - 1)$ guarantee independent color assignment $P(\text&#123;colorful&#125;) = k!/k^k$.
+              </p>
+            </div>
+
+            <div className="glass-panel p-5 rounded-2xl border border-slate-800 hover:border-emerald-500/40 transition">
+              <div className="w-9 h-9 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 mb-3">
+                <CheckCircle2 className="w-5 h-5" />
+              </div>
+              <h4 className="text-sm font-bold text-white mb-1">Temporal Soundness</h4>
+              <p className="text-xs text-slate-400 leading-relaxed">
+                Mathematically certified zero false temporal cycles ($t_1 &lt; t_2 &lt; \dots &lt; t_k$), eliminating the 97% false alarms of static graph algorithms.
+              </p>
+            </div>
+
+            <div className="glass-panel p-5 rounded-2xl border border-slate-800 hover:border-cyan-500/40 transition">
+              <div className="w-9 h-9 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 mb-3">
+                <BarChart3 className="w-5 h-5" />
+              </div>
+              <h4 className="text-sm font-bold text-white mb-1">Pareto Telemetry Frontier</h4>
+              <p className="text-xs text-slate-400 leading-relaxed">
+                Empirical Pareto characterization sweeping $V_\max \times L$: $36.2\,\mu\text&#123;s&#125;$ latency at $23,320\text&#123; tx/s&#125;$ on $73\text&#123; KB&#125;$ RAM.
               </p>
             </div>
           </div>

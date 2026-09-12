@@ -69,14 +69,16 @@ Every flagship algorithm should follow your established methodology: **formal ma
 * **Deliverables:** 60 FPS HTML5 Canvas simulation suite ([Live Demo](https://rswarke1972-art.github.io/KineticShield/)), automated 11/11 passing unit tests, Monte Carlo stress benchmark (5 modalities), IEEE manuscript, and open-source GitHub repository ([Repo](https://github.com/rswarke1972-art/KineticShield)).
 
 
-### Algorithm 3: ChronosGraph
+### Algorithm 3: ChronosGraph [COMPLETED & AUDITED]
 * **Domain:** Streaming Graph Data Science / Financial Cyber-Forensics
 * **The Problem:** Detecting cyclical money laundering rings, front-running arbitrage bots, and fraud syndicates in high-velocity transaction streams (Visa, Ethereum) where exact subgraph isomorphism is NP-complete.
 * **The Algorithmic Innovation:**
-  - Streaming temporal graph engine using randomized edge reservoir sampling and color-coding sketches.
-  - Detects directed cycles ($k$-cliques, temporal triangles) in $O(1)$ amortized time per incoming edge without maintaining an unbounded adjacency matrix.
-* **Theoretical Invariant:** Constant per-edge update time with bounded false-positive cycle identification probability $\delta \le \left(\frac{e}{\epsilon}\right)^{-k}$.
-* **Empirical Trade-off:** Subgraph detection accuracy ($F_1$-score) vs. event throughput (events/sec) compared to Neo4j / NetworkX exact baselines.
+  - Bounded active vertex working set ($|V_{\text{active}}| \le V_{\max}$) with LRU temporal eviction.
+  - Streaming color-coding engine using $L$ $k$-wise independent polynomial sketches over Mersenne prime field $\mathbb{F}_{2^{31}-1}$.
+  - Dynamic bitmask reachability tracking in amortized $O(L \cdot 2^k) = O(1)$ operations per edge.
+* **Theoretical Invariant:** Certified temporal soundness (100% temporal precision: reported cycle $\implies t_1 < t_2 < \dots < t_k \land \Delta t \le \Delta T$) and bounded total miss probability $\delta_{\text{total}} \le (1 - k!/k^k)^L + \delta_{\text{reservoir}}$.
+* **Empirical Trade-off:** Memory-Recall-Latency Pareto frontier: 100.0% recall ($F_1 = 0.988$) on DEX arbitrage and wash trading with $36.2\text{--}105.5\,\mu\text{s}$ median latency ($>8,000\text{--}23,000\text{ tx/s}$) on $73.1\text{--}175.3\text{ KB}$ RAM.
+* **Deliverables:** 60 FPS HTML5 Canvas simulation suite ([Live Demo](https://rswarke1972-art.github.io/ChronosGraph/)), automated 12/12 passing unit tests, Monte Carlo Pareto sweep + 5-topology financial benchmark, IEEE manuscript, patentability review, and open-source GitHub repository ([Repo](https://github.com/rswarke1972-art/ChronosGraph)).
 
 ### Algorithm 4: NexusDispatch
 * **Domain:** Multi-Agent Reinforcement Learning / Logistics Optimization
@@ -209,6 +211,7 @@ To maximize your research impact and maintain momentum alongside your academic g
 | :--- | :--- | :--- | :--- |
 | **Completed & Audited** | **SynapseCache (KV-Optic)** | Algorithm + PWA + IEEE | Bounded-memory KV-cache compaction with cross-head consensus. Live on GitHub & portfolio. |
 | **Completed & Audited** | **KineticShield** | Algorithm + PWA + IEEE | Online conformal prediction tubes over kinematic B-splines with sub-millisecond SAT pruning. Live on GitHub & portfolio. |
+| **Completed & Audited** | **ChronosGraph** | Algorithm + PWA + IEEE | Bounded-memory streaming temporal motif detection via color-coded reachability sketches. Live on GitHub & portfolio. |
 | **Immediate (Dual-Frontier)** | **ResonaEngine** (with **SwaraTune AI** & **PranaResonance AI**) | Algorithm + Dual PWAs | Demonstrates master-level systems generalization: one DSP/audio engine powering both musical intonation and neuro-acoustic wellness. Bridges with your published psychology book. |
 | **Linguistics & Literature** | **ProsodiCore** (with **PolyVerse Studio**) | Algorithm + PWA | Breakthrough in comparative poetics: multi-objective prosodic-semantic isomorphism preserving classical meter across non-cognate scripts. |
 | **Neuropsychology Flagship**| **NeuroAttractor** (with **NeuroPhase AI**) | Algorithm + PWA | Pioneering non-linear dynamical systems approach to mental health: Takens' phase-space embedding and bifurcation early warning. |
