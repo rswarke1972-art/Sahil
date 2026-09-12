@@ -760,10 +760,10 @@ export default function AlgorithmShowcase() {
               <div className="lg:col-span-7 space-y-6">
                 <div>
                   <h3 className="text-2xl sm:text-3xl font-extrabold text-white font-heading">
-                    KineticShield: <span className="bg-gradient-to-r from-emerald-400 via-teal-300 to-cyan-400 bg-clip-text text-transparent">Certified Conformal Collision Pruning &amp; Kinematic Planning</span>
+                    KineticShield: <span className="bg-gradient-to-r from-emerald-400 via-teal-300 to-cyan-400 bg-clip-text text-transparent">Conformal Collision Pruning &amp; Kinematic B-Spline Planning</span>
                   </h3>
                   <p className="text-slate-300 text-sm mt-1 leading-relaxed">
-                    Real-time certified motion planning architecture coupling online non-parametric Conformal Prediction Sets with continuous-time kinematic B-spline derivative polygons and sub-millisecond Separating Axis Theorem (SAT) collision pruning.
+                    Distribution-free uncertainty estimation with formally bounded trajectory feasibility and empirical collision evaluation across dynamic human-industrial environments.
                   </p>
                 </div>
 
@@ -782,9 +782,9 @@ export default function AlgorithmShowcase() {
                   <div className="p-4 rounded-2xl bg-slate-900/80 border border-emerald-500/30">
                     <span className="text-[11px] font-bold text-emerald-400 uppercase tracking-wider block mb-1">KineticShield Conformal Innovation</span>
                     <p className="text-xs text-slate-300 leading-relaxed">
-                      Finite-sample marginal coverage $P(\mathbf&#123;p&#125;_\text&#123;obs&#125; \in \mathcal&#123;C&#125;_\alpha) \ge 1 - \alpha$ without normality assumptions, combined with continuous-time derivative bounds:
+                      Finite-sample marginal coverage $P(\mathbf&#123;p&#125;_\text&#123;obs&#125; \in \mathcal&#123;C&#125;_\alpha) \ge 1 - \alpha$ under exchangeability; closed-loop collision safety evaluated empirically in simulation:
                       <code className="block mt-1 text-[11px] text-emerald-300 font-mono-code bg-slate-950 p-1.5 rounded border border-emerald-500/20">
-                        KineticShield Freezing = 4.4% (-95.5%) | Collisions = 0.0%
+                        Chokepoint Freezing: 4.4% (-95.5%) | Area: 0.78 m² (-77.5%)
                       </code>
                     </p>
                   </div>
@@ -794,13 +794,13 @@ export default function AlgorithmShowcase() {
                 <div className="p-4 sm:p-5 rounded-2xl bg-emerald-950/20 border border-emerald-500/30 relative">
                   <div className="flex items-center gap-2 text-emerald-300 text-xs font-semibold uppercase tracking-wider mb-1">
                     <ShieldCheck className="w-4 h-4 text-emerald-400" />
-                    <span>The Continuous-Time Kinematic &amp; Coverage Invariants</span>
+                    <span>Kinematic Feasibility &amp; Geometric Bound Invariants</span>
                   </div>
                   <p className="text-slate-200 text-sm font-mono-code leading-relaxed">
-                    P(p_obs(t+k) &isin; C_&alpha;(t+k)) &ge; 1 - &alpha; &nbsp;&amp;&nbsp; max ||Q_i|| &le; v_max, max ||R_i|| &le; a_max
+                    max ||Q_i|| &le; v_max &rArr; ||ṙ(t)|| &le; v_max &nbsp;&amp;&nbsp; &delta;_r &le; R(sec(&pi;/8) - 1)
                   </p>
                   <p className="text-xs text-slate-400 mt-1">
-                    Certified continuous-time velocity and acceleration feasibility across all $t \in [0, T]$ by the convex hull property of B-spline derivative control polygons, avoiding inter-sample constraint violations.
+                    Continuous-time velocity and acceleration limits are strictly guaranteed by construction as sufficient conditions via B-spline derivative control polygons ($\mathbf&#123;Q&#125;_i, \mathbf&#123;R&#125;_i$), eliminating inter-sample discretization violations.
                   </p>
                 </div>
 
@@ -850,28 +850,28 @@ export default function AlgorithmShowcase() {
                       Empirical Verification Telemetry
                     </span>
                     <span className="text-[10px] font-mono-code px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
-                      10/10 UNIT TESTS PASSING
+                      11/11 UNIT TESTS PASSING
                     </span>
                   </div>
 
                   {/* Telemetry Metric Cards */}
                   <div className="grid grid-cols-2 gap-3 mb-4">
                     <div className="p-3 rounded-xl bg-slate-950/80 border border-slate-800/80">
-                      <span className="text-[11px] text-slate-400 block mb-0.5">SAT Pruning Latency</span>
+                      <span className="text-[11px] text-slate-400 block mb-0.5">SAT Narrow-Phase (p50)</span>
                       <span className="text-base font-bold text-emerald-400 font-mono-code">0.084 ms</span>
-                      <span className="text-[10px] text-slate-500 block mt-0.5">p99: 0.142 ms (&lt; 0.5 ms target)</span>
+                      <span className="text-[10px] text-slate-500 block mt-0.5">p99: 0.142 ms (&lt; 0.5 ms budget)</span>
                     </div>
 
                     <div className="p-3 rounded-xl bg-slate-950/80 border border-slate-800/80">
-                      <span className="text-[11px] text-slate-400 block mb-0.5">Conformal Coverage</span>
-                      <span className="text-base font-bold text-cyan-400 font-mono-code">96.2%</span>
-                      <span className="text-[10px] text-slate-500 block mt-0.5">Target: &ge; 95.0% (&alpha; = 0.05)</span>
+                      <span className="text-[11px] text-slate-400 block mb-0.5">Closed-Loop Planning</span>
+                      <span className="text-base font-bold text-cyan-400 font-mono-code">1.276 ms</span>
+                      <span className="text-[10px] text-slate-500 block mt-0.5">&lt; 16.67 ms (60 FPS budget)</span>
                     </div>
 
                     <div className="p-3 rounded-xl bg-slate-950/80 border border-slate-800/80">
                       <span className="text-[11px] text-slate-400 block mb-0.5">Chokepoint Freezing</span>
                       <span className="text-base font-bold text-emerald-400 font-mono-code">4.4%</span>
-                      <span className="text-[10px] text-slate-500 block mt-0.5">vs. 97.8% Conservative</span>
+                      <span className="text-[10px] text-slate-500 block mt-0.5">vs. 97.8% Conservative (-95.5%)</span>
                     </div>
 
                     <div className="p-3 rounded-xl bg-slate-950/80 border border-slate-800/80">
@@ -889,23 +889,23 @@ export default function AlgorithmShowcase() {
                     </div>
                     <div className="flex justify-between">
                       <span className="text-slate-400">1. Linear Crossing</span>
-                      <span className="text-emerald-400 font-semibold">0.0% vs. 100.0% (Overconfident)</span>
+                      <span className="text-emerald-400 font-semibold">0/20 [0.0%, 16.1%] vs. 20/20 (100%)</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="text-slate-400">2. Bimodal Wandering</span>
-                      <span className="text-emerald-400 font-semibold">15.0% (Freezing: 2.8% vs 22.1%)</span>
+                      <span className="text-emerald-400 font-semibold">3/20 [5.2%, 36.0%] | Freezing: 2.8%</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="text-slate-400">3. Adversarial Pursuit</span>
-                      <span className="text-emerald-400 font-semibold">0.0% vs. 100.0% (Conservative)</span>
+                      <span className="text-emerald-400 font-semibold">0/20 [0.0%, 16.1%] vs. 20/20 (100%)</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="text-slate-400">4. Narrow Chokepoint</span>
-                      <span className="text-emerald-400 font-semibold">0.0% Collisions | 4.4% Freezing</span>
+                      <span className="text-emerald-400 font-semibold">0/20 Collisions | 4.4% Freezing</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="text-slate-400">5. Distribution Shift</span>
-                      <span className="text-emerald-400 font-semibold">20.0% vs. 100.0% (Gaussian MPC)</span>
+                      <span className="text-emerald-400 font-semibold">4/20 [8.1%, 41.6%] vs. 20/20 (100%)</span>
                     </div>
                   </div>
                 </div>
