@@ -1522,10 +1522,10 @@ export default function AlgorithmShowcase() {
                   <div className="flex items-center justify-between mb-4">
                     <span className="text-xs font-mono-code text-slate-400 uppercase tracking-wider flex items-center gap-2">
                       <Terminal className="w-3.5 h-3.5 text-cyan-400" />
-                      Empirical Consensus Telemetry
+                      Modeled Consensus Telemetry
                     </span>
                     <span className="text-[10px] font-mono-code px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-300 border border-emerald-500/30">
-                      Linearizability Certified
+                      Linearizability Preserved
                     </span>
                   </div>
 
@@ -1536,19 +1536,19 @@ export default function AlgorithmShowcase() {
                       <span className="text-[10px] text-slate-400 block mt-0.5">95.0% at C=10%</span>
                     </div>
                     <div className="p-3 rounded-xl bg-slate-950/70 border border-slate-800/80">
-                      <span className="text-[10px] text-slate-400 block font-mono-code">Speedup vs PBFT</span>
+                      <span className="text-[10px] text-slate-400 block font-mono-code">Modeled Advantage</span>
                       <span className="text-xl font-extrabold text-cyan-400 font-mono-code">3.00x</span>
-                      <span className="text-[10px] text-slate-400 block mt-0.5">100ms vs 300ms</span>
+                      <span className="text-[10px] text-slate-400 block mt-0.5">vs PBFT Simulated Ref.</span>
                     </div>
                     <div className="p-3 rounded-xl bg-slate-950/70 border border-slate-800/80">
                       <span className="text-[10px] text-slate-400 block font-mono-code">Global WAN Latency</span>
                       <span className="text-xl font-extrabold text-teal-300 font-mono-code">188 ms</span>
-                      <span className="text-[10px] text-slate-400 block mt-0.5">vs 570 ms HotStuff</span>
+                      <span className="text-[10px] text-slate-400 block mt-0.5">vs 570 ms HotStuff Ref.</span>
                     </div>
                     <div className="p-3 rounded-xl bg-slate-950/70 border border-slate-800/80">
-                      <span className="text-[10px] text-slate-400 block font-mono-code">Safety Violations</span>
+                      <span className="text-[10px] text-slate-400 block font-mono-code">Conflicting Finalizations</span>
                       <span className="text-xl font-extrabold text-white font-mono-code">0</span>
-                      <span className="text-[10px] text-slate-400 block mt-0.5">33 PoE Quarantines</span>
+                      <span className="text-[10px] text-slate-400 block mt-0.5">33 PoEs / 1-RTT Quarantined</span>
                     </div>
                   </div>
 
@@ -1563,7 +1563,7 @@ export default function AlgorithmShowcase() {
                     </div>
                     <div className="flex justify-between text-slate-300">
                       <span>Ephemeral Rollback Cost</span>
-                      <span className="text-cyan-400 font-bold">O(1) Pointer Redirection</span>
+                      <span className="text-cyan-400 font-bold">Qualified O(1) Pointer Reset</span>
                     </div>
                     <div className="flex justify-between text-slate-300">
                       <span>Pacemaker View Change</span>
@@ -1573,7 +1573,7 @@ export default function AlgorithmShowcase() {
                 </div>
 
                 <div className="p-4 rounded-2xl bg-cyan-500/5 border border-cyan-500/20 text-xs text-cyan-200/90 leading-relaxed">
-                  <strong>Geo-Replication Benchmark:</strong> Built and benchmarked across 4 multi-region network topologies (LAN, WAN-Regional, WAN-Transatlantic, WAN-Global); validated against Classical PBFT, Modern HotStuff, and Raft CFT ceiling with 15/15 unit test verification.
+                  <strong>Protocol-Delay Benchmark:</strong> Evaluated across 4 multi-region network profiles; demonstrates the low-contention speculative trade-off against Classical PBFT, Modern HotStuff, and Raft CFT reference under synthetic network delay with 15/15 protocol invariant and adversarial tests passed.
                 </div>
               </div>
 
