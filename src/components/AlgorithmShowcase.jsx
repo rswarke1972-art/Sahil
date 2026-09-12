@@ -829,6 +829,17 @@ export default function AlgorithmShowcase() {
                   </a>
 
                   <a
+                    href="https://github.com/rswarke1972-art/KineticShield/blob/main/paper/patentability_and_prior_art_review.md"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-4 py-2.5 rounded-xl glass-button text-slate-200 hover:text-emerald-300 text-xs sm:text-sm font-medium flex items-center gap-2 border border-slate-700/80 hover:border-emerald-500/40 transition"
+                  >
+                    <Sparkles className="w-4 h-4 text-amber-400" />
+                    <span>Prior Art &amp; Claims</span>
+                    <ExternalLink className="w-3 h-3 text-slate-400" />
+                  </a>
+
+                  <a
                     href="https://github.com/rswarke1972-art/KineticShield"
                     target="_blank"
                     rel="noopener noreferrer"
