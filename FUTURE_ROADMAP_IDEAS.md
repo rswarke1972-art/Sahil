@@ -107,6 +107,30 @@ Every flagship algorithm should follow your established methodology: **formal ma
 * **Empirical Trade-off:** Tracking latency vs. $f_0$ extraction error across diverse multi-timbre acoustic benchmarks (GuitarSet, Bach10) and clinical respiratory vocalization datasets.
 * **Dual-App Ecosystem:** Directly powers two distinct production PWAs from a single mathematical engine: **SwaraTune AI** (Instrument Mastery) and **PranaResonance AI** (Pranayama Biofeedback).
 
+### Algorithm 7: ProsodiCore (MetriLingua: Multi-Objective Cross-Lingual Prosodic-Semantic Isomorphism for Classical Verse & Poetics)
+* **Domain:** Computational Linguistics / Comparative Poetics & Metrical Phonology
+* **The Problem:** Classical poetry, sacred hymns, and philosophical verse (e.g., Sanskrit *chhanda*, Persian *aruz*, Japanese moraic verse, Greek dactylic hexameter, Dante's *terza rima*) rely fundamentally on syllabic weight, breath pauses (*yati* / caesura), and phonetic resonance. Existing translation models face a destructive dichotomy: modern LLMs translate meaning while flattening rhythmic cadence into pedestrian prose, whereas rhyming translation engines force trivial synonym substitution, destroying philosophical nuance. No algorithm exists that jointly optimizes prosodic scansion, phonetic sonority, and deep semantic embeddings.
+* **The Algorithmic Innovation:**
+  - **Phonetic Moraic Weight Decomposition:** Decomposes source text into continuous moraic vectors $\mathbf{m}_s \in \{1, 2\}^L$ (light/short vs. heavy/long syllables, e.g., *Laghu/Guru* in Sanskrit or *Sabab/Watad* in Persian).
+  - **Cross-Lingual Phonotactic Graph (CLPG):** Maps target-language lexical candidates into a phonetic distance manifold using International Phonetic Alphabet (IPA) distinctive feature vectors (sonority, voicing, articulation place).
+  - **Multi-Objective Pareto Lattice Search:** Solves a bounded branch-and-bound A* dynamic program over the translation lattice optimizing a joint Chebyshev scalarization:
+    $$\max_{\mathcal{T}} \quad \Phi(\mathcal{S}, \mathcal{T}) = \alpha \cos(\mathbf{e}_\mathcal{S}, \mathbf{e}_\mathcal{T}) + \beta \text{ProsodicIso}(\mathbf{m}_\mathcal{S}, \mathbf{m}_\mathcal{T}) + \gamma \text{PhonoResonance}(\mathcal{S}, \mathcal{T})$$
+* **Theoretical Invariant:** Strict metric scansion preservation: $|\mathbf{m}_\mathcal{T} - \mathbf{m}_\mathcal{S}|_{\ell_1} = 0 \text{ (or EditDist} \le \epsilon_{\text{meter}}\text{)}$ with guaranteed bounded semantic drift $\cos(\mathbf{e}_\mathcal{S}, \mathbf{e}_\mathcal{T}) \ge \theta_{\text{min}}$.
+* **Empirical Trade-off:** Metrical scansion fidelity ($M_F \ge 99.2\%$) vs. semantic BLEURT preservation ($S_P \ge 0.86$) and acoustic sonority envelope correlation.
+* **Companion Applications:** Directly powers **PolyVerse Studio** (Classical Poetics Scansion & Isometric Translator) and **LyricFlow AI** (Cross-Lingual Melodic Song & Libretto Adaptor).
+
+### Algorithm 8: NeuroAttractor (CogniPhase: Continuous Cognitive Phase-Space Reconstruction & Non-Linear Attractor Bifurcation Early-Warning)
+* **Domain:** Computational Neuropsychology / Cognitive Dynamical Systems / Digital Phenotyping
+* **The Problem:** Clinical psychological diagnostics rely on retrospective, self-reported discrete questionnaires (PHQ-9, GAD-7) that suffer from severe recall bias and only identify decompensation *after* depressive, panic, or burnout episodes have fully entrenched. Furthermore, static machine learning classifiers evaluate instantaneous snapshots without modeling the underlying continuous dynamical state. In cognitive neuroscience, healthy states transition flexibly across emotional landscapes, while anxious/depressive pathologies correspond to rigid, deep attractor basins (rumination traps). Existing systems lack real-time mathematics to detect "critical slowing down" before an individual crosses a bifurcation tipping point.
+* **The Algorithmic Innovation:**
+  - **Takens' Time-Delay Coordinate Embedding:** Reconstructs the multi-dimensional cognitive attractor manifold $\mathcal{M} \subset \mathbb{R}^d$ from passive, non-invasive digital telemetry (micro-keystroke interval dynamics, sentiment variance, response latency) using optimal delay $\tau^*$ and embedding dimension $d^*$ determined via False Nearest Neighbors:
+    $$\mathbf{x}(t) = \left[ s(t), \; s(t - \tau^*), \; s(t - 2\tau^*), \; \dots, \; s(t - (d^* - 1)\tau^*) \right]^T \in \mathbb{R}^{d^*}$$
+  - **Critical Slowing Down (CSD) Metric:** Measures the system's post-perturbation recovery rate $\tau_{\text{recovery}}(t)$. As an individual approaches an attractor bifurcation, recovery rate asymptotically approaches zero, signaled by diverging lag-1 autocorrelation $\rho_1(t) \to 1.0$ and variance $\sigma^2_w(t)$.
+  - **Local Lyapunov Exponent ($\lambda_{\text{loc}}$) Tracking:** Quantifies cognitive behavioral complexity; a collapse of $\lambda_{\text{loc}} \to 0$ detects rigid rumination basin entrapment.
+* **Theoretical Invariant:** Guaranteed asymptotic early warning at codimension-1 bifurcations: $\lim_{t \to t_{\text{bifurcation}}} \rho_1(t) \to 1.0 \wedge \lim_{t \to t_{\text{bifurcation}}} \tau_{\text{recovery}}(t) \to \infty$, triggering alerts $\Delta t_{\text{lead}} \ge 24-48$ hours prior to clinical symptom elevation.
+* **Empirical Trade-off:** Lead-time warning horizon ($24-48\text{ hrs}$) vs. false alarm rate ($\le 0.15\text{ alerts/month}$) benchmarked against longitudinal clinical digital phenotyping cohorts.
+* **Companion Applications:** Directly powers **NeuroPhase AI** (Cognitive Attractor & Dynamic Resilience Bio-Dashboard PWA) and **ClinicalAttractor Console** (Psychiatric Outpatient Early-Intervention Portal).
+
 ---
 
 ## 4. Next Breakthrough Applications & PWAs: Simulators & Tools
@@ -143,6 +167,16 @@ Building upon your 60+ web applications, these apps tackle rich visualization, z
 * **What it is:** A scientific biofeedback platform optimizing *Bhramari Pranayama* (humming bee breath) and *Om* chanting to maximize paranasal sinus Nitric Oxide release and vagus nerve stimulation.
 * **PWA Features:** Real-time cranial vs throat resonance detector, acoustic jitter & shimmer vocal cord stability meter, smooth exhalation envelope timer, bio-luminescent cymatic mandala visualizer that blooms and vibrates synchronously with the user's resonant frequency, zero-cloud private on-device audio processing.
 
+### App 8: PolyVerse Studio (Classical Poetic Scansion & Isometric Translation PWA)
+* **Engine Core:** Powered by *ProsodiCore*
+* **What it is:** An interactive poetic translation workbench that translates ancient Sanskrit, Persian, Latin, and Old Norse verses into isometric English, Hindi, and Marathi poetry while guaranteeing strict metric foot and moraic rhythm preservation.
+* **PWA Features:** Interactive syllabic scansion editor (*Laghu/Guru* and Long/Short visualizer), acoustic sonority audio synthesis, side-by-side bilingual meter alignment, exportable annotated scansion sheets.
+
+### App 9: NeuroPhase AI (Cognitive Attractor & Dynamic Resilience Bio-Dashboard PWA)
+* **Engine Core:** Powered by *NeuroAttractor*
+* **What it is:** A continuous, non-invasive digital phenotyping health dashboard tracking personal cognitive resilience, burnout risk, and emotional flexibility without requiring intrusive daily questionnaires.
+* **PWA Features:** 3D interactive cognitive attractor phase-space manifold visualizer (WebGL/Three.js), Critical Slowing Down warning meter, recovery latency timer, exportable clinical longitudinal resilience report.
+
 ---
 
 ## 5. Next Specialized Websites & Living Cultural Platforms
@@ -172,10 +206,12 @@ To maximize your research impact and maintain momentum alongside your academic g
 
 | Phase | Target Project | Category | Key Benefit |
 | :--- | :--- | :--- | :--- |
+| **Completed & Audited** | **SynapseCache (KV-Optic)** | Algorithm + PWA + IEEE | Bounded-memory KV-cache compaction with cross-head consensus. Live on GitHub & portfolio. |
 | **Immediate (Dual-Frontier)** | **ResonaEngine** (with **SwaraTune AI** & **PranaResonance AI**) | Algorithm + Dual PWAs | Demonstrates master-level systems generalization: one DSP/audio engine powering both musical intonation and neuro-acoustic wellness. Bridges with your published psychology book. |
-| **AI Systems Flagship** | **SynapseCache** | Algorithm | Directly attacks the #1 bottleneck in frontier AI (LLM KV-cache memory saturation); highly attractive for top AI labs. |
+| **Linguistics & Literature** | **ProsodiCore** (with **PolyVerse Studio**) | Algorithm + PWA | Breakthrough in comparative poetics: multi-objective prosodic-semantic isomorphism preserving classical meter across non-cognate scripts. |
+| **Neuropsychology Flagship**| **NeuroAttractor** (with **NeuroPhase AI**) | Algorithm + PWA | Pioneering non-linear dynamical systems approach to mental health: Takens' phase-space embedding and bifurcation early warning. |
 | **Literary Follow-up** | **"The Architecture of Unspoken Thoughts"** | Book | Builds upon *The Questions That Heal* to establish an enduring literary bibliography. |
-| **Developer Ecosystem** | **AlgoArena** | PWA Tool | Transforms your existing algorithm benchmarks (HyperAgent, AegisStream, ResonaEngine) into an interactive showcase. |
+| **Developer Ecosystem** | **AlgoArena** | PWA Tool | Transforms your existing algorithm benchmarks (HyperAgent, AegisStream, SynapseCache, ResonaEngine) into an interactive showcase. |
 | **Robotics & Safety** | **KineticShield** | Algorithm | Expands your systems profile into autonomous robotics and certified mathematical safety. |
 
 ---
