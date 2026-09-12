@@ -54,7 +54,7 @@ export default function Hero({ totalProjects = 60 }) {
             className="w-full sm:w-auto px-6 py-3.5 rounded-2xl bg-cyan-500/20 hover:bg-cyan-500/30 text-cyan-300 hover:text-white font-bold text-sm shadow-lg shadow-cyan-950/50 hover:-translate-y-0.5 active:translate-y-0 transition flex items-center justify-center gap-2 border border-cyan-500/40"
           >
             <Cpu className="w-4 h-4 text-cyan-400" />
-            <span>2. HyperAgent Algorithm</span>
+            <span>2. Algorithms</span>
             <span className="text-[10px] px-1.5 py-0.5 rounded bg-cyan-500/20 border border-cyan-500/30 text-cyan-300">Patent/IEEE</span>
           </a>
 
@@ -81,9 +81,9 @@ export default function Hero({ totalProjects = 60 }) {
           <div className="glass-panel p-4 rounded-2xl border border-cyan-500/40 hover:border-cyan-500/70 transition group">
             <div className="flex items-center gap-2 text-cyan-400 mb-1">
               <Cpu className="w-4 h-4" />
-              <span className="text-xl font-bold font-heading text-white">1</span>
+              <span className="text-xl font-bold font-heading text-white">2</span>
             </div>
-            <p className="text-xs text-slate-400 font-medium">Patent-Pending Algorithm</p>
+            <p className="text-xs text-slate-400 font-medium">Patent-Pending Algorithms</p>
           </div>
 
           <div className="glass-panel p-4 rounded-2xl border border-slate-800/80 hover:border-cyan-500/40 transition group">
