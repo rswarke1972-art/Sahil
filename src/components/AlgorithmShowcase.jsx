@@ -38,7 +38,7 @@ export default function AlgorithmShowcase() {
             Autonomous Systems &amp; Streaming Algorithms
           </h2>
           <p className="text-slate-300 text-base sm:text-lg leading-relaxed">
-            Three production-grade architectures attacking foundational systems bottlenecks: wall-clock latency in AI agent workflows, memory bloat in high-velocity cyber-telemetry streams, and O(N) KV-cache memory exhaustion in long-context LLM inference.
+            Four production-grade architectures attacking foundational systems bottlenecks: wall-clock latency in AI agent workflows, memory bloat in high-velocity cyber-telemetry streams, O(N) KV-cache memory exhaustion in long-context LLM inference, and the freezing robot problem in dynamic autonomous mobile robotics.
           </p>
         </div>
 
@@ -738,6 +738,221 @@ export default function AlgorithmShowcase() {
               <h4 className="text-sm font-bold text-white mb-1">Entropy Salience Scoring</h4>
               <p className="text-xs text-slate-400 leading-relaxed">
                 Normalized Shannon entropy across query heads combined with exponential decay ($\lambda = 0.95$), pruning stale transient tokens smoothly.
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+        {/* ALGORITHM 4: KINETICSHIELD */}
+        <div className="space-y-6 pt-10">
+          <div className="flex items-center gap-3">
+            <div className="px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-300 font-mono-code text-xs font-bold uppercase tracking-wider">
+              Algorithm 04 · Robotics &amp; Autonomous Motion Planning
+            </div>
+            <div className="h-px flex-1 bg-gradient-to-r from-emerald-500/30 to-transparent"></div>
+          </div>
+
+          <div className="glass-card rounded-3xl p-6 sm:p-10 lg:p-12 border border-emerald-500/30 shadow-2xl shadow-emerald-950/40 relative overflow-hidden">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+              
+              {/* Left Column: Theory & Invariants */}
+              <div className="lg:col-span-7 space-y-6">
+                <div>
+                  <h3 className="text-2xl sm:text-3xl font-extrabold text-white font-heading">
+                    KineticShield: <span className="bg-gradient-to-r from-emerald-400 via-teal-300 to-cyan-400 bg-clip-text text-transparent">Certified Conformal Collision Pruning &amp; Kinematic Planning</span>
+                  </h3>
+                  <p className="text-slate-300 text-sm mt-1 leading-relaxed">
+                    Real-time certified motion planning architecture coupling online non-parametric Conformal Prediction Sets with continuous-time kinematic B-spline derivative polygons and sub-millisecond Separating Axis Theorem (SAT) collision pruning.
+                  </p>
+                </div>
+
+                {/* Problem vs Innovation */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  <div className="p-4 rounded-2xl bg-slate-900/80 border border-rose-500/20">
+                    <span className="text-[11px] font-bold text-rose-400 uppercase tracking-wider block mb-1">The Overconfidence vs Freezing Dilemma</span>
+                    <p className="text-xs text-slate-300 leading-relaxed">
+                      Neural trajectory predictors crash under out-of-distribution drift (100% collision in linear/shift regimes), while conservative potential fields freeze in place (97.8% paralysis in chokepoints):
+                      <code className="block mt-1 text-[11px] text-rose-300 font-mono-code bg-slate-950 p-1.5 rounded border border-rose-500/20">
+                        Baseline Freezing Rate = 97.8% in Narrow Chokepoints
+                      </code>
+                    </p>
+                  </div>
+
+                  <div className="p-4 rounded-2xl bg-slate-900/80 border border-emerald-500/30">
+                    <span className="text-[11px] font-bold text-emerald-400 uppercase tracking-wider block mb-1">KineticShield Conformal Innovation</span>
+                    <p className="text-xs text-slate-300 leading-relaxed">
+                      Finite-sample marginal coverage $P(\mathbf&#123;p&#125;_\text&#123;obs&#125; \in \mathcal&#123;C&#125;_\alpha) \ge 1 - \alpha$ without normality assumptions, combined with continuous-time derivative bounds:
+                      <code className="block mt-1 text-[11px] text-emerald-300 font-mono-code bg-slate-950 p-1.5 rounded border border-emerald-500/20">
+                        KineticShield Freezing = 4.4% (-95.5%) | Collisions = 0.0%
+                      </code>
+                    </p>
+                  </div>
+                </div>
+
+                {/* Strict Invariants Box */}
+                <div className="p-4 sm:p-5 rounded-2xl bg-emerald-950/20 border border-emerald-500/30 relative">
+                  <div className="flex items-center gap-2 text-emerald-300 text-xs font-semibold uppercase tracking-wider mb-1">
+                    <ShieldCheck className="w-4 h-4 text-emerald-400" />
+                    <span>The Continuous-Time Kinematic &amp; Coverage Invariants</span>
+                  </div>
+                  <p className="text-slate-200 text-sm font-mono-code leading-relaxed">
+                    P(p_obs(t+k) &isin; C_&alpha;(t+k)) &ge; 1 - &alpha; &nbsp;&amp;&nbsp; max ||Q_i|| &le; v_max, max ||R_i|| &le; a_max
+                  </p>
+                  <p className="text-xs text-slate-400 mt-1">
+                    Certified continuous-time velocity and acceleration feasibility across all $t \in [0, T]$ by the convex hull property of B-spline derivative control polygons, avoiding inter-sample constraint violations.
+                  </p>
+                </div>
+
+                {/* Action Buttons */}
+                <div className="flex flex-wrap gap-3 pt-2">
+                  <a
+                    href="https://rswarke1972-art.github.io/KineticShield/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-emerald-400 to-teal-500 hover:from-emerald-300 hover:to-teal-400 text-slate-950 font-bold text-xs sm:text-sm shadow-md shadow-emerald-500/25 hover:shadow-emerald-500/40 hover:-translate-y-0.5 active:translate-y-0 transition flex items-center gap-2 group"
+                  >
+                    <Activity className="w-4 h-4" />
+                    <span>Launch 60 FPS Simulation</span>
+                    <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition" />
+                  </a>
+
+                  <a
+                    href="https://github.com/rswarke1972-art/KineticShield/blob/main/paper/IEEE_KineticShield_Manuscript.md"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-4 py-2.5 rounded-xl glass-button text-slate-200 hover:text-emerald-300 text-xs sm:text-sm font-medium flex items-center gap-2 border border-slate-700/80 hover:border-emerald-500/40 transition"
+                  >
+                    <FileText className="w-4 h-4 text-emerald-400" />
+                    <span>IEEE Manuscript</span>
+                    <ExternalLink className="w-3 h-3 text-slate-400" />
+                  </a>
+
+                  <a
+                    href="https://github.com/rswarke1972-art/KineticShield"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-4 py-2.5 rounded-xl glass-button text-slate-200 hover:text-emerald-300 text-xs sm:text-sm font-medium flex items-center gap-2 border border-slate-700/80 hover:border-emerald-500/40 transition"
+                  >
+                    <GitBranch className="w-4 h-4 text-slate-400" />
+                    <span>GitHub (v1.2.0)</span>
+                    <ExternalLink className="w-3 h-3 text-slate-400" />
+                  </a>
+                </div>
+              </div>
+
+              {/* Right Column: Telemetry & Invariants Gauges */}
+              <div className="lg:col-span-5 space-y-4">
+                <div className="p-5 rounded-2xl bg-slate-900/90 border border-slate-800 shadow-xl">
+                  <div className="flex items-center justify-between mb-4">
+                    <span className="text-xs font-mono-code text-slate-400 uppercase tracking-wider flex items-center gap-2">
+                      <Terminal className="w-3.5 h-3.5 text-emerald-400" />
+                      Empirical Verification Telemetry
+                    </span>
+                    <span className="text-[10px] font-mono-code px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
+                      10/10 UNIT TESTS PASSING
+                    </span>
+                  </div>
+
+                  {/* Telemetry Metric Cards */}
+                  <div className="grid grid-cols-2 gap-3 mb-4">
+                    <div className="p-3 rounded-xl bg-slate-950/80 border border-slate-800/80">
+                      <span className="text-[11px] text-slate-400 block mb-0.5">SAT Pruning Latency</span>
+                      <span className="text-base font-bold text-emerald-400 font-mono-code">0.084 ms</span>
+                      <span className="text-[10px] text-slate-500 block mt-0.5">p99: 0.142 ms (&lt; 0.5 ms target)</span>
+                    </div>
+
+                    <div className="p-3 rounded-xl bg-slate-950/80 border border-slate-800/80">
+                      <span className="text-[11px] text-slate-400 block mb-0.5">Conformal Coverage</span>
+                      <span className="text-base font-bold text-cyan-400 font-mono-code">96.2%</span>
+                      <span className="text-[10px] text-slate-500 block mt-0.5">Target: &ge; 95.0% (&alpha; = 0.05)</span>
+                    </div>
+
+                    <div className="p-3 rounded-xl bg-slate-950/80 border border-slate-800/80">
+                      <span className="text-[11px] text-slate-400 block mb-0.5">Chokepoint Freezing</span>
+                      <span className="text-base font-bold text-emerald-400 font-mono-code">4.4%</span>
+                      <span className="text-[10px] text-slate-500 block mt-0.5">vs. 97.8% Conservative</span>
+                    </div>
+
+                    <div className="p-3 rounded-xl bg-slate-950/80 border border-slate-800/80">
+                      <span className="text-[11px] text-slate-400 block mb-0.5">Uncertainty Tube Area</span>
+                      <span className="text-base font-bold text-teal-400 font-mono-code">0.78 m²</span>
+                      <span className="text-[10px] text-slate-500 block mt-0.5">-77.5% vs. 3.46 m² buffers</span>
+                    </div>
+                  </div>
+
+                  {/* Benchmark Modalities Mini-Table */}
+                  <div className="p-3 rounded-xl bg-slate-950/60 border border-slate-800 text-[11px] font-mono-code text-slate-300 space-y-1.5">
+                    <div className="text-[10px] text-slate-500 uppercase tracking-wider font-semibold border-b border-slate-800 pb-1 flex justify-between">
+                      <span>Modality Stress Test</span>
+                      <span>Collision (KineticShield vs Base)</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-slate-400">1. Linear Crossing</span>
+                      <span className="text-emerald-400 font-semibold">0.0% vs. 100.0% (Overconfident)</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-slate-400">2. Bimodal Wandering</span>
+                      <span className="text-emerald-400 font-semibold">15.0% (Freezing: 2.8% vs 22.1%)</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-slate-400">3. Adversarial Pursuit</span>
+                      <span className="text-emerald-400 font-semibold">0.0% vs. 100.0% (Conservative)</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-slate-400">4. Narrow Chokepoint</span>
+                      <span className="text-emerald-400 font-semibold">0.0% Collisions | 4.4% Freezing</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-slate-400">5. Distribution Shift</span>
+                      <span className="text-emerald-400 font-semibold">20.0% vs. 100.0% (Gaussian MPC)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          {/* 4 Pillars for KineticShield */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div className="glass-panel p-5 rounded-2xl border border-slate-800 hover:border-emerald-500/40 transition">
+              <div className="w-9 h-9 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 mb-3">
+                <ShieldCheck className="w-5 h-5" />
+              </div>
+              <h4 className="text-sm font-bold text-white mb-1">Split Conformal (Mode A)</h4>
+              <p className="text-xs text-slate-400 leading-relaxed">
+                Certified finite-sample marginal coverage $P(\mathbf&#123;p&#125;_\text&#123;obs&#125; \in \mathcal&#123;C&#125;_\alpha) \ge 1 - \alpha$ over exchangeable non-conformity residuals without distributional assumptions.
+              </p>
+            </div>
+
+            <div className="glass-panel p-5 rounded-2xl border border-slate-800 hover:border-teal-500/40 transition">
+              <div className="w-9 h-9 rounded-xl bg-teal-500/10 border border-teal-500/20 flex items-center justify-center text-teal-400 mb-3">
+                <Sparkles className="w-5 h-5" />
+              </div>
+              <h4 className="text-sm font-bold text-white mb-1">Adaptive Recency (Mode B)</h4>
+              <p className="text-xs text-slate-400 leading-relaxed">
+                Sliding-window exponential discounting ($\gamma = 0.96$) to empirically track non-stationary dynamic regimes and sudden turning transitions.
+              </p>
+            </div>
+
+            <div className="glass-panel p-5 rounded-2xl border border-slate-800 hover:border-cyan-500/40 transition">
+              <div className="w-9 h-9 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 mb-3">
+                <Layers className="w-5 h-5" />
+              </div>
+              <h4 className="text-sm font-bold text-white mb-1">Derivative Control Polygons</h4>
+              <p className="text-xs text-slate-400 leading-relaxed">
+                Continuous-time B-spline hodograph proof bounding velocity and acceleration by construction via control polygons $\mathbf&#123;Q&#125;_i$ and $\mathbf&#123;R&#125;_i$.
+              </p>
+            </div>
+
+            <div className="glass-panel p-5 rounded-2xl border border-slate-800 hover:border-emerald-500/40 transition">
+              <div className="w-9 h-9 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 mb-3">
+                <Zap className="w-5 h-5" />
+              </div>
+              <h4 className="text-sm font-bold text-white mb-1">Sub-Millisecond SAT Pruning</h4>
+              <p className="text-xs text-slate-400 leading-relaxed">
+                AABB broad-phase filter combined with 2D Separating Axis Theorem on regular octagons ($\delta_r \le 0.034 R$) executing in $0.084$ ms.
               </p>
             </div>
           </div>
