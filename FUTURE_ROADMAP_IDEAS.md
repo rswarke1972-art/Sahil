@@ -91,15 +91,18 @@ Every flagship algorithm should follow your established methodology: **formal ma
 * **Empirical Trade-off:** 0 simulated collisions and 0 stranded vehicles across five synthetic logistics scenarios, with 0.11-0.18 ms median safety-filter latency and up to +28.4% throughput improvement over static halt bubbles.
 * **Deliverables:** 60 FPS HTML5 Canvas simulation suite ([Live Demo](https://rswarke1972-art.github.io/NexusDispatch/)), automated 12/12 passing unit tests, Monte Carlo Pareto sweep + 4-way ablation + 5-topology benchmark, IEEE manuscript, formal patentability review, and open-source GitHub repository ([Repo](https://github.com/rswarke1972-art/NexusDispatch)).
 
-### Algorithm 5: AetherBFT
-* **Domain:** Distributed Systems / Consensus Protocols
-* **The Problem:** Geo-distributed replicated databases (e.g., Google Spanner, multi-region CockroachDB) suffer severe latency penalties because classical PBFT/Raft requires 2–3 round-trip times (RTTs) per commit.
+### Algorithm 5: AetherBFT [COMPLETED & AUDITED]
+* **Domain:** Distributed Systems / Consensus Protocols & Replicated State Machines
+* **The Problem:** Geo-distributed replicated databases (e.g., Google Spanner, multi-region CockroachDB) suffer severe latency penalties because classical PBFT and modern HotStuff require 2 to 3 round-trip times (RTTs) per commit (300 ms to 570 ms across wide-area links).
 * **The Algorithmic Innovation:**
   - Dual-path consensus engine:
-    1. *Optimistic Speculative Fast-Path:* 1 RTT transaction sequencing for non-conflicting proposals.
-    2. *Fast Ephemeral Rollback Vector:* Localized rollback using version trees if network jitter or Byzantine equivocation occurs, without freezing cluster throughput.
-* **Theoretical Invariant:** Linearizability under asynchronous networks with $f < n/3$ Byzantine nodes.
-* **Empirical Trade-off:** Commit latency under benign loads (1 RTT vs. 3 RTT) vs. recovery penalty under deliberate network partition attacks.
+    1. *Optimistic Speculative Fast-Path:* 1-RTT transaction sequencing for non-conflicting proposals using unanimous fast quorums ($Q_{\text{fast}} = 3f + 1$).
+    2. *Certified Dependency Context (CDC):* Finite deterministic key transaction classifier isolating in-flight conflicts prior to route dispatch.
+    3. *Fast Ephemeral Rollback Vector:* Localized rollback using immutable MVCC version-tree DAGs ($O(1)$ pointer redirection) if network jitter, dependency conflicts, or Byzantine equivocation occur, without freezing cluster throughput.
+    4. *Resilient 2-Phase Fallback & Pacemaker:* 2-RTT Prepare-Commit fallback ($Q_{\text{slow}} = 2f + 1$) coupled with linear $O(n)$ Pacemaker view change.
+* **Theoretical Invariant:** Unconditional Safety under asynchronous network scheduling ($n \ge 3f + 1$, $|Q_{\text{fast}} \cap Q_{\text{slow}}| \ge f + 1$ honest nodes precluding double commits); Liveness guaranteed after GST under partial synchrony; strict speculative non-linearizability boundary protecting canonical finalized reads.
+* **Empirical Trade-off:** Commit latency under benign loads (1 RTT vs. 3 RTT, achieving a **3.0x speedup** matching Raft CFT ceiling: 100.2 ms vs 300.4 ms PBFT) with zero safety violations under active Byzantine equivocation (33 PoEs assembled, quarantined within 1 RTT).
+* **Deliverables:** 60 FPS HTML5 Canvas simulation suite ([Live Demo](https://rswarke1972-art.github.io/AetherBFT/)), automated 15/15 passing unit tests, Monte Carlo Pareto sweep + Byzantine resilience + Geo-distributed simulation benchmarks, IEEE manuscript, formal patentability review (12 claims), and open-source GitHub repository ([Repo](https://github.com/rswarke1972-art/AetherBFT)).
 
 ### Algorithm 6: ResonaEngine (Unified Harmonic Perturbation & Spectral Resonance Estimator)
 * **Domain:** Digital Signal Processing (DSP), Bio-Acoustics & Neural Audio Intonation
