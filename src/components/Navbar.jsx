@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { Menu, X, BookOpen, Layers, User, Mail, Sparkles } from "lucide-react";
+import { Menu, X, BookOpen, Layers, User, Mail, Sparkles, Cpu } from "lucide-react";
 
-export default function Navbar({ projectCount = 45 }) {
+export default function Navbar({ projectCount = 60 }) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -16,6 +16,7 @@ export default function Navbar({ projectCount = 45 }) {
   const navLinks = [
     { label: "Home", href: "#home" },
     { label: "The Book", href: "#book", icon: BookOpen, badge: "Novel" },
+    { label: "Algorithm", href: "#algorithm", icon: Cpu, badge: "Patent" },
     { label: "Projects", href: "#projects", icon: Layers, count: projectCount },
     { label: "About", href: "#about", icon: User },
     { label: "Contact", href: "#contact", icon: Mail },
@@ -40,7 +41,7 @@ export default function Navbar({ projectCount = 45 }) {
               Sahil Rajesh Warke
             </span>
             <span className="text-[11px] text-cyan-400/80 font-mono-code font-medium -mt-1">
-              Developer & Author
+              Systems Researcher, Developer &amp; Author
             </span>
           </div>
         </a>

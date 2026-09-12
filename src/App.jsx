@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import BookShowcase from "./components/BookShowcase";
+import AlgorithmShowcase from "./components/AlgorithmShowcase";
 import ProjectsSection from "./components/ProjectsSection";
 import ProjectModal from "./components/ProjectModal";
 import About from "./components/About";
@@ -29,7 +30,10 @@ function App() {
         {/* Book Showcase: The Questions That Heal */}
         <BookShowcase />
 
-        {/* 45+ Projects Gallery with Category Filters & Search */}
+        {/* Algorithm & Systems Research: HyperAgent */}
+        <AlgorithmShowcase />
+
+        {/* 60 Projects Gallery with Category Filters & Search */}
         <ProjectsSection onSelectProject={(project) => setSelectedProject(project)} />
 
         {/* About Sahil */}

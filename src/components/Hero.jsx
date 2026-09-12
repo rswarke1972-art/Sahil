@@ -1,7 +1,7 @@
 import React from "react";
-import { ArrowRight, BookOpen, Sparkles, Layers, Code, Globe, ShieldCheck } from "lucide-react";
+import { ArrowRight, BookOpen, Sparkles, Layers, Code, Globe, ShieldCheck, Cpu } from "lucide-react";
 
-export default function Hero({ totalProjects = 45 }) {
+export default function Hero({ totalProjects = 60 }) {
   return (
     <section
       id="home"
@@ -22,7 +22,7 @@ export default function Hero({ totalProjects = 45 }) {
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
             <span className="relative inline-flex rounded-full h-2 w-2 bg-cyan-500"></span>
           </span>
-          <span>Full-Stack & Frontend Developer · Interactive Systems Architect · Author</span>
+          <span>Systems & Algorithm Researcher · Interactive Architect · Published Author</span>
         </div>
 
         {/* Main Heading */}
@@ -36,33 +36,56 @@ export default function Hero({ totalProjects = 45 }) {
 
         {/* Subtitle */}
         <p className="max-w-3xl mx-auto text-slate-300 text-base sm:text-lg md:text-xl leading-relaxed mb-10 font-normal">
-          I am <strong className="text-white font-semibold">Sahil Rajesh Warke</strong>. I transform complex domains from mathematics, 
-          neuropsychology, and linguistics to financial trading and statecraft into rich, interactive web applications, 
-          Progressive Web Apps (PWAs), games, and literature.
+          I am <strong className="text-white font-semibold">Sahil Rajesh Warke</strong>. I engineer speculative algorithms for low-latency agentic AI, publish literature, and build high-performance web systems across finance, cybersecurity, and linguistics.
         </p>
 
-        {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
+        {/* 3-Pillar CTA Buttons (Book -> Algo -> Apps) */}
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-3.5 mb-16">
           <a
-            href="#projects"
-            className="w-full sm:w-auto px-8 py-4 rounded-2xl bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold text-base shadow-xl shadow-cyan-500/25 hover:shadow-cyan-500/40 hover:-translate-y-0.5 active:translate-y-0 transition flex items-center justify-center gap-2 group"
+            href="#book"
+            className="w-full sm:w-auto px-6 py-3.5 rounded-2xl glass-button text-purple-200 hover:text-white font-semibold text-sm shadow-lg hover:-translate-y-0.5 active:translate-y-0 transition flex items-center justify-center gap-2 border border-purple-500/30"
           >
-            <Layers className="w-5 h-5 group-hover:rotate-6 transition" />
-            <span>Explore All {totalProjects}+ Projects</span>
-            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition" />
+            <BookOpen className="w-4 h-4 text-purple-400" />
+            <span>1. The Book</span>
           </a>
 
           <a
-            href="#book"
-            className="w-full sm:w-auto px-8 py-4 rounded-2xl glass-button text-slate-100 hover:text-cyan-300 font-semibold text-base shadow-lg hover:-translate-y-0.5 active:translate-y-0 transition flex items-center justify-center gap-2 border border-slate-700/80"
+            href="#algorithm"
+            className="w-full sm:w-auto px-6 py-3.5 rounded-2xl bg-cyan-500/20 hover:bg-cyan-500/30 text-cyan-300 hover:text-white font-bold text-sm shadow-lg shadow-cyan-950/50 hover:-translate-y-0.5 active:translate-y-0 transition flex items-center justify-center gap-2 border border-cyan-500/40"
           >
-            <BookOpen className="w-5 h-5 text-purple-400" />
-            <span>Discover The Book</span>
+            <Cpu className="w-4 h-4 text-cyan-400" />
+            <span>2. HyperAgent Algorithm</span>
+            <span className="text-[10px] px-1.5 py-0.5 rounded bg-cyan-500/20 border border-cyan-500/30 text-cyan-300">Patent/IEEE</span>
+          </a>
+
+          <a
+            href="#projects"
+            className="w-full sm:w-auto px-6 py-3.5 rounded-2xl bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold text-sm shadow-xl shadow-cyan-500/25 hover:shadow-cyan-500/40 hover:-translate-y-0.5 active:translate-y-0 transition flex items-center justify-center gap-2 group"
+          >
+            <Layers className="w-4 h-4 group-hover:rotate-6 transition" />
+            <span>3. Explore 60+ Apps</span>
+            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition" />
           </a>
         </div>
 
         {/* Quick Highlights Grid */}
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 max-w-4xl mx-auto text-left">
+          <div className="glass-panel p-4 rounded-2xl border border-purple-500/30 hover:border-purple-500/60 transition group">
+            <div className="flex items-center gap-2 text-purple-400 mb-1">
+              <BookOpen className="w-4 h-4" />
+              <span className="text-xl font-bold font-heading text-white">1</span>
+            </div>
+            <p className="text-xs text-slate-400 font-medium">Published Novel</p>
+          </div>
+
+          <div className="glass-panel p-4 rounded-2xl border border-cyan-500/40 hover:border-cyan-500/70 transition group">
+            <div className="flex items-center gap-2 text-cyan-400 mb-1">
+              <Cpu className="w-4 h-4" />
+              <span className="text-xl font-bold font-heading text-white">1</span>
+            </div>
+            <p className="text-xs text-slate-400 font-medium">Patent-Pending Algorithm</p>
+          </div>
+
           <div className="glass-panel p-4 rounded-2xl border border-slate-800/80 hover:border-cyan-500/40 transition group">
             <div className="flex items-center gap-2 text-cyan-400 mb-1">
               <Code className="w-4 h-4" />
@@ -76,23 +99,7 @@ export default function Hero({ totalProjects = 45 }) {
               <ShieldCheck className="w-4 h-4" />
               <span className="text-xl font-bold font-heading text-white">10+</span>
             </div>
-            <p className="text-xs text-slate-400 font-medium">Progressive Web Apps (PWA)</p>
-          </div>
-
-          <div className="glass-panel p-4 rounded-2xl border border-slate-800/80 hover:border-cyan-500/40 transition group">
-            <div className="flex items-center gap-2 text-blue-400 mb-1">
-              <Globe className="w-4 h-4" />
-              <span className="text-xl font-bold font-heading text-white">12+</span>
-            </div>
-            <p className="text-xs text-slate-400 font-medium">Multilingual Platforms</p>
-          </div>
-
-          <div className="glass-panel p-4 rounded-2xl border border-slate-800/80 hover:border-purple-500/40 transition group">
-            <div className="flex items-center gap-2 text-purple-400 mb-1">
-              <BookOpen className="w-4 h-4" />
-              <span className="text-xl font-bold font-heading text-white">1</span>
-            </div>
-            <p className="text-xs text-slate-400 font-medium">Published Novel</p>
+            <p className="text-xs text-slate-400 font-medium">Progressive Web Apps</p>
           </div>
         </div>
       </div>
