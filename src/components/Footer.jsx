@@ -51,6 +51,14 @@ export default function Footer() {
           >
             Internet Archive
           </a>
+          <a
+            href="https://rswarke1972-art.github.io/TheQuestionsThatHeal/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-cyan-300 transition text-cyan-400 font-medium"
+          >
+            Book Website
+          </a>
         </div>
 
         {/* Back to top */}

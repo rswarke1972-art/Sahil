@@ -122,21 +122,41 @@ export default function BookShowcase() {
               </div>
 
               {/* Action Buttons */}
-              <div className="pt-4 flex flex-wrap items-center gap-4">
-                <a
-                  href={bookData.archiveUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="px-6 py-3.5 rounded-xl bg-gradient-to-r from-purple-500 via-pink-500 to-purple-600 hover:from-purple-400 hover:to-pink-400 text-white font-bold text-sm shadow-lg shadow-purple-500/25 hover:shadow-purple-500/40 hover:scale-[1.02] active:scale-95 transition flex items-center gap-2"
-                >
-                  <BookOpen className="w-4 h-4" />
-                  <span>Read Free on Internet Archive</span>
-                  <ExternalLink className="w-3.5 h-3.5" />
-                </a>
+              <div className="pt-4 flex flex-col gap-3">
+                <div className="flex flex-wrap items-center gap-4">
+                  <a
+                    href={bookData.archiveUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-6 py-3.5 rounded-xl bg-gradient-to-r from-purple-500 via-pink-500 to-purple-600 hover:from-purple-400 hover:to-pink-400 text-white font-bold text-sm shadow-lg shadow-purple-500/25 hover:shadow-purple-500/40 hover:scale-[1.02] active:scale-95 transition flex items-center gap-2"
+                  >
+                    <BookOpen className="w-4 h-4" />
+                    <span>Read Free on Internet Archive</span>
+                    <ExternalLink className="w-3.5 h-3.5" />
+                  </a>
 
-                <div className="text-xs text-slate-400 flex items-center gap-1.5 font-medium">
-                  <Heart className="w-3.5 h-3.5 text-pink-400" />
-                  <span>Open Access & Free Borrowing</span>
+                  <div className="text-xs text-slate-400 flex items-center gap-1.5 font-medium">
+                    <Heart className="w-3.5 h-3.5 text-pink-400" />
+                    <span>Open Access & Free Borrowing</span>
+                  </div>
+                </div>
+
+                <div className="flex flex-wrap items-center gap-4">
+                  <a
+                    href={bookData.websiteUrl || "https://rswarke1972-art.github.io/TheQuestionsThatHeal/"}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-6 py-3.5 rounded-xl bg-slate-900/90 hover:bg-slate-800 text-cyan-300 hover:text-cyan-200 border border-cyan-500/40 hover:border-cyan-400 font-bold text-sm shadow-lg shadow-cyan-500/10 hover:shadow-cyan-500/25 hover:scale-[1.02] active:scale-95 transition flex items-center gap-2 group"
+                  >
+                    <Sparkles className="w-4 h-4 text-cyan-400 group-hover:rotate-12 transition-transform" />
+                    <span>Read on Official Book Website (Web Edition)</span>
+                    <ExternalLink className="w-3.5 h-3.5" />
+                  </a>
+
+                  <div className="text-xs text-slate-400 flex items-center gap-2 font-medium">
+                    <span className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+                    <span>Direct Web Reader & E-Book EPUB Download</span>
+                  </div>
                 </div>
               </div>
 

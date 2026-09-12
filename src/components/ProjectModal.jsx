@@ -197,7 +197,7 @@ export default function ProjectModal({ project, onClose }) {
           {activeTab === "labs" && project.details?.labs && (
             <div className="space-y-3 animate-in fade-in duration-150">
               <p className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">
-                Dedicated Mathematical Simulation Engines
+                Dedicated Interactive Simulation & Analysis Modules
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 {project.details.labs.map((lab, idx) => (
@@ -208,9 +208,9 @@ export default function ProjectModal({ project, onClose }) {
                     <div>
                       <div className="flex items-center gap-2 mb-1.5">
                         <span className="w-2 h-2 rounded-full bg-cyan-400 flex-shrink-0"></span>
-                        <h4 className="text-sm font-bold text-white">{lab.name}</h4>
+                        <h4 className="text-sm font-bold text-white">{lab.name || lab.title}</h4>
                       </div>
-                      <p className="text-xs text-slate-300 leading-relaxed">{lab.desc}</p>
+                      <p className="text-xs text-slate-300 leading-relaxed">{lab.desc || lab.description}</p>
                     </div>
                   </div>
                 ))}
@@ -227,7 +227,7 @@ export default function ProjectModal({ project, onClose }) {
                   Technical Architecture & Execution
                 </h4>
                 <p className="text-slate-200 text-sm sm:text-base leading-relaxed">
-                  {project.details.working}
+                  {project.details.working || project.details.generalIdea}
                 </p>
               </div>
 

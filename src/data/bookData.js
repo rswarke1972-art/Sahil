@@ -7,6 +7,7 @@ export const bookData = {
   badge: "Published Novel",
   coverImage: bookCover,
   archiveUrl: "https://archive.org/details/the-questions-that-heal/mode/2up",
+  websiteUrl: "https://rswarke1972-art.github.io/TheQuestionsThatHeal/",
   subtitle: "A story of conversations between Professor Vinay and his student Rudhika, exploring psychology, philosophy, healing, love, and the questions that quietly change us.",
   quote: "Sometimes healing does not begin with an answer. Sometimes... it begins with a question.",
   description: `Some wounds cannot be seen. They live quietly in memories, relationships, unanswered questions, and the stories we tell ourselves.
