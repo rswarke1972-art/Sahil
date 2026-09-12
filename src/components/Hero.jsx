@@ -46,7 +46,7 @@ export default function Hero({ totalProjects = 60 }) {
             className="w-full sm:w-auto px-6 py-3.5 rounded-2xl glass-button text-purple-200 hover:text-white font-semibold text-sm shadow-lg hover:-translate-y-0.5 active:translate-y-0 transition flex items-center justify-center gap-2 border border-purple-500/30"
           >
             <BookOpen className="w-4 h-4 text-purple-400" />
-            <span>1. The Book</span>
+            <span>The Book</span>
           </a>
 
           <a
@@ -54,8 +54,8 @@ export default function Hero({ totalProjects = 60 }) {
             className="w-full sm:w-auto px-6 py-3.5 rounded-2xl bg-cyan-500/20 hover:bg-cyan-500/30 text-cyan-300 hover:text-white font-bold text-sm shadow-lg shadow-cyan-950/50 hover:-translate-y-0.5 active:translate-y-0 transition flex items-center justify-center gap-2 border border-cyan-500/40"
           >
             <Cpu className="w-4 h-4 text-cyan-400" />
-            <span>2. Algorithms</span>
-            <span className="text-[10px] px-1.5 py-0.5 rounded bg-cyan-500/20 border border-cyan-500/30 text-cyan-300">Patent/IEEE</span>
+            <span>3 Algorithms</span>
+            <span className="text-[10px] px-1.5 py-0.5 rounded bg-cyan-500/20 border border-cyan-500/30 text-cyan-300">3 Patents/IEEE</span>
           </a>
 
           <a
@@ -63,7 +63,7 @@ export default function Hero({ totalProjects = 60 }) {
             className="w-full sm:w-auto px-6 py-3.5 rounded-2xl bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold text-sm shadow-xl shadow-cyan-500/25 hover:shadow-cyan-500/40 hover:-translate-y-0.5 active:translate-y-0 transition flex items-center justify-center gap-2 group"
           >
             <Layers className="w-4 h-4 group-hover:rotate-6 transition" />
-            <span>3. Explore 60+ Apps</span>
+            <span>Explore 60+ Apps</span>
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition" />
           </a>
         </div>
