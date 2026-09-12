@@ -38,7 +38,7 @@ export default function AlgorithmShowcase() {
             Autonomous Systems &amp; Streaming Algorithms
           </h2>
           <p className="text-slate-300 text-base sm:text-lg leading-relaxed">
-            Two production-grade architectures attacking foundational systems bottlenecks: wall-clock latency in AI agent workflows, and memory bloat in high-velocity cyber-telemetry streams.
+            Three production-grade architectures attacking foundational systems bottlenecks: wall-clock latency in AI agent workflows, memory bloat in high-velocity cyber-telemetry streams, and O(N) KV-cache memory exhaustion in long-context LLM inference.
           </p>
         </div>
 
@@ -506,6 +506,238 @@ export default function AlgorithmShowcase() {
               <h4 className="text-sm font-bold text-white mb-1">Bounded Lateral Tracker</h4>
               <p className="text-xs text-slate-400 leading-relaxed">
                 Replaces unbounded bipartite graph edge retention ($O(|V| + |E|)$) with streaming per-user HLL cardinality estimators ($O(1)$ memory w.r.t. events).
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+        {/* ALGORITHM 3: SYNAPSECACHE */}
+        <div className="space-y-6 pt-10">
+          <div className="flex items-center gap-3">
+            <div className="px-3 py-1 rounded-full bg-purple-500/10 border border-purple-500/30 text-purple-300 font-mono-code text-xs font-bold uppercase tracking-wider">
+              Algorithm 03 · AI Systems &amp; LLM Memory Optimization
+            </div>
+            <div className="h-px flex-1 bg-gradient-to-r from-purple-500/30 to-transparent"></div>
+          </div>
+
+          <div className="glass-card rounded-3xl p-6 sm:p-10 lg:p-12 border border-purple-500/30 shadow-2xl shadow-purple-950/40 relative overflow-hidden">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+              
+              {/* Left Column: Theory & Invariants */}
+              <div className="lg:col-span-7 space-y-6">
+                <div>
+                  <h3 className="text-2xl sm:text-3xl font-extrabold text-white font-heading">
+                    SynapseCache: <span className="bg-gradient-to-r from-purple-400 via-indigo-300 to-cyan-400 bg-clip-text text-transparent">Bounded-Memory Attention-Aware KV Compaction</span>
+                  </h3>
+                  <p className="text-slate-300 text-sm mt-1 leading-relaxed">
+                    Deterministic bounded-memory Key-Value cache manager enforcing strict capacity $|\mathcal&#123;C&#125;_t| \le B$ across long-context autoregressive transformer inference via online cross-head entropy and relational consensus.
+                  </p>
+                </div>
+
+                {/* Problem vs Innovation */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  <div className="p-4 rounded-2xl bg-slate-900/80 border border-rose-500/20">
+                    <span className="text-[11px] font-bold text-rose-400 uppercase tracking-wider block mb-1">Standard LLM O(N) VRAM Bottleneck</span>
+                    <p className="text-xs text-slate-300 leading-relaxed">
+                      Full KV cache grows linearly with context length $O(N \cdot L \cdot H_&#123;\text&#123;KV&#125;&#125; \cdot d)$, exhausting GPU High-Bandwidth Memory (HBM) and causing out-of-memory serving crashes:
+                      <code className="block mt-1 text-[11px] text-rose-300 font-mono-code bg-slate-950 p-1.5 rounded border border-rose-500/20">
+                        M_KV(64k, 70B Model) = 20.00 GB decimal (18.63 GiB)
+                      </code>
+                    </p>
+                  </div>
+
+                  <div className="p-4 rounded-2xl bg-slate-900/80 border border-purple-500/30">
+                    <span className="text-[11px] font-bold text-purple-400 uppercase tracking-wider block mb-1">SynapseCache Tiered Innovation</span>
+                    <p className="text-xs text-slate-300 leading-relaxed">
+                      Four-tier bounded cache topology with cross-head entropy consensus locks memory into a deterministic invariant with 100% long-range topic retention:
+                      <code className="block mt-1 text-[11px] text-purple-300 font-mono-code bg-slate-950 p-1.5 rounded border border-purple-500/20">
+                        M_Synapse(64k, 20% Budget) = 4.00 GB decimal (-80.0%)
+                      </code>
+                    </p>
+                  </div>
+                </div>
+
+                {/* Strict Capacity Invariant */}
+                <div className="p-4 sm:p-5 rounded-2xl bg-purple-950/20 border border-purple-500/30 relative">
+                  <div className="flex items-center gap-2 text-purple-300 text-xs font-semibold uppercase tracking-wider mb-1">
+                    <ShieldCheck className="w-4 h-4 text-purple-400" />
+                    <span>The Strict Capacity Invariant</span>
+                  </div>
+                  <p className="text-slate-200 text-sm font-mono-code leading-relaxed">
+                    |C_t| &le; B &forall; t &isin; [1, N] (Strict Invariant by Construction)
+                  </p>
+                  <p className="text-xs text-slate-400 mt-1">
+                    Verified step-by-step across 5,000 insertions &amp; 7 adversarial conditions (14/14 tests). Demonstrates immunity to multi-topic distractor collapse across 32,000 intervening tokens where uncalibrated baselines (H2O) collapse to 0.0% retention.
+                  </p>
+                </div>
+
+                {/* Action Buttons */}
+                <div className="flex flex-wrap gap-3 pt-2">
+                  <a
+                    href="https://rswarke1972-art.github.io/SynapseCache/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-purple-400 to-indigo-500 hover:from-purple-300 hover:to-indigo-400 text-slate-950 font-bold text-xs sm:text-sm shadow-md shadow-purple-500/25 hover:shadow-purple-500/40 hover:-translate-y-0.5 active:translate-y-0 transition flex items-center gap-2 group"
+                  >
+                    <Activity className="w-4 h-4" />
+                    <span>Launch Telemetry Dashboard</span>
+                    <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition" />
+                  </a>
+
+                  <a
+                    href="https://github.com/rswarke1972-art/SynapseCache/blob/main/paper/IEEE_SynapseCache_Manuscript.md"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-4 py-2.5 rounded-xl glass-button text-slate-200 hover:text-purple-300 text-xs sm:text-sm font-medium flex items-center gap-2 border border-slate-700/80 hover:border-purple-500/40 transition"
+                  >
+                    <FileText className="w-4 h-4 text-purple-400" />
+                    <span>IEEE Manuscript</span>
+                    <ExternalLink className="w-3 h-3 text-slate-400" />
+                  </a>
+
+                  <a
+                    href="https://github.com/rswarke1972-art/SynapseCache/blob/main/paper/patentability_and_prior_art_review.md"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-4 py-2.5 rounded-xl glass-button text-slate-200 hover:text-purple-300 text-xs sm:text-sm font-medium flex items-center gap-2 border border-slate-700/80 hover:border-purple-500/40 transition"
+                  >
+                    <Sparkles className="w-4 h-4 text-amber-400" />
+                    <span>Prior Art &amp; Claims</span>
+                    <ExternalLink className="w-3 h-3 text-slate-400" />
+                  </a>
+
+                  <a
+                    href="https://github.com/rswarke1972-art/SynapseCache"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-4 py-2.5 rounded-xl glass-button text-slate-200 hover:text-purple-300 text-xs sm:text-sm font-medium flex items-center gap-2 border border-slate-700/80 hover:border-purple-500/40 transition"
+                  >
+                    <GitBranch className="w-4 h-4 text-slate-400" />
+                    <span>GitHub (v1.1.0)</span>
+                    <ExternalLink className="w-3 h-3 text-slate-400" />
+                  </a>
+                </div>
+              </div>
+
+              {/* Right Column: Metrics & Memory Scaling */}
+              <div className="lg:col-span-5 space-y-4">
+                <div className="p-5 rounded-2xl bg-slate-900/90 border border-slate-800 shadow-xl">
+                  <div className="flex items-center justify-between mb-4 border-b border-slate-800 pb-2.5">
+                    <span className="text-xs font-bold uppercase tracking-wider text-purple-400 flex items-center gap-1.5">
+                      <Database className="w-4 h-4 text-purple-400" />
+                      70B KV Memory Footprint (N=64,000, FP16)
+                    </span>
+                    <span className="text-[10px] font-mono-code px-2 py-0.5 rounded bg-purple-500/10 text-purple-300 border border-purple-500/20">
+                      6.11x Speedup
+                    </span>
+                  </div>
+
+                  <div className="space-y-3 font-mono-code text-xs">
+                    <div>
+                      <div className="flex justify-between text-slate-400 mb-1">
+                        <span>1. Full KV Baseline (Unbounded)</span>
+                        <span className="text-rose-400 font-bold">20.00 GB (18.63 GiB)</span>
+                      </div>
+                      <div className="w-full bg-slate-800 h-2 rounded-full overflow-hidden">
+                        <div className="bg-rose-500 h-full w-full"></div>
+                      </div>
+                    </div>
+
+                    <div>
+                      <div className="flex justify-between text-purple-300 mb-1">
+                        <span className="font-bold">2. SynapseCache (20% Budget)</span>
+                        <span className="text-purple-300 font-bold">4.00 GB (-80.0% State)</span>
+                      </div>
+                      <div className="w-full bg-slate-800 h-2.5 rounded-full overflow-hidden">
+                        <div className="bg-gradient-to-r from-purple-400 via-indigo-400 to-cyan-400 h-full w-[20%] shadow-lg shadow-purple-500/50"></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="mt-4 pt-3 border-t border-slate-800/80 flex items-center justify-between text-[11px]">
+                    <span className="text-slate-400">Prototype Attention Latency:</span>
+                    <span className="text-purple-400 font-bold font-mono-code">36.17 ms vs 220.87 ms</span>
+                  </div>
+                </div>
+
+                <div className="p-4 rounded-2xl bg-slate-900/80 border border-slate-800">
+                  <div className="flex items-center justify-between mb-2">
+                    <span className="text-xs font-bold text-slate-200 flex items-center gap-1.5">
+                      <Radio className="w-3.5 h-3.5 text-cyan-400" />
+                      Subspace Consensus &amp; Distractor Immunity
+                    </span>
+                    <span className="text-[10px] px-2 py-0.5 rounded bg-purple-500/15 text-purple-300 border border-purple-500/30 font-bold">
+                      100% Retention at D = 32k
+                    </span>
+                  </div>
+                  <p className="text-[11px] text-slate-400 leading-relaxed mb-3">
+                    Single-head spikes (&kappa;=1) age out naturally in candidates. Cross-head consensus (&kappa; &ge; 4, &delta; &ge; 0.04) promotes relational anchors to protected storage.
+                  </p>
+
+                  <div className="grid grid-cols-4 gap-1.5 text-center text-[10px] font-mono-code">
+                    <div className="p-1.5 rounded bg-slate-950/60 border border-slate-800">
+                      <span className="text-slate-400 block">Cold (&delta;=0)</span>
+                      <span className="text-rose-400 font-bold">Evicted</span>
+                    </div>
+                    <div className="p-1.5 rounded bg-slate-950/60 border border-slate-800">
+                      <span className="text-slate-400 block">1 Head</span>
+                      <span className="text-amber-300 font-bold">Filtered</span>
+                    </div>
+                    <div className="p-1.5 rounded bg-purple-500/10 border border-purple-500/30">
+                      <span className="text-purple-300 block">&ge;4 Heads</span>
+                      <span className="text-purple-300 font-bold">100% Anch</span>
+                    </div>
+                    <div className="p-1.5 rounded bg-emerald-500/10 border border-emerald-500/30">
+                      <span className="text-emerald-400 block">Topic 32k</span>
+                      <span className="text-emerald-400 font-bold">100% Ret</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          {/* 4 Pillars for SynapseCache */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div className="glass-panel p-5 rounded-2xl border border-slate-800 hover:border-purple-500/40 transition">
+              <div className="w-9 h-9 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 mb-3">
+                <ShieldCheck className="w-5 h-5" />
+              </div>
+              <h4 className="text-sm font-bold text-white mb-1">Invariant Sink Tier</h4>
+              <p className="text-xs text-slate-400 leading-relaxed">
+                Guaranteed 0% eviction probability for initial tokens ($t &lt; k_&#123;\text&#123;sink&#125;&#125;$), preserving prompt structure and system instructions permanently.
+              </p>
+            </div>
+
+            <div className="glass-panel p-5 rounded-2xl border border-slate-800 hover:border-indigo-500/40 transition">
+              <div className="w-9 h-9 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 mb-3">
+                <Sparkles className="w-5 h-5" />
+              </div>
+              <h4 className="text-sm font-bold text-white mb-1">Relational Anchor Tier</h4>
+              <p className="text-xs text-slate-400 leading-relaxed">
+                Multi-head consensus gate ($\sum \mathbb&#123;I&#125;(A_h &gt; \tau) \ge \kappa$). Immune-locks foundational entities against catastrophic topic drift.
+              </p>
+            </div>
+
+            <div className="glass-panel p-5 rounded-2xl border border-slate-800 hover:border-cyan-500/40 transition">
+              <div className="w-9 h-9 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 mb-3">
+                <Layers className="w-5 h-5" />
+              </div>
+              <h4 className="text-sm font-bold text-white mb-1">Sliding Local Window</h4>
+              <p className="text-xs text-slate-400 leading-relaxed">
+                FIFO buffer of size $w_&#123;\text&#123;local&#125;&#125;$ for immediate syntactic coherence, local punctuation, and short-range conversational fluency.
+              </p>
+            </div>
+
+            <div className="glass-panel p-5 rounded-2xl border border-slate-800 hover:border-emerald-500/40 transition">
+              <div className="w-9 h-9 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 mb-3">
+                <Activity className="w-5 h-5" />
+              </div>
+              <h4 className="text-sm font-bold text-white mb-1">Entropy Salience Scoring</h4>
+              <p className="text-xs text-slate-400 leading-relaxed">
+                Normalized Shannon entropy across query heads combined with exponential decay ($\lambda = 0.95$), pruning stale transient tokens smoothly.
               </p>
             </div>
           </div>
