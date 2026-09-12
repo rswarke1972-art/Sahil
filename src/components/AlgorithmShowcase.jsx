@@ -1206,10 +1206,10 @@ export default function AlgorithmShowcase() {
               <div className="lg:col-span-7 space-y-6">
                 <div>
                   <h3 className="text-2xl sm:text-3xl font-extrabold text-white font-heading">
-                    NexusDispatch: <span className="bg-gradient-to-r from-cyan-400 via-teal-300 to-emerald-400 bg-clip-text text-transparent">Certified Safe Multi-Agent Fleet Logistics</span>
+                    NexusDispatch: <span className="bg-gradient-to-r from-cyan-400 via-teal-300 to-emerald-400 bg-clip-text text-transparent">Multi-Agent Fleet Safety Filtering</span>
                   </h3>
                   <p className="text-slate-300 text-sm mt-1 leading-relaxed">
-                    Eliminating the freezing robot dilemma and battery stranding in autonomous AGV and drone fulfillment networks via Distributed Control Barrier Functions (D-CBF-QP) and Primal-Dual CMDP.
+                    A dual-timescale multi-agent dispatch architecture combining primal-dual constrained learning with distributed control-barrier safety filtering for collision-free, energy-aware fleet coordination.
                   </p>
                 </div>
 
@@ -1230,7 +1230,7 @@ export default function AlgorithmShowcase() {
                     <p className="text-xs text-slate-300 leading-relaxed">
                       Mode 1 projects velocity onto safe forward-invariant polytopes; Mode 2 triggers emergency deceleration along barrier gradients under severe bottlenecks:
                       <code className="block mt-1 text-[11px] text-cyan-300 font-mono-code bg-slate-950 p-1.5 rounded border border-cyan-500/20">
-                        Collisions = 0 &amp; Stranded = 0.0% (p50 = 0.14 ms)
+                        Simulated Collisions = 0 &amp; Stranded = 0.0% (p50 = 0.14 ms)
                       </code>
                     </p>
                   </div>
@@ -1248,7 +1248,7 @@ export default function AlgorithmShowcase() {
                     h&#775;_ij + &alpha;(h_ij) &ge; 0 &nbsp;&amp;&nbsp; h_E(E_i, p_i) = E_i - E_min - &kappa;||p_i - p_chg||(1 + &mu; m) &ge; 0
                   </p>
                   <p className="text-xs text-slate-400 mt-1">
-                    Certified 100% forward invariance: Mode 1 guarantees safe kinematic projection, Mode 2 engages an emergency braking-repulsion gradient under congestion, and dynamic battery margins eliminate depot stranding.
+                    <strong className="text-slate-200">Formal Guarantee:</strong> Forward invariance of safe set $\mathcal&#123;C&#125;$ under modeled kinematic dynamics and satisfied hard CBF assumptions. <strong className="text-slate-200">Empirical Observation:</strong> 0 collisions and 0 stranded vehicles across all 5 benchmark logistics scenarios with 0.11-0.18 ms median safety-filter latency.
                   </p>
                 </div>
 
@@ -1309,20 +1309,20 @@ export default function AlgorithmShowcase() {
                       Empirical Logistics Telemetry
                     </span>
                     <span className="text-[10px] font-mono-code px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-300 border border-emerald-500/30">
-                      Certified Safe Set C
+                      Modeled Safe Set C
                     </span>
                   </div>
 
                   <div className="grid grid-cols-2 gap-3 mb-4">
                     <div className="p-3 rounded-xl bg-slate-950/70 border border-slate-800/80">
-                      <span className="text-[10px] text-slate-400 block font-mono-code">Collision Rate</span>
-                      <span className="text-xl font-extrabold text-emerald-400 font-mono-code">0.00%</span>
+                      <span className="text-[10px] text-slate-400 block font-mono-code">Simulated Collisions</span>
+                      <span className="text-xl font-extrabold text-emerald-400 font-mono-code">0</span>
                       <span className="text-[10px] text-slate-400 block mt-0.5">vs 120 Unconstrained</span>
                     </div>
                     <div className="p-3 rounded-xl bg-slate-950/70 border border-slate-800/80">
                       <span className="text-[10px] text-slate-400 block font-mono-code">Depot Stranding</span>
-                      <span className="text-xl font-extrabold text-emerald-400 font-mono-code">0.00%</span>
-                      <span className="text-[10px] text-slate-400 block mt-0.5">Certified h_E &ge; 0</span>
+                      <span className="text-xl font-extrabold text-emerald-400 font-mono-code">0</span>
+                      <span className="text-[10px] text-slate-400 block mt-0.5">Simulated h_E &ge; 0</span>
                     </div>
                     <div className="p-3 rounded-xl bg-slate-950/70 border border-slate-800/80">
                       <span className="text-[10px] text-slate-400 block font-mono-code">QP Latency (p50)</span>
@@ -1357,7 +1357,7 @@ export default function AlgorithmShowcase() {
                 </div>
 
                 <div className="p-4 rounded-2xl bg-cyan-500/5 border border-cyan-500/20 text-xs text-cyan-200/90 leading-relaxed">
-                  <strong>Cyber-Physical Fleet Logistics:</strong> NexusDispatch resolves the fundamental trade-off between warehouse parcel throughput and physical collision safety, enabling high-density AGV and drone fulfillment without the freezing robot pathology.
+                  <strong>Autonomous Fleet Logistics:</strong> Built and benchmarked a multi-agent fleet simulator with distributed CBF-QP safety filtering and battery barriers; achieved 0 simulated collisions and 0 stranded vehicles across five synthetic logistics scenarios, with 0.11-0.18 ms median safety-filter latency.
                 </div>
               </div>
 

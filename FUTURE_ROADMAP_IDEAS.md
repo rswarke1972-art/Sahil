@@ -80,14 +80,16 @@ Every flagship algorithm should follow your established methodology: **formal ma
 * **Empirical Trade-off:** Memory-Recall-Latency Pareto frontier: 100.0% recall ($F_1 = 0.988$) on DEX arbitrage and wash trading with $36.2\text{--}105.5\,\mu\text{s}$ median latency ($>8,000\text{--}23,000\text{ tx/s}$) on $73.1\text{--}175.3\text{ KB}$ RAM.
 * **Deliverables:** 60 FPS HTML5 Canvas simulation suite ([Live Demo](https://rswarke1972-art.github.io/ChronosGraph/)), automated 12/12 passing unit tests, Monte Carlo Pareto sweep + 5-topology financial benchmark, IEEE manuscript, patentability review, and open-source GitHub repository ([Repo](https://github.com/rswarke1972-art/ChronosGraph)).
 
-### Algorithm 4: NexusDispatch
-* **Domain:** Multi-Agent Reinforcement Learning / Logistics Optimization
-* **The Problem:** Autonomous vehicle fleets, warehouse AGVs, and drone networks must coordinate delivery routes without violating hard battery thresholds or physical corridor capacities.
+### Algorithm 4: NexusDispatch [COMPLETED & AUDITED]
+* **Domain:** Multi-Agent Reinforcement Learning / Cyber-Physical Logistics & Robotics
+* **The Problem:** Autonomous vehicle fleets, warehouse AGVs, and drone networks must coordinate delivery routes without violating hard battery thresholds or physical corridor boundaries, while avoiding the conservative "freezing robot" dilemma.
 * **The Algorithmic Innovation:**
-  - Constrained Markov Decision Process (CMDP) solver using a **Primal-Dual Actor-Critic** architecture coupled with continuous **Control Barrier Functions (CBFs)**.
-  - Mathematically guarantees certified zero-violation safety polytopes during both exploration and inference.
-* **Theoretical Invariant:** Provable asymptotic constraint violation regret $\mathcal{R}_c(T) = o(T)$ ensuring safe convergence.
-* **Empirical Trade-off:** Fleet delivery throughput vs. cumulative constraint violations.
+  - A dual-timescale multi-agent dispatch architecture combining primal-dual constrained learning with distributed control-barrier safety filtering for collision-free, energy-aware fleet coordination.
+  - Two-Mode Safety Filter: Mode 1 executes CBF-filtered control satisfying modeled safety constraints ($p_{50} = 0.14$ ms); Mode 2 triggers emergency deceleration along barrier normal gradients when dense bottlenecks render the hard polytope empty.
+  - Dynamic Battery-to-Charger Margin Barrier ($h_E \ge 0$) coupling quadratic aerodynamic/velocity drag and payload mass weighting.
+* **Theoretical Invariant:** Formal Guarantee: Forward invariance of safe set $\mathcal{C}$ under modeled kinematics and satisfied hard CBF assumptions; asymptotic sub-linear constraint violation regret $\mathcal{R}_c(T) = o(T)$ under Slater's condition; certified non-stranding via $h_E \ge 0$.
+* **Empirical Trade-off:** 0 simulated collisions and 0 stranded vehicles across five synthetic logistics scenarios, with 0.11-0.18 ms median safety-filter latency and up to +28.4% throughput improvement over static halt bubbles.
+* **Deliverables:** 60 FPS HTML5 Canvas simulation suite ([Live Demo](https://rswarke1972-art.github.io/NexusDispatch/)), automated 12/12 passing unit tests, Monte Carlo Pareto sweep + 4-way ablation + 5-topology benchmark, IEEE manuscript, formal patentability review, and open-source GitHub repository ([Repo](https://github.com/rswarke1972-art/NexusDispatch)).
 
 ### Algorithm 5: AetherBFT
 * **Domain:** Distributed Systems / Consensus Protocols
