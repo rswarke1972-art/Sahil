@@ -265,7 +265,7 @@ export default function AlgorithmShowcase() {
             </div>
             <h4 className="text-sm font-bold text-white mb-1">7/7 Correctness Proof</h4>
             <p className="text-xs text-slate-400 leading-relaxed">
-              Formal automated test suite proves mathematical output equivalence ($S_H \equiv S_{seq}$) across synthetic fault injections and nested dependencies.
+              Formal automated test suite proves mathematical output equivalence (S_HyperAgent &equiv; S_Sequential) across synthetic fault injections and nested dependencies.
             </p>
           </div>
         </div>
