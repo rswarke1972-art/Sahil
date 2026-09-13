@@ -16,7 +16,7 @@ export default function Navbar({ projectCount = 60 }) {
   const navLinks = [
     { label: "Home", href: "#home" },
     { label: "The Book", href: "#book", icon: BookOpen, badge: "Novel" },
-    { label: "Algorithms", href: "#algorithm", icon: Cpu, badge: "4 Algos" },
+    { label: "Algorithms", href: "#algorithm", icon: Cpu, badge: "10 Algos" },
     { label: "Projects", href: "#projects", icon: Layers, count: projectCount },
     { label: "About", href: "#about", icon: User },
     { label: "Contact", href: "#contact", icon: Mail },

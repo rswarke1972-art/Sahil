@@ -54,8 +54,8 @@ export default function Hero({ totalProjects = 60 }) {
             className="w-full sm:w-auto px-6 py-3.5 rounded-2xl bg-cyan-500/20 hover:bg-cyan-500/30 text-cyan-300 hover:text-white font-bold text-sm shadow-lg shadow-cyan-950/50 hover:-translate-y-0.5 active:translate-y-0 transition flex items-center justify-center gap-2 border border-cyan-500/40"
           >
             <Cpu className="w-4 h-4 text-cyan-400" />
-            <span>8 Algorithms</span>
-            <span className="text-[10px] px-1.5 py-0.5 rounded bg-cyan-500/20 border border-cyan-500/30 text-cyan-300">8 IEEE/Research</span>
+            <span>10 Algorithms</span>
+            <span className="text-[10px] px-1.5 py-0.5 rounded bg-cyan-500/20 border border-cyan-500/30 text-cyan-300">10 IEEE/Research</span>
           </a>
 
           <a
