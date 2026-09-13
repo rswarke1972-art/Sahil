@@ -26,7 +26,8 @@ import {
   Volume2,
   BookOpen,
   Feather,
-  Languages
+  Languages,
+  TrendingUp
 } from "lucide-react";
 
 export default function AlgorithmShowcase() {
@@ -48,7 +49,7 @@ export default function AlgorithmShowcase() {
             Autonomous Systems &amp; Streaming Algorithms
           </h2>
           <p className="text-slate-300 text-base sm:text-lg leading-relaxed">
-            Nine production-grade architectures attacking foundational systems bottlenecks: wall-clock latency in AI agent workflows, memory bloat in high-velocity cyber-telemetry streams, O(N) KV-cache memory exhaustion in long-context LLM inference, the freezing robot problem in dynamic autonomous mobile robotics, streaming temporal graph motif detection in financial cyber-forensics, certified safety-constrained multi-agent fleet logistics, dual-path speculative 1-RTT Byzantine consensus with ephemeral MVCC rollback for geo-distributed replicated databases, sub-millisecond continuous acoustic feature decomposition unifying harmonic intonation and micro-perturbation dynamics for real-time instrument mastery and bioacoustic feedback, and multi-objective cross-lingual prosodic constraint optimization solving classical metrical scansion and phonetic sonority preservation across diverse poetic ontologies.
+            Ten production-grade architectures attacking foundational systems bottlenecks: wall-clock latency in AI agent workflows, memory bloat in high-velocity cyber-telemetry streams, O(N) KV-cache memory exhaustion in long-context LLM inference, the freezing robot problem in dynamic autonomous mobile robotics, streaming temporal graph motif detection in financial cyber-forensics, certified safety-constrained multi-agent fleet logistics, dual-path speculative 1-RTT Byzantine consensus with ephemeral MVCC rollback for geo-distributed replicated databases, sub-millisecond continuous acoustic feature decomposition unifying harmonic intonation and micro-perturbation dynamics for real-time instrument mastery and bioacoustic feedback, multi-objective cross-lingual prosodic constraint optimization solving classical metrical scansion across diverse poetic ontologies, and causal nonlinear phase-space reconstruction with autocorrelation-gated critical slowing down detection for early-warning analysis in dynamical systems and behavioral telemetry.
           </p>
         </div>
 
@@ -2068,6 +2069,224 @@ export default function AlgorithmShowcase() {
               <h4 className="text-sm font-bold text-white mb-1">Multi-Verse Production Bridge</h4>
               <p className="text-xs text-slate-400 leading-relaxed">
                 Directly powers both PolyVerse Studio (classical scansion &amp; translation) and LyricFlow AI (lyrical adaptation &amp; real-time 60 FPS syllable-stress pulse synthesis).
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* ALGORITHM 10: NEUROATTRACTOR */}
+        <div className="space-y-6 pt-12 border-t border-slate-900">
+          <div className="flex items-center gap-3">
+            <div className="px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-300 font-mono-code text-xs font-bold uppercase tracking-wider">
+              Algorithm 10 · Nonlinear Dynamical Systems &amp; Critical Slowing Down
+            </div>
+            <div className="h-px flex-1 bg-gradient-to-r from-cyan-500/30 to-transparent"></div>
+          </div>
+
+          <div className="glass-card rounded-3xl p-6 sm:p-10 lg:p-12 border border-cyan-500/30 shadow-2xl shadow-cyan-950/40 relative overflow-hidden">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+              
+              {/* Left Column: Theory & Invariants */}
+              <div className="lg:col-span-7 space-y-6">
+                <div>
+                  <div className="inline-flex items-center gap-2 px-3 py-1 rounded-lg bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-semibold mb-3">
+                    <TrendingUp className="w-3.5 h-3.5" />
+                    <span>Three-Tiered Dynamical Analysis with Autocorrelation-Gated CSD</span>
+                  </div>
+                  <h3 className="text-2xl sm:text-4xl font-extrabold text-white font-heading tracking-tight leading-tight">
+                    NeuroAttractor: Nonlinear Time-Series Reconstruction &amp; Early-Warning Analysis for Dynamical Systems
+                  </h3>
+                </div>
+
+                <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
+                  A computational dynamical-systems engine that reconstructs continuous phase-space manifolds and detects Critical Slowing Down (CSD) indicators prior to structural bifurcations. Rejecting direct clinical diagnostic overclaims, NeuroAttractor establishes a disciplined three-tiered claim hierarchy: evaluating controlled mathematical normal forms (<strong className="text-white">Fold/Saddle-Node</strong>, <strong className="text-white">Supercritical Hopf</strong>, and <strong className="text-white">Subcritical Pitchfork</strong>), validating early warnings against <strong className="text-white">four non-bifurcation negative controls</strong>, and providing an exploratory non-diagnostic telemetry resampler (<strong className="text-white">CogniPhase</strong>). Across 1,000 Monte Carlo trials under strict causal windowing ($H = 0.20 \cdot t_c$), NeuroAttractor achieves <strong className="text-white">0.6953 mean transition ROC-AUC</strong> (P95 = 0.9017), <strong className="text-white">10.8% false alarm rate</strong> on negative controls (vs 88.0% static thresholding), and <strong className="text-white">L_norm = 0.068 normalized lead time</strong>, while a temporal-shuffled surrogate null model collapses to chance (AUC = 0.4995).
+                </p>
+
+                {/* Problem vs Breakthrough Grid */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                  <div className="p-4 rounded-2xl bg-slate-900/60 border border-slate-800">
+                    <div className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-1 flex items-center gap-1.5">
+                      <span className="w-2 h-2 rounded-full bg-rose-500"></span>
+                      The Category Error &amp; Pseudo-CSD Bottleneck
+                    </div>
+                    <p className="text-xs text-slate-400 leading-relaxed">
+                      Conflating abstract normal forms with psychiatric illness creates unsupportable claims, while noise drift and transient shocks cause severe pseudo-CSD false alarms (88% FPR).
+                    </p>
+                  </div>
+
+                  <div className="p-4 rounded-2xl bg-cyan-950/30 border border-cyan-500/30">
+                    <div className="text-xs font-bold text-cyan-300 uppercase tracking-wider mb-1 flex items-center gap-1.5">
+                      <span className="w-2 h-2 rounded-full bg-cyan-400"></span>
+                      The Autocorrelation-Gated CSD Core
+                    </div>
+                    <p className="text-xs text-slate-300 leading-relaxed">
+                      Gates variance elevation by lag-1 autocorrelation persistence (rho_1) to attenuate isolated impulse disturbances and heteroskedasticity, preserving true bifurcation sensitivity.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Safety / Methodological Invariant */}
+                <div className="p-4 sm:p-5 rounded-2xl bg-cyan-950/20 border border-cyan-500/30 relative">
+                  <div className="flex items-center gap-2 text-cyan-300 text-xs font-semibold uppercase tracking-wider mb-1">
+                    <ShieldCheck className="w-4 h-4 text-cyan-400" />
+                    <span>Disciplined Claim Hierarchy &amp; Non-Diagnostic Invariant</span>
+                  </div>
+                  <p className="text-slate-200 text-sm font-mono-code leading-relaxed">
+                    Level 1 (Mathematical): Controlled normal forms are evaluated strictly as abstract differential equations, not physiological models. Level 2 (Computational): Causal rolling evaluation ({'{'}x_t-W+1...x_t{'}'}) with zero lookahead, validated against shuffled surrogates (AUC = 0.4995) and non-bifurcation controls (10.8% FPR). Level 3 (Behavioral): CogniPhase is strictly exploratory non-diagnostic research software without clinical claims.
+                  </p>
+                </div>
+
+                {/* Complete 4-Button Suite */}
+                <div className="flex flex-wrap items-center gap-3 pt-2">
+                  <a
+                    href="https://rswarke1972-art.github.io/NeuroAttractor/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-cyan-400 via-teal-400 to-emerald-400 hover:from-cyan-300 hover:to-emerald-300 text-slate-950 font-bold text-xs sm:text-sm shadow-md shadow-cyan-500/25 hover:shadow-cyan-500/40 hover:-translate-y-0.5 active:translate-y-0 transition flex items-center gap-2 group"
+                  >
+                    <Activity className="w-4 h-4" />
+                    <span>Launch 60 FPS Simulation</span>
+                    <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition" />
+                  </a>
+
+                  <a
+                    href="https://github.com/rswarke1972-art/NeuroAttractor/blob/main/paper/IEEE_NeuroAttractor_Manuscript.md"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-4 py-2.5 rounded-xl glass-button text-slate-200 hover:text-cyan-300 text-xs sm:text-sm font-medium flex items-center gap-2 border border-slate-700/80 hover:border-cyan-500/40 transition"
+                  >
+                    <FileText className="w-4 h-4 text-cyan-400" />
+                    <span>IEEE Manuscript</span>
+                    <ExternalLink className="w-3 h-3 text-slate-400" />
+                  </a>
+
+                  <a
+                    href="https://github.com/rswarke1972-art/NeuroAttractor/blob/main/paper/patentability_and_prior_art_review.md"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-4 py-2.5 rounded-xl glass-button text-slate-200 hover:text-cyan-300 text-xs sm:text-sm font-medium flex items-center gap-2 border border-slate-700/80 hover:border-cyan-500/40 transition"
+                  >
+                    <Sparkles className="w-4 h-4 text-emerald-400" />
+                    <span>Prior Art &amp; Claims</span>
+                    <ExternalLink className="w-3 h-3 text-slate-400" />
+                  </a>
+
+                  <a
+                    href="https://github.com/rswarke1972-art/NeuroAttractor"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-4 py-2.5 rounded-xl glass-button text-slate-200 hover:text-cyan-300 text-xs sm:text-sm font-medium flex items-center gap-2 border border-slate-700/80 hover:border-cyan-500/40 transition"
+                  >
+                    <GitBranch className="w-4 h-4 text-slate-400" />
+                    <span>GitHub (v1.0.0)</span>
+                    <ExternalLink className="w-3 h-3 text-slate-400" />
+                  </a>
+                </div>
+              </div>
+
+              {/* Right Column: Live Benchmark Telemetry Card */}
+              <div className="lg:col-span-5 space-y-4">
+                <div className="glass-panel p-6 rounded-3xl border border-cyan-500/20 bg-slate-900/80 shadow-inner space-y-4">
+                  <div className="flex items-center justify-between border-b border-slate-800 pb-3">
+                    <span className="text-xs font-mono-code uppercase tracking-wider text-cyan-400 font-bold flex items-center gap-2">
+                      <BarChart3 className="w-4 h-4" />
+                      Empirical Dynamical Telemetry
+                    </span>
+                    <span className="text-[11px] font-mono-code px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-300 border border-emerald-500/30">
+                      13/13 Tests Passed
+                    </span>
+                  </div>
+
+                  <div className="grid grid-cols-2 gap-3">
+                    <div className="p-3 rounded-xl bg-slate-950/60 border border-slate-800/80">
+                      <span className="text-[11px] text-slate-400 block mb-1">Transition ROC-AUC</span>
+                      <span className="text-2xl font-extrabold text-cyan-400 font-mono-code">0.6953</span>
+                      <span className="text-[10px] text-slate-500 block mt-0.5">P95 = 0.9017 (1,000 trials)</span>
+                    </div>
+                    <div className="p-3 rounded-xl bg-slate-950/60 border border-slate-800/80">
+                      <span className="text-[11px] text-slate-400 block mb-1">Surrogate Null AUC</span>
+                      <span className="text-2xl font-extrabold text-emerald-400 font-mono-code">0.4995</span>
+                      <span className="text-[10px] text-slate-500 block mt-0.5">Chance null baseline (50.0%)</span>
+                    </div>
+                    <div className="p-3 rounded-xl bg-slate-950/60 border border-slate-800/80">
+                      <span className="text-[11px] text-slate-400 block mb-1">Negative Control FPR</span>
+                      <span className="text-2xl font-extrabold text-emerald-400 font-mono-code">10.8%</span>
+                      <span className="text-[10px] text-slate-500 block mt-0.5">vs 88.0% static threshold</span>
+                    </div>
+                    <div className="p-3 rounded-xl bg-slate-950/60 border border-slate-800/80">
+                      <span className="text-[11px] text-slate-400 block mb-1">Normalized Lead</span>
+                      <span className="text-2xl font-extrabold text-cyan-400 font-mono-code">L = 0.068</span>
+                      <span className="text-[10px] text-slate-500 block mt-0.5">Causal anticipatory horizon</span>
+                    </div>
+                  </div>
+
+                  <div className="space-y-2 pt-2 border-t border-slate-800/80 font-mono-code text-[11px]">
+                    <div className="flex justify-between text-slate-300">
+                      <span>Fold / Saddle-Node Transition</span>
+                      <span className="text-cyan-400 font-bold">AUC = 0.7259 (L_norm = 0.074)</span>
+                    </div>
+                    <div className="flex justify-between text-slate-300">
+                      <span>Supercritical Hopf (Limit Cycle)</span>
+                      <span className="text-emerald-400 font-bold">AUC = 0.7355 (L_norm = 0.081)</span>
+                    </div>
+                    <div className="flex justify-between text-slate-300">
+                      <span>Subcritical Pitchfork (Bistable)</span>
+                      <span className="text-teal-400 font-bold">AUC = 0.6246 (L_norm = 0.050)</span>
+                    </div>
+                    <div className="flex justify-between text-slate-300">
+                      <span>Non-Bifurcation Control Specificity</span>
+                      <span className="text-purple-400 font-bold">89.2% TNR (10.8% FPR across 250 runs)</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="p-4 rounded-2xl bg-cyan-500/5 border border-cyan-500/20 text-xs text-cyan-200/90 leading-relaxed">
+                  <strong>Dual-Mode Architecture:</strong> Powers <em>Dynamical Systems Lab</em> (interactive 60 FPS phase-portrait orbit &amp; Poincaré section analysis) and <em>CogniPhase</em> (non-diagnostic behavioral telemetry resampler).
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          {/* 4 Pillars for NeuroAttractor */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div className="glass-panel p-5 rounded-2xl border border-slate-800 hover:border-cyan-500/40 transition">
+              <div className="w-9 h-9 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 mb-3">
+                <TrendingUp className="w-5 h-5" />
+              </div>
+              <h4 className="text-sm font-bold text-white mb-1">Normal-Form Testbeds</h4>
+              <p className="text-xs text-slate-400 leading-relaxed">
+                Replaces speculative clinical claims with controlled Euler-Maruyama integration of Saddle-Node, Hopf, and Pitchfork canonical transitions.
+              </p>
+            </div>
+
+            <div className="glass-panel p-5 rounded-2xl border border-slate-800 hover:border-emerald-500/40 transition">
+              <div className="w-9 h-9 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 mb-3">
+                <ShieldCheck className="w-5 h-5" />
+              </div>
+              <h4 className="text-sm font-bold text-white mb-1">Autocorrelation CSD Gate</h4>
+              <p className="text-xs text-slate-400 leading-relaxed">
+                Suppresses isolated impulse shocks and heteroskedastic noise by gating variance elevation with lag-1 autocorrelation persistence.
+              </p>
+            </div>
+
+            <div className="glass-panel p-5 rounded-2xl border border-slate-800 hover:border-teal-500/40 transition">
+              <div className="w-9 h-9 rounded-xl bg-teal-500/10 border border-teal-500/20 flex items-center justify-center text-teal-400 mb-3">
+                <Sliders className="w-5 h-5" />
+              </div>
+              <h4 className="text-sm font-bold text-white mb-1">Automated AMI &amp; FNN</h4>
+              <p className="text-xs text-slate-400 leading-relaxed">
+                Automatically determines optimal delay tau* via Average Mutual Information and embedding dimension d* via False Nearest Neighbors.
+              </p>
+            </div>
+
+            <div className="glass-panel p-5 rounded-2xl border border-slate-800 hover:border-purple-500/40 transition">
+              <div className="w-9 h-9 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 mb-3">
+                <Cpu className="w-5 h-5" />
+              </div>
+              <h4 className="text-sm font-bold text-white mb-1">Negative Control Benchmark</h4>
+              <p className="text-xs text-slate-400 leading-relaxed">
+                Evaluated against 4 non-bifurcation negative controls and shuffled surrogates to rigorously prevent pseudo-CSD false alarms.
               </p>
             </div>
           </div>
