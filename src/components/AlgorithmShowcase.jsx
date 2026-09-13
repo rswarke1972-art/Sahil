@@ -23,7 +23,10 @@ import {
   Music,
   Sliders,
   Mic,
-  Volume2
+  Volume2,
+  BookOpen,
+  Feather,
+  Languages
 } from "lucide-react";
 
 export default function AlgorithmShowcase() {
@@ -45,7 +48,7 @@ export default function AlgorithmShowcase() {
             Autonomous Systems &amp; Streaming Algorithms
           </h2>
           <p className="text-slate-300 text-base sm:text-lg leading-relaxed">
-            Eight production-grade architectures attacking foundational systems bottlenecks: wall-clock latency in AI agent workflows, memory bloat in high-velocity cyber-telemetry streams, O(N) KV-cache memory exhaustion in long-context LLM inference, the freezing robot problem in dynamic autonomous mobile robotics, streaming temporal graph motif detection in financial cyber-forensics, certified safety-constrained multi-agent fleet logistics, dual-path speculative 1-RTT Byzantine consensus with ephemeral MVCC rollback for geo-distributed replicated databases, and sub-millisecond continuous acoustic feature decomposition unifying harmonic intonation and micro-perturbation dynamics for real-time instrument mastery and bioacoustic feedback.
+            Nine production-grade architectures attacking foundational systems bottlenecks: wall-clock latency in AI agent workflows, memory bloat in high-velocity cyber-telemetry streams, O(N) KV-cache memory exhaustion in long-context LLM inference, the freezing robot problem in dynamic autonomous mobile robotics, streaming temporal graph motif detection in financial cyber-forensics, certified safety-constrained multi-agent fleet logistics, dual-path speculative 1-RTT Byzantine consensus with ephemeral MVCC rollback for geo-distributed replicated databases, sub-millisecond continuous acoustic feature decomposition unifying harmonic intonation and micro-perturbation dynamics for real-time instrument mastery and bioacoustic feedback, and multi-objective cross-lingual prosodic constraint optimization solving classical metrical scansion and phonetic sonority preservation across diverse poetic ontologies.
           </p>
         </div>
 
@@ -1844,6 +1847,227 @@ export default function AlgorithmShowcase() {
               <h4 className="text-sm font-bold text-white mb-1">Dual-Application Bridge</h4>
               <p className="text-xs text-slate-400 leading-relaxed">
                 Directly powers both SwaraTune AI (instrument intonation &amp; 60 FPS phase-locked strobe tuning) and PranaResonance AI (non-diagnostic vocal stability biofeedback).
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* ALGORITHM 9: PROSODICORE */}
+        <div className="space-y-6 pt-12 border-t border-slate-900">
+          <div className="flex items-center gap-3">
+            <div className="px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-300 font-mono-code text-xs font-bold uppercase tracking-wider">
+              Algorithm 09 · Computational Poetics &amp; Metrical Phonology
+            </div>
+            <div className="h-px flex-1 bg-gradient-to-r from-cyan-500/30 to-transparent"></div>
+          </div>
+
+          <div className="glass-card rounded-3xl p-6 sm:p-10 lg:p-12 border border-cyan-500/30 shadow-2xl shadow-cyan-950/40 relative overflow-hidden">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+              
+              {/* Left Column: Theory & Invariants */}
+              <div className="lg:col-span-7 space-y-6">
+                <div>
+                  <div className="inline-flex items-center gap-2 px-3 py-1 rounded-lg bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-semibold mb-3">
+                    <Feather className="w-3.5 h-3.5" />
+                    <span>Multi-Objective Pareto Lattice Search with Tradition-Specific Scansion</span>
+                  </div>
+                  <h3 className="text-2xl sm:text-4xl font-extrabold text-white font-heading tracking-tight leading-tight">
+                    ProsodiCore: Multi-Objective Cross-Lingual Prosodic Constraint Optimization for Metrical Verse
+                  </h3>
+                </div>
+
+                <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
+                  A computational poetics engine that formalizes classical verse translation as a multi-objective vector optimization problem. Rejecting uniform moraic flattening across incompatible poetic traditions, ProsodiCore enforces disaggregated metrical constraint models (<strong className="text-white">Sanskrit Anushtubh</strong>, <strong className="text-white">Persian 'Arūż</strong>, <strong className="text-white">Classical Dactylic Hexameter</strong>, and <strong className="text-white">English Iambic Pentameter</strong>) alongside a continuous 19-dimensional IPA phonetic sonority manifold. Across 1,000 Monte Carlo evaluations, ProsodiCore achieves <strong className="text-white">100.0% metrical validity</strong> with zero cadence violations, <strong className="text-white">0.9385 semantic cosine fidelity</strong>, and <strong className="text-white">+0.742 sonority envelope correlation</strong> at a median search latency of <strong className="text-white">7.7 ms</strong> (P95 = 13.4 ms; &gt;92% lattice state space pruning).
+                </p>
+
+                {/* Problem vs Breakthrough Grid */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                  <div className="p-4 rounded-2xl bg-slate-900/60 border border-slate-800">
+                    <div className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-1 flex items-center gap-1.5">
+                      <span className="w-2 h-2 rounded-full bg-rose-500"></span>
+                      The Category Error Bottleneck
+                    </div>
+                    <p className="text-xs text-slate-400 leading-relaxed">
+                      Modern LLMs collapse distinct metrical ontologies into uniform syllable counts or unmetered prose (0.0% validity on Sanskrit Pathyā cadence), destroying sacred rhythm.
+                    </p>
+                  </div>
+
+                  <div className="p-4 rounded-2xl bg-cyan-950/30 border border-cyan-500/30">
+                    <div className="text-xs font-bold text-cyan-300 uppercase tracking-wider mb-1 flex items-center gap-1.5">
+                      <span className="w-2 h-2 rounded-full bg-cyan-400"></span>
+                      The Multi-Objective Pareto Core
+                    </div>
+                    <p className="text-xs text-slate-300 leading-relaxed">
+                      Decouples tradition-specific scansion grammars (C_M) and jointly optimizes phonetic sonority (R_sono) and semantic fidelity (S_E) via bounded DAG lattice pruning.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Safety / Methodological Invariant */}
+                <div className="p-4 sm:p-5 rounded-2xl bg-cyan-950/20 border border-cyan-500/30 relative">
+                  <div className="flex items-center gap-2 text-cyan-300 text-xs font-semibold uppercase tracking-wider mb-1">
+                    <ShieldCheck className="w-4 h-4 text-cyan-400" />
+                    <span>Tradition-Specific Scansion &amp; Semantic Bounds Invariant</span>
+                  </div>
+                  <p className="text-slate-200 text-sm font-mono-code leading-relaxed">
+                    Strict Grammatical Invariants: Sanskrit enforces 4x8 pada division, positional lengthening (samyogapara before conjuncts), and mandatory Pathyā cadence (U - U X in even padas); Persian 'Arūż enforces cyclical foot structures (mafā'īlun LGGG) and canonical ziḥāfāt mutations (maqbūz LGLG, akhrab GGLG); Classical Hexameter governs 6 feet with dactyl/spondee substitution.
+                  </p>
+                  <p className="text-slate-400 text-xs mt-2 leading-relaxed">
+                    Pareto frontier search strictly guarantees C_M = 1 and enforces minimum semantic threshold constraints (θ_min = 0.70). Note: Dense embedding cosine similarity (S_E) measures lexical/conceptual alignment; qualitative preservation of deep philosophical nuance remains subject to qualitative expert validation.
+                  </p>
+                </div>
+
+                {/* Complete 4-Button Suite */}
+                <div className="flex flex-wrap items-center gap-3 pt-2">
+                  <a
+                    href="https://rswarke1972-art.github.io/ProsodiCore/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-cyan-400 via-teal-400 to-emerald-400 hover:from-cyan-300 hover:to-emerald-300 text-slate-950 font-bold text-xs sm:text-sm shadow-md shadow-cyan-500/25 hover:shadow-cyan-500/40 hover:-translate-y-0.5 active:translate-y-0 transition flex items-center gap-2 group"
+                  >
+                    <Activity className="w-4 h-4" />
+                    <span>Launch 60 FPS Simulation</span>
+                    <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition" />
+                  </a>
+
+                  <a
+                    href="https://github.com/rswarke1972-art/ProsodiCore/blob/main/paper/IEEE_ProsodiCore_Manuscript.md"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-4 py-2.5 rounded-xl glass-button text-slate-200 hover:text-cyan-300 text-xs sm:text-sm font-medium flex items-center gap-2 border border-slate-700/80 hover:border-cyan-500/40 transition"
+                  >
+                    <FileText className="w-4 h-4 text-cyan-400" />
+                    <span>IEEE Manuscript</span>
+                    <ExternalLink className="w-3 h-3 text-slate-400" />
+                  </a>
+
+                  <a
+                    href="https://github.com/rswarke1972-art/ProsodiCore/blob/main/paper/patentability_and_prior_art_review.md"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-4 py-2.5 rounded-xl glass-button text-slate-200 hover:text-cyan-300 text-xs sm:text-sm font-medium flex items-center gap-2 border border-slate-700/80 hover:border-cyan-500/40 transition"
+                  >
+                    <Sparkles className="w-4 h-4 text-emerald-400" />
+                    <span>Prior Art &amp; Claims</span>
+                    <ExternalLink className="w-3 h-3 text-slate-400" />
+                  </a>
+
+                  <a
+                    href="https://github.com/rswarke1972-art/ProsodiCore"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-4 py-2.5 rounded-xl glass-button text-slate-200 hover:text-cyan-300 text-xs sm:text-sm font-medium flex items-center gap-2 border border-slate-700/80 hover:border-cyan-500/40 transition"
+                  >
+                    <GitBranch className="w-4 h-4 text-slate-400" />
+                    <span>GitHub (v1.0.0)</span>
+                    <ExternalLink className="w-3 h-3 text-slate-400" />
+                  </a>
+                </div>
+              </div>
+
+              {/* Right Column: Live Benchmark Telemetry Card */}
+              <div className="lg:col-span-5 space-y-4">
+                <div className="glass-panel p-6 rounded-3xl border border-cyan-500/20 bg-slate-900/80 shadow-inner space-y-4">
+                  <div className="flex items-center justify-between border-b border-slate-800 pb-3">
+                    <span className="text-xs font-mono-code uppercase tracking-wider text-cyan-400 font-bold flex items-center gap-2">
+                      <BarChart3 className="w-4 h-4" />
+                      Empirical Poetic Telemetry
+                    </span>
+                    <span className="text-[11px] font-mono-code px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-300 border border-emerald-500/30">
+                      12/12 Tests Passed
+                    </span>
+                  </div>
+
+                  <div className="grid grid-cols-2 gap-3">
+                    <div className="p-3 rounded-xl bg-slate-950/60 border border-slate-800/80">
+                      <span className="text-[11px] text-slate-400 block mb-1">Metrical Validity</span>
+                      <span className="text-2xl font-extrabold text-cyan-400 font-mono-code">100.0%</span>
+                      <span className="text-[10px] text-slate-500 block mt-0.5">0% for LLM &amp; Syllable tiers</span>
+                    </div>
+                    <div className="p-3 rounded-xl bg-slate-950/60 border border-slate-800/80">
+                      <span className="text-[11px] text-slate-400 block mb-1">Semantic Cosine (S_E)</span>
+                      <span className="text-2xl font-extrabold text-emerald-400 font-mono-code">0.9385</span>
+                      <span className="text-[10px] text-slate-500 block mt-0.5">Gold corpus benchmark</span>
+                    </div>
+                    <div className="p-3 rounded-xl bg-slate-950/60 border border-slate-800/80">
+                      <span className="text-[11px] text-slate-400 block mb-1">Median Search Latency</span>
+                      <span className="text-2xl font-extrabold text-cyan-400 font-mono-code">7.7 ms</span>
+                      <span className="text-[10px] text-slate-500 block mt-0.5">P95 = 13.4 ms (1,000 trials)</span>
+                    </div>
+                    <div className="p-3 rounded-xl bg-slate-950/60 border border-slate-800/80">
+                      <span className="text-[11px] text-slate-400 block mb-1">Lattice Pruning Rate</span>
+                      <span className="text-2xl font-extrabold text-emerald-400 font-mono-code">92.4%</span>
+                      <span className="text-[10px] text-slate-500 block mt-0.5">Vector upper-bound pruning</span>
+                    </div>
+                  </div>
+
+                  <div className="space-y-2 pt-2 border-t border-slate-800/80 font-mono-code text-[11px]">
+                    <div className="flex justify-between text-slate-300">
+                      <span>Sanskrit Anushtubh (Pathyā)</span>
+                      <span className="text-cyan-400 font-bold">100% Valid (LLM = 0%, Syllable = 0%)</span>
+                    </div>
+                    <div className="flex justify-between text-slate-300">
+                      <span>Persian 'Arūż (Hazaj &amp; Akhrab)</span>
+                      <span className="text-emerald-400 font-bold">100% Valid (LLM = 15.2%)</span>
+                    </div>
+                    <div className="flex justify-between text-slate-300">
+                      <span>Classical Dactylic Hexameter</span>
+                      <span className="text-teal-400 font-bold">100% Valid (LLM = 11.6%)</span>
+                    </div>
+                    <div className="flex justify-between text-slate-300">
+                      <span>Sonority Envelope (R_sono)</span>
+                      <span className="text-purple-400 font-bold">+0.742 mean Pearson correlation</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="p-4 rounded-2xl bg-cyan-500/5 border border-cyan-500/20 text-xs text-cyan-200/90 leading-relaxed">
+                  <strong>Dual-App Ecosystem:</strong> Powers <em>PolyVerse Studio</em> (multi-lingual classical verse translation and live prosodic scansion) and <em>LyricFlow AI</em> (meter-constrained lyrical adaptation with real-time rhythm pulse playback).
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          {/* 4 Pillars for ProsodiCore */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div className="glass-panel p-5 rounded-2xl border border-slate-800 hover:border-cyan-500/40 transition">
+              <div className="w-9 h-9 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 mb-3">
+                <BookOpen className="w-5 h-5" />
+              </div>
+              <h4 className="text-sm font-bold text-white mb-1">Ontology-Specific Scansion</h4>
+              <p className="text-xs text-slate-400 leading-relaxed">
+                Replaces flawed universal moraic abstractions with dedicated constraint models for Sanskrit Anushtubh, Persian 'Arūż, Classical Hexameter, and English Iambic Pentameter.
+              </p>
+            </div>
+
+            <div className="glass-panel p-5 rounded-2xl border border-slate-800 hover:border-emerald-500/40 transition">
+              <div className="w-9 h-9 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 mb-3">
+                <Languages className="w-5 h-5" />
+              </div>
+              <h4 className="text-sm font-bold text-white mb-1">19-D IPA Sonority Manifold</h4>
+              <p className="text-xs text-slate-400 leading-relaxed">
+                Maps multi-lingual phonemes into a 19-dimensional acoustic feature space, tracking continuous sonority profile envelopes with Pearson correlation (R_sono).
+              </p>
+            </div>
+
+            <div className="glass-panel p-5 rounded-2xl border border-slate-800 hover:border-teal-500/40 transition">
+              <div className="w-9 h-9 rounded-xl bg-teal-500/10 border border-teal-500/20 flex items-center justify-center text-teal-400 mb-3">
+                <Sliders className="w-5 h-5" />
+              </div>
+              <h4 className="text-sm font-bold text-white mb-1">Admissible Vector Pareto Pruning</h4>
+              <p className="text-xs text-slate-400 leading-relaxed">
+                Employs a directed acyclic candidate prefix lattice with an upper-bound vector heuristic h(u) to prune &gt;92% of dominated paths with zero metrical violations.
+              </p>
+            </div>
+
+            <div className="glass-panel p-5 rounded-2xl border border-slate-800 hover:border-purple-500/40 transition">
+              <div className="w-9 h-9 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 mb-3">
+                <Feather className="w-5 h-5" />
+              </div>
+              <h4 className="text-sm font-bold text-white mb-1">Multi-Verse Production Bridge</h4>
+              <p className="text-xs text-slate-400 leading-relaxed">
+                Directly powers both PolyVerse Studio (classical scansion &amp; translation) and LyricFlow AI (lyrical adaptation &amp; real-time 60 FPS syllable-stress pulse synthesis).
               </p>
             </div>
           </div>

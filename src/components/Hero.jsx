@@ -81,7 +81,7 @@ export default function Hero({ totalProjects = 60 }) {
           <div className="glass-panel p-4 rounded-2xl border border-cyan-500/40 hover:border-cyan-500/70 transition group">
             <div className="flex items-center gap-2 text-cyan-400 mb-1">
               <Cpu className="w-4 h-4" />
-              <span className="text-xl font-bold font-heading text-white">8</span>
+              <span className="text-xl font-bold font-heading text-white">9</span>
             </div>
             <p className="text-xs text-slate-400 font-medium">Research Algorithms</p>
           </div>
