@@ -19,7 +19,11 @@ import {
   Network,
   Truck,
   BatteryCharging,
-  Navigation
+  Navigation,
+  Music,
+  Sliders,
+  Mic,
+  Volume2
 } from "lucide-react";
 
 export default function AlgorithmShowcase() {
@@ -41,7 +45,7 @@ export default function AlgorithmShowcase() {
             Autonomous Systems &amp; Streaming Algorithms
           </h2>
           <p className="text-slate-300 text-base sm:text-lg leading-relaxed">
-            Seven production-grade architectures attacking foundational systems bottlenecks: wall-clock latency in AI agent workflows, memory bloat in high-velocity cyber-telemetry streams, O(N) KV-cache memory exhaustion in long-context LLM inference, the freezing robot problem in dynamic autonomous mobile robotics, streaming temporal graph motif detection in financial cyber-forensics, certified safety-constrained multi-agent fleet logistics, and dual-path speculative 1-RTT Byzantine consensus with ephemeral MVCC rollback for geo-distributed replicated databases.
+            Eight production-grade architectures attacking foundational systems bottlenecks: wall-clock latency in AI agent workflows, memory bloat in high-velocity cyber-telemetry streams, O(N) KV-cache memory exhaustion in long-context LLM inference, the freezing robot problem in dynamic autonomous mobile robotics, streaming temporal graph motif detection in financial cyber-forensics, certified safety-constrained multi-agent fleet logistics, dual-path speculative 1-RTT Byzantine consensus with ephemeral MVCC rollback for geo-distributed replicated databases, and sub-millisecond continuous acoustic feature decomposition unifying harmonic intonation and micro-perturbation dynamics for real-time instrument mastery and bioacoustic feedback.
           </p>
         </div>
 
@@ -1619,6 +1623,227 @@ export default function AlgorithmShowcase() {
               <h4 className="text-sm font-bold text-white mb-1">Non-Linearizable Barrier</h4>
               <p className="text-xs text-slate-400 leading-relaxed">
                 Formal API separation returning tentative state exclusively under explicit non-linearizable flags, protecting ACID query consistency.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* ALGORITHM 8: RESONAENGINE */}
+        <div className="space-y-6 pt-12 border-t border-slate-900">
+          <div className="flex items-center gap-3">
+            <div className="px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-300 font-mono-code text-xs font-bold uppercase tracking-wider">
+              Algorithm 08 · Digital Signal Processing &amp; Bioacoustics
+            </div>
+            <div className="h-px flex-1 bg-gradient-to-r from-cyan-500/30 to-transparent"></div>
+          </div>
+
+          <div className="glass-card rounded-3xl p-6 sm:p-10 lg:p-12 border border-cyan-500/30 shadow-2xl shadow-cyan-950/40 relative overflow-hidden">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+              
+              {/* Left Column: Theory & Invariants */}
+              <div className="lg:col-span-7 space-y-6">
+                <div>
+                  <div className="inline-flex items-center gap-2 px-3 py-1 rounded-lg bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-semibold mb-3">
+                    <Music className="w-3.5 h-3.5" />
+                    <span>Sub-Millisecond Unified Continuous Feature Decomposition</span>
+                  </div>
+                  <h3 className="text-2xl sm:text-4xl font-extrabold text-white font-heading tracking-tight leading-tight">
+                    ResonaEngine: Unified Harmonic Pitch Tracker, Perturbation Dynamics &amp; Spectral Resonance Estimator
+                  </h3>
+                </div>
+
+                <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
+                  A streaming digital signal processing engine that bridges musical intonation tracking and clinical vocal perturbation profiling. Rather than requiring long offline batch recordings (&gt;1.0 s) or sluggish neural models (&gt;25 ms), ResonaEngine extracts an augmented 7-tuple acoustic vector <code className="text-cyan-300 font-mono-code text-xs bg-slate-900 px-1.5 py-0.5 rounded border border-cyan-500/30">R(t) = [f_0, HNR, Jitter, Shimmer, μ_spectral, Ψ_HF/LF, CPP]</code> every 10.0 ms with an average per-frame CPU execution latency of <strong className="text-white">0.886 ms</strong> (8.86% duty cycle), leaving &gt;88% CPU capacity for interactive UI rendering and audio synthesis.
+                </p>
+
+                {/* Problem vs Breakthrough Grid */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                  <div className="p-4 rounded-2xl bg-slate-900/60 border border-slate-800">
+                    <div className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-1 flex items-center gap-1.5">
+                      <span className="w-2 h-2 rounded-full bg-rose-500"></span>
+                      The Bifurcation Bottleneck
+                    </div>
+                    <p className="text-xs text-slate-400 leading-relaxed">
+                      Musical pitch tuners discard perturbation dynamics while voice profiling tools (Praat, MDVP) require offline batch buffers, preventing real-time biofeedback.
+                    </p>
+                  </div>
+
+                  <div className="p-4 rounded-2xl bg-cyan-950/30 border border-cyan-500/30">
+                    <div className="text-xs font-bold text-cyan-300 uppercase tracking-wider mb-1 flex items-center gap-1.5">
+                      <span className="w-2 h-2 rounded-full bg-cyan-400"></span>
+                      The Unified Streaming Core
+                    </div>
+                    <p className="text-xs text-slate-300 leading-relaxed">
+                      Shares CMNDF lag products across an online bounded epoch queue (K=12) and unbiased autocorrelation to compute pitch, perturbation, and clarity concurrently.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Safety Invariant */}
+                <div className="p-4 sm:p-5 rounded-2xl bg-cyan-950/20 border border-cyan-500/30 relative">
+                  <div className="flex items-center gap-2 text-cyan-300 text-xs font-semibold uppercase tracking-wider mb-1">
+                    <ShieldCheck className="w-4 h-4 text-cyan-400" />
+                    <span>The Latency Separation &amp; Non-Diagnostic Invariant</span>
+                  </div>
+                  <p className="text-slate-200 text-sm font-mono-code leading-relaxed">
+                    Strict Physical Separation: Analysis Window (W = 23.2 ms), Hop Interval (T_hop = 10.0 ms), and Compute Time (T_compute = 0.886 ms) are strictly distinguished; real-time duty cycle is 8.86% (11.29x headroom).
+                  </p>
+                  <p className="text-slate-400 text-xs mt-2 leading-relaxed">
+                    Sub-sample parabolic lag interpolation reduces discrete quantization error to 0.45 cents median error with 0.00% octave doubling. PranaResonance is positioned strictly as non-diagnostic acoustic biofeedback without physiological cranial claims.
+                  </p>
+                </div>
+
+                {/* Complete 4-Button Suite */}
+                <div className="flex flex-wrap items-center gap-3 pt-2">
+                  <a
+                    href="https://rswarke1972-art.github.io/ResonaEngine/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-cyan-400 via-teal-400 to-emerald-400 hover:from-cyan-300 hover:to-emerald-300 text-slate-950 font-bold text-xs sm:text-sm shadow-md shadow-cyan-500/25 hover:shadow-cyan-500/40 hover:-translate-y-0.5 active:translate-y-0 transition flex items-center gap-2 group"
+                  >
+                    <Activity className="w-4 h-4" />
+                    <span>Launch 60 FPS Simulation</span>
+                    <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition" />
+                  </a>
+
+                  <a
+                    href="https://github.com/rswarke1972-art/ResonaEngine/blob/main/paper/IEEE_ResonaEngine_Manuscript.md"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-4 py-2.5 rounded-xl glass-button text-slate-200 hover:text-cyan-300 text-xs sm:text-sm font-medium flex items-center gap-2 border border-slate-700/80 hover:border-cyan-500/40 transition"
+                  >
+                    <FileText className="w-4 h-4 text-cyan-400" />
+                    <span>IEEE Manuscript</span>
+                    <ExternalLink className="w-3 h-3 text-slate-400" />
+                  </a>
+
+                  <a
+                    href="https://github.com/rswarke1972-art/ResonaEngine/blob/main/paper/patentability_and_prior_art_review.md"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-4 py-2.5 rounded-xl glass-button text-slate-200 hover:text-cyan-300 text-xs sm:text-sm font-medium flex items-center gap-2 border border-slate-700/80 hover:border-cyan-500/40 transition"
+                  >
+                    <Sparkles className="w-4 h-4 text-emerald-400" />
+                    <span>Prior Art &amp; Claims</span>
+                    <ExternalLink className="w-3 h-3 text-slate-400" />
+                  </a>
+
+                  <a
+                    href="https://github.com/rswarke1972-art/ResonaEngine"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-4 py-2.5 rounded-xl glass-button text-slate-200 hover:text-cyan-300 text-xs sm:text-sm font-medium flex items-center gap-2 border border-slate-700/80 hover:border-cyan-500/40 transition"
+                  >
+                    <GitBranch className="w-4 h-4 text-slate-400" />
+                    <span>GitHub (v1.0.0)</span>
+                    <ExternalLink className="w-3 h-3 text-slate-400" />
+                  </a>
+                </div>
+              </div>
+
+              {/* Right Column: Live Benchmark Telemetry Card */}
+              <div className="lg:col-span-5 space-y-4">
+                <div className="glass-panel p-6 rounded-3xl border border-cyan-500/20 bg-slate-900/80 shadow-inner space-y-4">
+                  <div className="flex items-center justify-between border-b border-slate-800 pb-3">
+                    <span className="text-xs font-mono-code uppercase tracking-wider text-cyan-400 font-bold flex items-center gap-2">
+                      <BarChart3 className="w-4 h-4" />
+                      Empirical DSP Telemetry
+                    </span>
+                    <span className="text-[11px] font-mono-code px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-300 border border-emerald-500/30">
+                      12/12 Tests Passed
+                    </span>
+                  </div>
+
+                  <div className="grid grid-cols-2 gap-3">
+                    <div className="p-3 rounded-xl bg-slate-950/60 border border-slate-800/80">
+                      <span className="text-[11px] text-slate-400 block mb-1">Median Cent Error</span>
+                      <span className="text-2xl font-extrabold text-cyan-400 font-mono-code">0.45 c</span>
+                      <span className="text-[10px] text-slate-500 block mt-0.5">0.04 c in clean tone</span>
+                    </div>
+                    <div className="p-3 rounded-xl bg-slate-950/60 border border-slate-800/80">
+                      <span className="text-[11px] text-slate-400 block mb-1">Octave Error Rate</span>
+                      <span className="text-2xl font-extrabold text-emerald-400 font-mono-code">0.00%</span>
+                      <span className="text-[10px] text-slate-500 block mt-0.5">0 / 1,200 trials</span>
+                    </div>
+                    <div className="p-3 rounded-xl bg-slate-950/60 border border-slate-800/80">
+                      <span className="text-[11px] text-slate-400 block mb-1">Mean CPU Latency</span>
+                      <span className="text-2xl font-extrabold text-cyan-400 font-mono-code">0.886 ms</span>
+                      <span className="text-[10px] text-slate-500 block mt-0.5">8.86% Duty Cycle</span>
+                    </div>
+                    <div className="p-3 rounded-xl bg-slate-950/60 border border-slate-800/80">
+                      <span className="text-[11px] text-slate-400 block mb-1">Real-Time Headroom</span>
+                      <span className="text-2xl font-extrabold text-emerald-400 font-mono-code">11.29x</span>
+                      <span className="text-[10px] text-slate-500 block mt-0.5">&gt;88% CPU Available</span>
+                    </div>
+                  </div>
+
+                  <div className="space-y-2 pt-2 border-t border-slate-800/80 font-mono-code text-[11px]">
+                    <div className="flex justify-between text-slate-300">
+                      <span>CMNDF Pitch Tracking</span>
+                      <span className="text-cyan-400 font-bold">p50 = 0.490 ms (e = 0.45 c)</span>
+                    </div>
+                    <div className="flex justify-between text-slate-300">
+                      <span>Trailing Perturbation Queue</span>
+                      <span className="text-emerald-400 font-bold">K=12 periods (σ = 0.088%)</span>
+                    </div>
+                    <div className="flex justify-between text-slate-300">
+                      <span>Unbiased HNR &amp; CPP</span>
+                      <span className="text-teal-400 font-bold">Autocorr +45 dB, Cepstrum Reg</span>
+                    </div>
+                    <div className="flex justify-between text-slate-300">
+                      <span>Spectral Energy Ratio (Ψ)</span>
+                      <span className="text-purple-400 font-bold">E(1500-3500) / E(100-800)</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="p-4 rounded-2xl bg-cyan-500/5 border border-cyan-500/20 text-xs text-cyan-200/90 leading-relaxed">
+                  <strong>Dual-App Ecosystem:</strong> Powers <em>SwaraTune AI</em> (instrument intonation and 60 FPS phase-locked strobe tuning) and <em>PranaResonance AI</em> (non-diagnostic vocal phonation biofeedback) from a single shared streaming DSP pipeline.
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          {/* 4 Pillars for ResonaEngine */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div className="glass-panel p-5 rounded-2xl border border-slate-800 hover:border-cyan-500/40 transition">
+              <div className="w-9 h-9 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 mb-3">
+                <Music className="w-5 h-5" />
+              </div>
+              <h4 className="text-sm font-bold text-white mb-1">CMNDF Parabolic Lag Refinement</h4>
+              <p className="text-xs text-slate-400 leading-relaxed">
+                Continuous sub-sample lag interpolation eliminates discrete time-domain lag quantization errors, achieving 0.45 cents median accuracy and 0.00% octave doubling.
+              </p>
+            </div>
+
+            <div className="glass-panel p-5 rounded-2xl border border-slate-800 hover:border-emerald-500/40 transition">
+              <div className="w-9 h-9 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 mb-3">
+                <Sliders className="w-5 h-5" />
+              </div>
+              <h4 className="text-sm font-bold text-white mb-1">Online Bounded Epoch Queue (K=12)</h4>
+              <p className="text-xs text-slate-400 leading-relaxed">
+                Eliminates multi-second offline batch phonation requirements by tracking micro-perturbations (Jitter, Shimmer) over a rolling window of recent pitch cycles.
+              </p>
+            </div>
+
+            <div className="glass-panel p-5 rounded-2xl border border-slate-800 hover:border-teal-500/40 transition">
+              <div className="w-9 h-9 rounded-xl bg-teal-500/10 border border-teal-500/20 flex items-center justify-center text-teal-400 mb-3">
+                <Volume2 className="w-5 h-5" />
+              </div>
+              <h4 className="text-sm font-bold text-white mb-1">Unbiased Periodic HNR &amp; CPP</h4>
+              <p className="text-xs text-slate-400 leading-relaxed">
+                Replaces biased finite-window cross-correlation with sample-overlap weighting and computes cepstral peak prominence above a log-spectrum regression floor.
+              </p>
+            </div>
+
+            <div className="glass-panel p-5 rounded-2xl border border-slate-800 hover:border-purple-500/40 transition">
+              <div className="w-9 h-9 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 mb-3">
+                <Mic className="w-5 h-5" />
+              </div>
+              <h4 className="text-sm font-bold text-white mb-1">Dual-Application Bridge</h4>
+              <p className="text-xs text-slate-400 leading-relaxed">
+                Directly powers both SwaraTune AI (instrument intonation &amp; 60 FPS phase-locked strobe tuning) and PranaResonance AI (non-diagnostic vocal stability biofeedback).
               </p>
             </div>
           </div>

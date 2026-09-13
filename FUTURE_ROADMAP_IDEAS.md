@@ -104,16 +104,19 @@ Every flagship algorithm should follow your established methodology: **formal ma
 * **Empirical Trade-off:** Commit latency under benign loads (1 RTT vs. 3 RTT, achieving a **3.0x speedup** matching Raft CFT ceiling: 100.2 ms vs 300.4 ms PBFT) with zero safety violations under active Byzantine equivocation (33 PoEs assembled, quarantined within 1 RTT).
 * **Deliverables:** 60 FPS HTML5 Canvas simulation suite ([Live Demo](https://rswarke1972-art.github.io/AetherBFT/)), automated 15/15 passing unit tests, Monte Carlo Pareto sweep + Byzantine resilience + Geo-distributed simulation benchmarks, IEEE manuscript, formal patentability review (12 claims), and open-source GitHub repository ([Repo](https://github.com/rswarke1972-art/AetherBFT)).
 
-### Algorithm 6: ResonaEngine (Unified Harmonic Perturbation & Spectral Resonance Estimator)
+### Algorithm 6: ResonaEngine [COMPLETED & AUDITED]
 * **Domain:** Digital Signal Processing (DSP), Bio-Acoustics & Neural Audio Intonation
 * **The Problem:** Existing acoustic algorithms treat musical instrument intonation and human respiratory humming as disconnected domains, relying on either sluggish batch FFTs (>50ms) or heavy neural networks that introduce unacceptable auditory latency (>20ms). No unified framework evaluates both mechanical harmonic overtones and physiological vocal fold stability.
 * **The Algorithmic Innovation:**
-  - A unified continuous feature decomposition engine outputting a 5-tuple acoustic vector every 10ms: $\mathbf{R}(t) = \big(f_0, \; \text{HNR}, \; \text{Jitter}, \; \text{Shimmer}, \; \mu_{\text{spectral}}\big)$.
-  - Implements a low-latency hybrid time-domain Autocorrelation/pYIN tracker with parabolic peak interpolation, coupled with an online spectral centroid estimator.
-  - Generates two downstream signals: (1) Discrete musical cent error $\Delta \text{cents} = 1200\log_2(f_0 / f_{\text{target}})$, and (2) Continuous cranial-to-throat resonance ratio for respiratory stability.
-* **Theoretical Invariant:** Provable sub-12ms processing latency with fundamental frequency resolution $\le 1.2$ cents and deterministic cycle-to-cycle perturbation convergence.
-* **Empirical Trade-off:** Tracking latency vs. $f_0$ extraction error across diverse multi-timbre acoustic benchmarks (GuitarSet, Bach10) and clinical respiratory vocalization datasets.
-* **Dual-App Ecosystem:** Directly powers two distinct production PWAs from a single mathematical engine: **SwaraTune AI** (Instrument Mastery) and **PranaResonance AI** (Pranayama Biofeedback).
+  - A unified continuous feature decomposition engine outputting an augmented 7-tuple acoustic vector every 10.0 ms: $\mathbf{R}(t) = \big[f_0, \; \text{HNR}, \; \text{Jitter}, \; \text{Shimmer}, \; \mu_{\text{spectral}}, \; \Psi_{\text{HF/LF}}, \; \text{CPP}\big]$.
+  - Implements a low-latency hybrid time-domain CMNDF tracker with parabolic sub-sample peak interpolation, coupled with an online bounded trailing-cycle epoch queue ($K \in \{8, 12, 16, 20\}$ periods).
+  - Unbiased autocorrelation Harmonic-to-Noise Ratio (HNR) estimator eliminating finite-window tapering bias.
+  - Real cepstrum Cepstral Peak Prominence (CPP) estimator using linear regression baseline fitting across the pitch quefrency range ($2.0\text{--}20.0$ ms).
+  - Upper-to-Lower Band Energy Ratio ($\Psi_{\text{HF/LF}} = E_{1500-3500} / E_{100-800}$) characterizing spectral tilt without physiological overclaims.
+* **Theoretical Invariant:** Formal separation between analysis window length ($W = 1024$ samples $\approx 23.2$ ms at 44.1 kHz), hop interval ($T_{\text{hop}} = 10.0$ ms), and CPU compute time ($T_{\text{compute}} \le 1.2$ ms); duty cycle $T_{\text{compute}} / T_{\text{hop}} = 8.86\%$ on single-core host.
+* **Empirical Trade-off:** Median cent error of 0.45 cents (0.04 cents in clean tone) with 0.00% octave errors across $55\text{--}1760$ Hz and $0\text{--}100$ dB SNR; $K = 12$ periods achieves Pareto-optimal trade-off between biofeedback response latency ($54.5$ ms at 220 Hz) and measurement variance ($0.088\%$ Jitter Std).
+* **Dual-App Ecosystem:** Powers two distinct downstream applications from a single unified DSP core: **SwaraTune AI** (Instrument Mastery & 60 FPS Phase-Locked Strobe Tuning) and **PranaResonance AI** (Non-Diagnostic Vocal Biofeedback & Steady Phonation Stability).
+* **Deliverables:** 60 FPS HTML5 Canvas simulation suite ([Live Demo](https://rswarke1972-art.github.io/ResonaEngine/)), automated 12/12 passing unit tests, Monte Carlo Pareto sweep + 3 benchmark suites, IEEE manuscript, formal patentability review (12 claims), and open-source GitHub repository ([Repo](https://github.com/rswarke1972-art/ResonaEngine)).
 
 ### Algorithm 7: ProsodiCore (MetriLingua: Multi-Objective Cross-Lingual Prosodic-Semantic Isomorphism for Classical Verse & Poetics)
 * **Domain:** Computational Linguistics / Comparative Poetics & Metrical Phonology
