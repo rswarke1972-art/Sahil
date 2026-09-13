@@ -1490,13 +1490,13 @@ export default function AlgorithmShowcase() {
                   </a>
 
                   <a
-                    href="https://github.com/rswarke1972-art/AetherBFT/blob/main/paper/IEEE_AetherBFT_Manuscript.md"
+                    href="https://rswarke1972-art.github.io/AetherBFT/paper/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="px-4 py-2.5 rounded-xl glass-button text-slate-200 hover:text-fuchsia-300 text-xs sm:text-sm font-medium flex items-center gap-2 border border-slate-700/80 hover:border-fuchsia-500/40 transition"
                   >
                     <FileText className="w-4 h-4 text-fuchsia-400" />
-                    <span>IEEE Manuscript</span>
+                    <span>Read Published Paper</span>
                     <ExternalLink className="w-3 h-3 text-slate-400" />
                   </a>
 
