@@ -2099,7 +2099,7 @@ export default function AlgorithmShowcase() {
                 </div>
 
                 <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
-                  A computational dynamical-systems engine that reconstructs continuous phase-space manifolds and detects Critical Slowing Down (CSD) indicators prior to structural bifurcations. Rejecting direct clinical diagnostic overclaims, NeuroAttractor establishes a disciplined three-tiered claim hierarchy: evaluating controlled mathematical normal forms (<strong className="text-white">Fold/Saddle-Node</strong>, <strong className="text-white">Supercritical Hopf</strong>, and <strong className="text-white">Subcritical Pitchfork</strong>), validating early warnings against <strong className="text-white">four non-bifurcation negative controls</strong>, and providing an exploratory non-diagnostic telemetry resampler (<strong className="text-white">CogniPhase</strong>). Across 1,000 Monte Carlo trials under strict causal windowing ($H = 0.20 \cdot t_c$), NeuroAttractor achieves <strong className="text-white">0.6953 mean transition ROC-AUC</strong> (P95 = 0.9017), <strong className="text-white">10.8% false alarm rate</strong> on negative controls (vs 88.0% static thresholding), and <strong className="text-white">L_norm = 0.068 normalized lead time</strong>, while a temporal-shuffled surrogate null model collapses to chance (AUC = 0.4995).
+                  A computational dynamical-systems engine that reconstructs continuous phase-space manifolds and detects Critical Slowing Down (CSD) indicators prior to structural bifurcations. Rejecting direct clinical diagnostic overclaims, NeuroAttractor establishes a disciplined three-tiered claim hierarchy: evaluating controlled mathematical normal forms (<strong className="text-white">Fold/Saddle-Node</strong>, <strong className="text-white">Supercritical Hopf</strong>, and <strong className="text-white">Subcritical Pitchfork</strong>), validating early warnings against <strong className="text-white">four non-bifurcation negative controls</strong>, and providing an exploratory non-diagnostic telemetry resampler (<strong className="text-white">CogniPhase</strong>). Across 1,000 Monte Carlo trials under strict causal windowing ($H = 0.20 \cdot t_c$), NeuroAttractor achieves <strong className="text-white">0.6685 mean transition ROC-AUC</strong> (95% CI: [0.6593, 0.6777], 95th-percentile trial AUC: 0.8658), <strong className="text-white">6.8% false alarm rate</strong> on negative controls (93.2% specificity vs 91.2% FPR for static thresholding), and <strong className="text-white">L_norm = 0.055 mean normalized lead time</strong>, while a temporal-shuffled surrogate null model collapses to chance (AUC = 0.4983).
                 </p>
 
                 {/* Problem vs Breakthrough Grid */}
@@ -2199,23 +2199,23 @@ export default function AlgorithmShowcase() {
 
                   <div className="grid grid-cols-2 gap-3">
                     <div className="p-3 rounded-xl bg-slate-950/60 border border-slate-800/80">
-                      <span className="text-[11px] text-slate-400 block mb-1">Transition ROC-AUC</span>
-                      <span className="text-2xl font-extrabold text-cyan-400 font-mono-code">0.6953</span>
-                      <span className="text-[10px] text-slate-500 block mt-0.5">P95 = 0.9017 (1,000 trials)</span>
+                      <span className="text-[11px] text-slate-400 block mb-1">Mean ROC-AUC</span>
+                      <span className="text-2xl font-extrabold text-cyan-400 font-mono-code">0.6685</span>
+                      <span className="text-[10px] text-slate-500 block mt-0.5">P95 Trial AUC: 0.8658 (N=1,000)</span>
                     </div>
                     <div className="p-3 rounded-xl bg-slate-950/60 border border-slate-800/80">
                       <span className="text-[11px] text-slate-400 block mb-1">Surrogate Null AUC</span>
-                      <span className="text-2xl font-extrabold text-emerald-400 font-mono-code">0.4995</span>
-                      <span className="text-[10px] text-slate-500 block mt-0.5">Chance null baseline (50.0%)</span>
+                      <span className="text-2xl font-extrabold text-purple-400 font-mono-code">0.4983</span>
+                      <span className="text-[10px] text-slate-500 block mt-0.5">Temporal shuffle null (chance = 0.50)</span>
                     </div>
                     <div className="p-3 rounded-xl bg-slate-950/60 border border-slate-800/80">
                       <span className="text-[11px] text-slate-400 block mb-1">Negative Control FPR</span>
-                      <span className="text-2xl font-extrabold text-emerald-400 font-mono-code">10.8%</span>
-                      <span className="text-[10px] text-slate-500 block mt-0.5">vs 88.0% static threshold</span>
+                      <span className="text-2xl font-extrabold text-emerald-400 font-mono-code">6.8%</span>
+                      <span className="text-[10px] text-slate-500 block mt-0.5">93.2% specificity (vs 91.2% static)</span>
                     </div>
                     <div className="p-3 rounded-xl bg-slate-950/60 border border-slate-800/80">
                       <span className="text-[11px] text-slate-400 block mb-1">Normalized Lead</span>
-                      <span className="text-2xl font-extrabold text-cyan-400 font-mono-code">L = 0.068</span>
+                      <span className="text-2xl font-extrabold text-cyan-400 font-mono-code">L = 0.055</span>
                       <span className="text-[10px] text-slate-500 block mt-0.5">Causal anticipatory horizon</span>
                     </div>
                   </div>
@@ -2223,7 +2223,7 @@ export default function AlgorithmShowcase() {
                   <div className="space-y-2 pt-2 border-t border-slate-800/80 font-mono-code text-[11px]">
                     <div className="flex justify-between text-slate-300">
                       <span>Fold / Saddle-Node Transition</span>
-                      <span className="text-cyan-400 font-bold">AUC = 0.7259 (L_norm = 0.074)</span>
+                      <span className="text-cyan-400 font-bold">AUC = 0.7038 (P95: 0.8240)</span>
                     </div>
                     <div className="flex justify-between text-slate-300">
                       <span>Supercritical Hopf (Limit Cycle)</span>
