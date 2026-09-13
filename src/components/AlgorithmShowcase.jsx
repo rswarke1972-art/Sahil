@@ -1653,7 +1653,7 @@ export default function AlgorithmShowcase() {
                 </div>
 
                 <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
-                  A streaming digital signal processing engine that bridges musical intonation tracking and clinical vocal perturbation profiling. Rather than requiring long offline batch recordings (&gt;1.0 s) or sluggish neural models (&gt;25 ms), ResonaEngine extracts an augmented 7-tuple acoustic vector <code className="text-cyan-300 font-mono-code text-xs bg-slate-900 px-1.5 py-0.5 rounded border border-cyan-500/30">R(t) = [f_0, HNR, Jitter, Shimmer, μ_spectral, Ψ_HF/LF, CPP]</code> every 10.0 ms with an average per-frame CPU execution latency of <strong className="text-white">0.886 ms</strong> (8.86% duty cycle), leaving &gt;88% CPU capacity for interactive UI rendering and audio synthesis.
+                  A streaming digital signal processing engine that bridges musical intonation tracking and clinical vocal perturbation profiling. In controlled synthetic evaluation across 1,200 trials (55 to 1760 Hz, 0 to 100 dB SNR), ResonaEngine achieves <strong className="text-white">0.45-cent median absolute pitch error</strong> (P95 = 11.65 c; 0.04 c in clean tone) and a <strong className="text-white">0.00% octave error rate</strong>. It extracts an augmented 7-tuple acoustic vector <code className="text-cyan-300 font-mono-code text-xs bg-slate-900 px-1.5 py-0.5 rounded border border-cyan-500/30">R(t) = [f_0, HNR, Jitter, Shimmer, μ_spectral, Ψ_HF/LF, CPP]</code> every 10.0 ms with an average per-frame CPU compute time of <strong className="text-white">0.886 ms</strong> (P95 = 1.198 ms; 8.86% duty cycle per 10-ms update), leaving &gt;88% CPU capacity for interactive UI rendering and audio synthesis.
                 </p>
 
                 {/* Problem vs Breakthrough Grid */}
@@ -1674,7 +1674,7 @@ export default function AlgorithmShowcase() {
                       The Unified Streaming Core
                     </div>
                     <p className="text-xs text-slate-300 leading-relaxed">
-                      Shares CMNDF lag products across an online bounded epoch queue (K=12) and unbiased autocorrelation to compute pitch, perturbation, and clarity concurrently.
+                      Shares CMNDF lag products across an online bounded epoch queue (K=12 knee point) and overlap-normalized autocorrelation to compute pitch, perturbation, and clarity concurrently.
                     </p>
                   </div>
                 </div>
@@ -1686,10 +1686,10 @@ export default function AlgorithmShowcase() {
                     <span>The Latency Separation &amp; Non-Diagnostic Invariant</span>
                   </div>
                   <p className="text-slate-200 text-sm font-mono-code leading-relaxed">
-                    Strict Physical Separation: Analysis Window (W = 23.2 ms), Hop Interval (T_hop = 10.0 ms), and Compute Time (T_compute = 0.886 ms) are strictly distinguished; real-time duty cycle is 8.86% (11.29x headroom).
+                    Strict Physical Separation: Analysis Window (W = 23.2 ms), Hop Interval (T_hop = 10.0 ms), and Compute Time (0.886 ms mean / 1.198 ms P95) are strictly distinguished; real-time duty cycle is 8.86% (11.29x headroom).
                   </p>
                   <p className="text-slate-400 text-xs mt-2 leading-relaxed">
-                    Sub-sample parabolic lag interpolation reduces discrete quantization error to 0.45 cents median error with 0.00% octave doubling. PranaResonance is positioned strictly as non-diagnostic acoustic biofeedback without physiological cranial claims.
+                    Sub-sample parabolic lag interpolation achieves 0.45 c median absolute error with 0.00% octave errors across 1,200 synthetic trials. Gross pitch error (21.75% across 0-100 dB SNR) drops below 2.0% for SNRs &ge; 20 dB. Current ground truth is synthetic; PranaResonance is positioned strictly as non-diagnostic acoustic biofeedback without physiological claims.
                   </p>
                 </div>
 
@@ -1756,19 +1756,19 @@ export default function AlgorithmShowcase() {
 
                   <div className="grid grid-cols-2 gap-3">
                     <div className="p-3 rounded-xl bg-slate-950/60 border border-slate-800/80">
-                      <span className="text-[11px] text-slate-400 block mb-1">Median Cent Error</span>
+                      <span className="text-[11px] text-slate-400 block mb-1">Median Pitch Error</span>
                       <span className="text-2xl font-extrabold text-cyan-400 font-mono-code">0.45 c</span>
-                      <span className="text-[10px] text-slate-500 block mt-0.5">0.04 c in clean tone</span>
+                      <span className="text-[10px] text-slate-500 block mt-0.5">11.65 c P95 (1,200 trials)</span>
                     </div>
                     <div className="p-3 rounded-xl bg-slate-950/60 border border-slate-800/80">
                       <span className="text-[11px] text-slate-400 block mb-1">Octave Error Rate</span>
                       <span className="text-2xl font-extrabold text-emerald-400 font-mono-code">0.00%</span>
-                      <span className="text-[10px] text-slate-500 block mt-0.5">0 / 1,200 trials</span>
+                      <span className="text-[10px] text-slate-500 block mt-0.5">0 / 1,200 trials (vs 6.3% STFT)</span>
                     </div>
                     <div className="p-3 rounded-xl bg-slate-950/60 border border-slate-800/80">
-                      <span className="text-[11px] text-slate-400 block mb-1">Mean CPU Latency</span>
+                      <span className="text-[11px] text-slate-400 block mb-1">Mean CPU Compute</span>
                       <span className="text-2xl font-extrabold text-cyan-400 font-mono-code">0.886 ms</span>
-                      <span className="text-[10px] text-slate-500 block mt-0.5">8.86% Duty Cycle</span>
+                      <span className="text-[10px] text-slate-500 block mt-0.5">P95 = 1.198 ms / 10 ms hop</span>
                     </div>
                     <div className="p-3 rounded-xl bg-slate-950/60 border border-slate-800/80">
                       <span className="text-[11px] text-slate-400 block mb-1">Real-Time Headroom</span>
@@ -1780,15 +1780,15 @@ export default function AlgorithmShowcase() {
                   <div className="space-y-2 pt-2 border-t border-slate-800/80 font-mono-code text-[11px]">
                     <div className="flex justify-between text-slate-300">
                       <span>CMNDF Pitch Tracking</span>
-                      <span className="text-cyan-400 font-bold">p50 = 0.490 ms (e = 0.45 c)</span>
+                      <span className="text-cyan-400 font-bold">p50 = 0.490 ms (0.45 c med, 0% oct)</span>
                     </div>
                     <div className="flex justify-between text-slate-300">
                       <span>Trailing Perturbation Queue</span>
-                      <span className="text-emerald-400 font-bold">K=12 periods (σ = 0.088%)</span>
+                      <span className="text-emerald-400 font-bold">K=12 knee point (σ = 0.088%)</span>
                     </div>
                     <div className="flex justify-between text-slate-300">
-                      <span>Unbiased HNR &amp; CPP</span>
-                      <span className="text-teal-400 font-bold">Autocorr +45 dB, Cepstrum Reg</span>
+                      <span>Overlap-Normalized HNR &amp; CPP</span>
+                      <span className="text-teal-400 font-bold">Autocorr +45 dB, Cepstrum Reg Floor</span>
                     </div>
                     <div className="flex justify-between text-slate-300">
                       <span>Spectral Energy Ratio (Ψ)</span>
@@ -1821,7 +1821,7 @@ export default function AlgorithmShowcase() {
               <div className="w-9 h-9 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 mb-3">
                 <Sliders className="w-5 h-5" />
               </div>
-              <h4 className="text-sm font-bold text-white mb-1">Online Bounded Epoch Queue (K=12)</h4>
+              <h4 className="text-sm font-bold text-white mb-1">Online Bounded Epoch Queue (K=12 Knee Point)</h4>
               <p className="text-xs text-slate-400 leading-relaxed">
                 Eliminates multi-second offline batch phonation requirements by tracking micro-perturbations (Jitter, Shimmer) over a rolling window of recent pitch cycles.
               </p>
@@ -1831,7 +1831,7 @@ export default function AlgorithmShowcase() {
               <div className="w-9 h-9 rounded-xl bg-teal-500/10 border border-teal-500/20 flex items-center justify-center text-teal-400 mb-3">
                 <Volume2 className="w-5 h-5" />
               </div>
-              <h4 className="text-sm font-bold text-white mb-1">Unbiased Periodic HNR &amp; CPP</h4>
+              <h4 className="text-sm font-bold text-white mb-1">Overlap-Normalized Periodic HNR &amp; CPP</h4>
               <p className="text-xs text-slate-400 leading-relaxed">
                 Replaces biased finite-window cross-correlation with sample-overlap weighting and computes cepstral peak prominence above a log-spectrum regression floor.
               </p>
