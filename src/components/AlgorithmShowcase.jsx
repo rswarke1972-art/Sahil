@@ -57,7 +57,7 @@ export default function AlgorithmShowcase() {
         <div className="space-y-6">
           <div className="flex items-center gap-3">
             <div className="px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-300 font-mono-code text-xs font-bold uppercase tracking-wider">
-              Algorithm 01 · AI Systems &amp; Concurrency
+              Algorithm 01 : AI Systems &amp; Concurrency
             </div>
             <div className="h-px flex-1 bg-gradient-to-r from-cyan-500/30 to-transparent"></div>
           </div>
@@ -295,7 +295,7 @@ export default function AlgorithmShowcase() {
         <div className="space-y-6 pt-10">
           <div className="flex items-center gap-3">
             <div className="px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-300 font-mono-code text-xs font-bold uppercase tracking-wider">
-              Algorithm 02 · Big Data &amp; Cybersecurity
+              Algorithm 02 : Big Data &amp; Cybersecurity
             </div>
             <div className="h-px flex-1 bg-gradient-to-r from-emerald-500/30 to-transparent"></div>
           </div>
@@ -527,7 +527,7 @@ export default function AlgorithmShowcase() {
         <div className="space-y-6 pt-10">
           <div className="flex items-center gap-3">
             <div className="px-3 py-1 rounded-full bg-purple-500/10 border border-purple-500/30 text-purple-300 font-mono-code text-xs font-bold uppercase tracking-wider">
-              Algorithm 03 · AI Systems &amp; LLM Memory Optimization
+              Algorithm 03 : AI Systems &amp; LLM Memory Optimization
             </div>
             <div className="h-px flex-1 bg-gradient-to-r from-purple-500/30 to-transparent"></div>
           </div>
@@ -758,20 +758,20 @@ export default function AlgorithmShowcase() {
         {/* ALGORITHM 4: KINETICSHIELD */}
         <div className="space-y-6 pt-10">
           <div className="flex items-center gap-3">
-            <div className="px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-300 font-mono-code text-xs font-bold uppercase tracking-wider">
-              Algorithm 04 · Robotics &amp; Autonomous Motion Planning
+            <div className="px-3 py-1 rounded-full bg-orange-500/10 border border-orange-500/30 text-orange-300 font-mono-code text-xs font-bold uppercase tracking-wider">
+              Algorithm 04 : Robotics &amp; Autonomous Motion Planning
             </div>
-            <div className="h-px flex-1 bg-gradient-to-r from-emerald-500/30 to-transparent"></div>
+            <div className="h-px flex-1 bg-gradient-to-r from-orange-500/30 to-transparent"></div>
           </div>
 
-          <div className="glass-card rounded-3xl p-6 sm:p-10 lg:p-12 border border-emerald-500/30 shadow-2xl shadow-emerald-950/40 relative overflow-hidden">
+          <div className="glass-card rounded-3xl p-6 sm:p-10 lg:p-12 border border-orange-500/30 shadow-2xl shadow-orange-950/40 relative overflow-hidden">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
               
               {/* Left Column: Theory & Invariants */}
               <div className="lg:col-span-7 space-y-6">
                 <div>
                   <h3 className="text-2xl sm:text-3xl font-extrabold text-white font-heading">
-                    KineticShield: <span className="bg-gradient-to-r from-emerald-400 via-teal-300 to-cyan-400 bg-clip-text text-transparent">Conformal Collision Pruning &amp; Kinematic B-Spline Planning</span>
+                    KineticShield: <span className="bg-gradient-to-r from-orange-400 via-amber-300 to-yellow-500 bg-clip-text text-transparent">Conformal Collision Pruning &amp; Kinematic B-Spline Planning</span>
                   </h3>
                   <p className="text-slate-300 text-sm mt-1 leading-relaxed">
                     Distribution-free uncertainty estimation with formally bounded trajectory feasibility and empirical collision evaluation across dynamic human-industrial environments.
@@ -790,11 +790,11 @@ export default function AlgorithmShowcase() {
                     </p>
                   </div>
 
-                  <div className="p-4 rounded-2xl bg-slate-900/80 border border-emerald-500/30">
-                    <span className="text-[11px] font-bold text-emerald-400 uppercase tracking-wider block mb-1">KineticShield Conformal Innovation</span>
+                  <div className="p-4 rounded-2xl bg-slate-900/80 border border-orange-500/30">
+                    <span className="text-[11px] font-bold text-orange-400 uppercase tracking-wider block mb-1">KineticShield Conformal Innovation</span>
                     <p className="text-xs text-slate-300 leading-relaxed">
                       Finite-sample marginal coverage $P(\mathbf&#123;p&#125;_\text&#123;obs&#125; \in \mathcal&#123;C&#125;_\alpha) \ge 1 - \alpha$ under exchangeability; closed-loop collision safety evaluated empirically in simulation:
-                      <code className="block mt-1 text-[11px] text-emerald-300 font-mono-code bg-slate-950 p-1.5 rounded border border-emerald-500/20">
+                      <code className="block mt-1 text-[11px] text-orange-300 font-mono-code bg-slate-950 p-1.5 rounded border border-orange-500/20">
                         Chokepoint Freezing: 4.4% (-95.5%) | Area: 0.78 m² (-77.5%)
                       </code>
                     </p>
@@ -802,9 +802,9 @@ export default function AlgorithmShowcase() {
                 </div>
 
                 {/* Strict Invariants Box */}
-                <div className="p-4 sm:p-5 rounded-2xl bg-emerald-950/20 border border-emerald-500/30 relative">
-                  <div className="flex items-center gap-2 text-emerald-300 text-xs font-semibold uppercase tracking-wider mb-1">
-                    <ShieldCheck className="w-4 h-4 text-emerald-400" />
+                <div className="p-4 sm:p-5 rounded-2xl bg-orange-950/20 border border-orange-500/30 relative">
+                  <div className="flex items-center gap-2 text-orange-300 text-xs font-semibold uppercase tracking-wider mb-1">
+                    <ShieldCheck className="w-4 h-4 text-orange-400" />
                     <span>Kinematic Feasibility &amp; Geometric Bound Invariants</span>
                   </div>
                   <p className="text-slate-200 text-sm font-mono-code leading-relaxed">
@@ -821,7 +821,7 @@ export default function AlgorithmShowcase() {
                     href="https://rswarke1972-art.github.io/KineticShield/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-emerald-400 to-teal-500 hover:from-emerald-300 hover:to-teal-400 text-slate-950 font-bold text-xs sm:text-sm shadow-md shadow-emerald-500/25 hover:shadow-emerald-500/40 hover:-translate-y-0.5 active:translate-y-0 transition flex items-center gap-2 group"
+                    className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-orange-400 to-teal-500 hover:from-orange-300 hover:to-amber-500 text-slate-950 font-bold text-xs sm:text-sm shadow-md shadow-orange-500/25 hover:shadow-orange-500/40 hover:-translate-y-0.5 active:translate-y-0 transition flex items-center gap-2 group"
                   >
                     <Activity className="w-4 h-4" />
                     <span>Launch 60 FPS Simulation</span>
@@ -832,9 +832,9 @@ export default function AlgorithmShowcase() {
                     href="https://github.com/rswarke1972-art/KineticShield/blob/main/paper/IEEE_KineticShield_Manuscript.md"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-4 py-2.5 rounded-xl glass-button text-slate-200 hover:text-emerald-300 text-xs sm:text-sm font-medium flex items-center gap-2 border border-slate-700/80 hover:border-emerald-500/40 transition"
+                    className="px-4 py-2.5 rounded-xl glass-button text-slate-200 hover:text-orange-300 text-xs sm:text-sm font-medium flex items-center gap-2 border border-slate-700/80 hover:border-orange-500/40 transition"
                   >
-                    <FileText className="w-4 h-4 text-emerald-400" />
+                    <FileText className="w-4 h-4 text-orange-400" />
                     <span>IEEE Manuscript</span>
                     <ExternalLink className="w-3 h-3 text-slate-400" />
                   </a>
@@ -843,7 +843,7 @@ export default function AlgorithmShowcase() {
                     href="https://github.com/rswarke1972-art/KineticShield/blob/main/paper/patentability_and_prior_art_review.md"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-4 py-2.5 rounded-xl glass-button text-slate-200 hover:text-emerald-300 text-xs sm:text-sm font-medium flex items-center gap-2 border border-slate-700/80 hover:border-emerald-500/40 transition"
+                    className="px-4 py-2.5 rounded-xl glass-button text-slate-200 hover:text-orange-300 text-xs sm:text-sm font-medium flex items-center gap-2 border border-slate-700/80 hover:border-orange-500/40 transition"
                   >
                     <Sparkles className="w-4 h-4 text-amber-400" />
                     <span>Prior Art &amp; Claims</span>
@@ -854,7 +854,7 @@ export default function AlgorithmShowcase() {
                     href="https://github.com/rswarke1972-art/KineticShield"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-4 py-2.5 rounded-xl glass-button text-slate-200 hover:text-emerald-300 text-xs sm:text-sm font-medium flex items-center gap-2 border border-slate-700/80 hover:border-emerald-500/40 transition"
+                    className="px-4 py-2.5 rounded-xl glass-button text-slate-200 hover:text-orange-300 text-xs sm:text-sm font-medium flex items-center gap-2 border border-slate-700/80 hover:border-orange-500/40 transition"
                   >
                     <GitBranch className="w-4 h-4 text-slate-400" />
                     <span>GitHub (v1.2.0)</span>
@@ -868,7 +868,7 @@ export default function AlgorithmShowcase() {
                 <div className="p-5 rounded-2xl bg-slate-900/90 border border-slate-800 shadow-xl">
                   <div className="flex items-center justify-between mb-4">
                     <span className="text-xs font-mono-code text-slate-400 uppercase tracking-wider flex items-center gap-2">
-                      <Terminal className="w-3.5 h-3.5 text-emerald-400" />
+                      <Terminal className="w-3.5 h-3.5 text-orange-400" />
                       Empirical Verification Telemetry
                     </span>
                     <span className="text-[10px] font-mono-code px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
@@ -880,7 +880,7 @@ export default function AlgorithmShowcase() {
                   <div className="grid grid-cols-2 gap-3 mb-4">
                     <div className="p-3 rounded-xl bg-slate-950/80 border border-slate-800/80">
                       <span className="text-[11px] text-slate-400 block mb-0.5">SAT Narrow-Phase (p50)</span>
-                      <span className="text-base font-bold text-emerald-400 font-mono-code">0.084 ms</span>
+                      <span className="text-base font-bold text-orange-400 font-mono-code">0.084 ms</span>
                       <span className="text-[10px] text-slate-500 block mt-0.5">p99: 0.142 ms (&lt; 0.5 ms budget)</span>
                     </div>
 
@@ -892,7 +892,7 @@ export default function AlgorithmShowcase() {
 
                     <div className="p-3 rounded-xl bg-slate-950/80 border border-slate-800/80">
                       <span className="text-[11px] text-slate-400 block mb-0.5">Chokepoint Freezing</span>
-                      <span className="text-base font-bold text-emerald-400 font-mono-code">4.4%</span>
+                      <span className="text-base font-bold text-orange-400 font-mono-code">4.4%</span>
                       <span className="text-[10px] text-slate-500 block mt-0.5">vs. 97.8% Conservative (-95.5%)</span>
                     </div>
 
@@ -911,23 +911,23 @@ export default function AlgorithmShowcase() {
                     </div>
                     <div className="flex justify-between">
                       <span className="text-slate-400">1. Linear Crossing</span>
-                      <span className="text-emerald-400 font-semibold">0/20 [0.0%, 16.1%] vs. 20/20 (100%)</span>
+                      <span className="text-orange-400 font-semibold">0/20 [0.0%, 16.1%] vs. 20/20 (100%)</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="text-slate-400">2. Bimodal Wandering</span>
-                      <span className="text-emerald-400 font-semibold">3/20 [5.2%, 36.0%] | Freezing: 2.8%</span>
+                      <span className="text-orange-400 font-semibold">3/20 [5.2%, 36.0%] | Freezing: 2.8%</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="text-slate-400">3. Adversarial Pursuit</span>
-                      <span className="text-emerald-400 font-semibold">0/20 [0.0%, 16.1%] vs. 20/20 (100%)</span>
+                      <span className="text-orange-400 font-semibold">0/20 [0.0%, 16.1%] vs. 20/20 (100%)</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="text-slate-400">4. Narrow Chokepoint</span>
-                      <span className="text-emerald-400 font-semibold">0/20 Collisions | 4.4% Freezing</span>
+                      <span className="text-orange-400 font-semibold">0/20 Collisions | 4.4% Freezing</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="text-slate-400">5. Distribution Shift</span>
-                      <span className="text-emerald-400 font-semibold">4/20 [8.1%, 41.6%] vs. 20/20 (100%)</span>
+                      <span className="text-orange-400 font-semibold">4/20 [8.1%, 41.6%] vs. 20/20 (100%)</span>
                     </div>
                   </div>
                 </div>
@@ -938,8 +938,8 @@ export default function AlgorithmShowcase() {
 
           {/* 4 Pillars for KineticShield */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            <div className="glass-panel p-5 rounded-2xl border border-slate-800 hover:border-emerald-500/40 transition">
-              <div className="w-9 h-9 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 mb-3">
+            <div className="glass-panel p-5 rounded-2xl border border-slate-800 hover:border-orange-500/40 transition">
+              <div className="w-9 h-9 rounded-xl bg-orange-500/10 border border-orange-500/20 flex items-center justify-center text-orange-400 mb-3">
                 <ShieldCheck className="w-5 h-5" />
               </div>
               <h4 className="text-sm font-bold text-white mb-1">Split Conformal (Mode A)</h4>
@@ -968,8 +968,8 @@ export default function AlgorithmShowcase() {
               </p>
             </div>
 
-            <div className="glass-panel p-5 rounded-2xl border border-slate-800 hover:border-emerald-500/40 transition">
-              <div className="w-9 h-9 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 mb-3">
+            <div className="glass-panel p-5 rounded-2xl border border-slate-800 hover:border-orange-500/40 transition">
+              <div className="w-9 h-9 rounded-xl bg-orange-500/10 border border-orange-500/20 flex items-center justify-center text-orange-400 mb-3">
                 <Zap className="w-5 h-5" />
               </div>
               <h4 className="text-sm font-bold text-white mb-1">Sub-Millisecond SAT Pruning</h4>
@@ -983,20 +983,20 @@ export default function AlgorithmShowcase() {
         {/* ALGORITHM 5: CHRONOSGRAPH */}
         <div className="space-y-6">
           <div className="flex items-center gap-3">
-            <div className="px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-300 font-mono-code text-xs font-bold uppercase tracking-wider">
-              Algorithm 05 · Streaming Graph Algorithms &amp; Cyber-Forensics
+            <div className="px-3 py-1 rounded-full bg-rose-500/10 border border-rose-500/30 text-rose-300 font-mono-code text-xs font-bold uppercase tracking-wider">
+              Algorithm 05 : Streaming Graph Algorithms &amp; Cyber-Forensics
             </div>
-            <div className="h-px flex-1 bg-gradient-to-r from-amber-500/30 to-transparent"></div>
+            <div className="h-px flex-1 bg-gradient-to-r from-rose-500/30 to-transparent"></div>
           </div>
 
-          <div className="glass-card rounded-3xl p-6 sm:p-10 lg:p-12 border border-amber-500/30 shadow-2xl shadow-amber-950/40 relative overflow-hidden">
+          <div className="glass-card rounded-3xl p-6 sm:p-10 lg:p-12 border border-rose-500/30 shadow-2xl shadow-rose-950/40 relative overflow-hidden">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
               
               {/* Left Column: Theory & Invariants */}
               <div className="lg:col-span-7 space-y-6">
                 <div>
                   <h3 className="text-2xl sm:text-3xl font-extrabold text-white font-heading">
-                    ChronosGraph: <span className="bg-gradient-to-r from-amber-400 via-yellow-300 to-emerald-400 bg-clip-text text-transparent">Bounded-Memory Streaming Temporal Motif Detection</span>
+                    ChronosGraph: <span className="bg-gradient-to-r from-rose-400 via-pink-300 to-red-500 bg-clip-text text-transparent">Bounded-Memory Streaming Temporal Motif Detection</span>
                   </h3>
                   <p className="text-slate-300 text-sm mt-1 leading-relaxed">
                     Online detection of cyclical money-laundering rings, front-running arbitrage bots, and wash-trading syndicates in high-velocity transaction streams (Visa, Ethereum) via color-coding sketches.
@@ -1015,11 +1015,11 @@ export default function AlgorithmShowcase() {
                     </p>
                   </div>
 
-                  <div className="p-4 rounded-2xl bg-slate-900/80 border border-amber-500/30">
-                    <span className="text-[11px] font-bold text-amber-400 uppercase tracking-wider block mb-1">ChronosGraph Color-Coding</span>
+                  <div className="p-4 rounded-2xl bg-slate-900/80 border border-rose-500/30">
+                    <span className="text-[11px] font-bold text-rose-400 uppercase tracking-wider block mb-1">ChronosGraph Color-Coding</span>
                     <p className="text-xs text-slate-300 leading-relaxed">
                       Bounded active vertex working set ($V_\max$) with $L$ $k$-wise independent polynomial sketches and bitmask reachability:
-                      <code className="block mt-1 text-[11px] text-amber-300 font-mono-code bg-slate-950 p-1.5 rounded border border-amber-500/20">
+                      <code className="block mt-1 text-[11px] text-rose-300 font-mono-code bg-slate-950 p-1.5 rounded border border-rose-500/20">
                         M &le; O(V_\max L 2^k) = O(1) &amp; T_edge = O(L 2^k)
                       </code>
                     </p>
@@ -1027,14 +1027,14 @@ export default function AlgorithmShowcase() {
                 </div>
 
                 {/* Mathematical Invariant Box */}
-                <div className="p-4 rounded-2xl bg-slate-950/80 border border-amber-500/20">
+                <div className="p-4 rounded-2xl bg-slate-950/80 border border-rose-500/20">
                   <div className="flex items-center gap-2 mb-1.5">
-                    <ShieldCheck className="w-4 h-4 text-amber-400" />
+                    <ShieldCheck className="w-4 h-4 text-rose-400" />
                     <span className="text-xs font-bold text-slate-200 uppercase tracking-wider">
                       Theoretical Invariant: Certified Temporal Soundness &amp; Bounded Miss Rate
                     </span>
                   </div>
-                  <p className="font-mono-code text-xs text-amber-300 bg-slate-900/90 p-2.5 rounded-lg border border-amber-500/30 overflow-x-auto">
+                  <p className="font-mono-code text-xs text-rose-300 bg-slate-900/90 p-2.5 rounded-lg border border-rose-500/30 overflow-x-auto">
                     Reported Cycle &rArr; t_1 &lt; t_2 &lt; ... &lt; t_k &nbsp;&amp;&nbsp; &delta;_total &le; (1 - k!/k^k)^L + &delta;_reservoir
                   </p>
                   <p className="text-xs text-slate-400 mt-1">
@@ -1048,7 +1048,7 @@ export default function AlgorithmShowcase() {
                     href="https://rswarke1972-art.github.io/ChronosGraph/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-amber-400 to-yellow-500 hover:from-amber-300 hover:to-yellow-400 text-slate-950 font-bold text-xs sm:text-sm shadow-md shadow-amber-500/25 hover:shadow-amber-500/40 hover:-translate-y-0.5 active:translate-y-0 transition flex items-center gap-2 group"
+                    className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-rose-400 to-red-500 hover:from-rose-300 hover:to-yellow-400 text-white font-bold text-xs sm:text-sm shadow-md shadow-rose-500/25 hover:shadow-rose-500/40 hover:-translate-y-0.5 active:translate-y-0 transition flex items-center gap-2 group"
                   >
                     <Activity className="w-4 h-4" />
                     <span>Launch 60 FPS Simulation</span>
@@ -1059,9 +1059,9 @@ export default function AlgorithmShowcase() {
                     href="https://github.com/rswarke1972-art/ChronosGraph/blob/main/paper/IEEE_ChronosGraph_Manuscript.md"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-4 py-2.5 rounded-xl glass-button text-slate-200 hover:text-amber-300 text-xs sm:text-sm font-medium flex items-center gap-2 border border-slate-700/80 hover:border-amber-500/40 transition"
+                    className="px-4 py-2.5 rounded-xl glass-button text-slate-200 hover:text-rose-300 text-xs sm:text-sm font-medium flex items-center gap-2 border border-slate-700/80 hover:border-rose-500/40 transition"
                   >
-                    <FileText className="w-4 h-4 text-amber-400" />
+                    <FileText className="w-4 h-4 text-rose-400" />
                     <span>IEEE Manuscript</span>
                     <ExternalLink className="w-3 h-3 text-slate-400" />
                   </a>
@@ -1070,7 +1070,7 @@ export default function AlgorithmShowcase() {
                     href="https://github.com/rswarke1972-art/ChronosGraph/blob/main/paper/patentability_and_prior_art_review.md"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-4 py-2.5 rounded-xl glass-button text-slate-200 hover:text-amber-300 text-xs sm:text-sm font-medium flex items-center gap-2 border border-slate-700/80 hover:border-amber-500/40 transition"
+                    className="px-4 py-2.5 rounded-xl glass-button text-slate-200 hover:text-rose-300 text-xs sm:text-sm font-medium flex items-center gap-2 border border-slate-700/80 hover:border-rose-500/40 transition"
                   >
                     <Sparkles className="w-4 h-4 text-yellow-400" />
                     <span>Prior Art &amp; Claims</span>
@@ -1081,7 +1081,7 @@ export default function AlgorithmShowcase() {
                     href="https://github.com/rswarke1972-art/ChronosGraph"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-4 py-2.5 rounded-xl glass-button text-slate-200 hover:text-amber-300 text-xs sm:text-sm font-medium flex items-center gap-2 border border-slate-700/80 hover:border-amber-500/40 transition"
+                    className="px-4 py-2.5 rounded-xl glass-button text-slate-200 hover:text-rose-300 text-xs sm:text-sm font-medium flex items-center gap-2 border border-slate-700/80 hover:border-rose-500/40 transition"
                   >
                     <GitBranch className="w-4 h-4 text-slate-400" />
                     <span>GitHub (v1.0.0)</span>
@@ -1095,7 +1095,7 @@ export default function AlgorithmShowcase() {
                 <div className="p-5 rounded-2xl bg-slate-900/90 border border-slate-800 shadow-xl">
                   <div className="flex items-center justify-between mb-4">
                     <span className="text-xs font-mono-code text-slate-400 uppercase tracking-wider flex items-center gap-2">
-                      <Terminal className="w-3.5 h-3.5 text-amber-400" />
+                      <Terminal className="w-3.5 h-3.5 text-rose-400" />
                       Empirical Forensics Telemetry
                     </span>
                     <span className="text-[10px] font-mono-code px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-300 border border-emerald-500/30">
@@ -1111,7 +1111,7 @@ export default function AlgorithmShowcase() {
                     </div>
                     <div className="p-3 rounded-xl bg-slate-950/70 border border-slate-800/80">
                       <span className="text-[10px] text-slate-400 block font-mono-code">DEX Arbitrage Recall</span>
-                      <span className="text-xl font-extrabold text-amber-400 font-mono-code">100.0%</span>
+                      <span className="text-xl font-extrabold text-rose-400 font-mono-code">100.0%</span>
                       <span className="text-[10px] text-slate-400 block mt-0.5">F1 = 0.909 (@ L=24)</span>
                     </div>
                     <div className="p-3 rounded-xl bg-slate-950/70 border border-slate-800/80">
@@ -1133,7 +1133,7 @@ export default function AlgorithmShowcase() {
                     </div>
                     <div className="flex justify-between text-slate-300">
                       <span>Wash Trading Detection Recall</span>
-                      <span className="text-amber-400 font-bold">100.0% (F1 = 0.847)</span>
+                      <span className="text-rose-400 font-bold">100.0% (F1 = 0.847)</span>
                     </div>
                     <div className="flex justify-between text-slate-300">
                       <span>Smurfing Ring Recovery (k=4)</span>
@@ -1146,7 +1146,7 @@ export default function AlgorithmShowcase() {
                   </div>
                 </div>
 
-                <div className="p-4 rounded-2xl bg-amber-500/5 border border-amber-500/20 text-xs text-amber-200/90 leading-relaxed">
+                <div className="p-4 rounded-2xl bg-rose-500/5 border border-rose-500/20 text-xs text-rose-200/90 leading-relaxed">
                   <strong>Streaming Cyber-Forensics:</strong> ChronosGraph decouples structural motif detection from domain risk classification, enabling real-time inline AML compliance and DEX front-running bot interception at scale.
                 </div>
               </div>
@@ -1156,8 +1156,8 @@ export default function AlgorithmShowcase() {
 
           {/* 4 Pillars for ChronosGraph */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            <div className="glass-panel p-5 rounded-2xl border border-slate-800 hover:border-amber-500/40 transition">
-              <div className="w-9 h-9 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400 mb-3">
+            <div className="glass-panel p-5 rounded-2xl border border-slate-800 hover:border-rose-500/40 transition">
+              <div className="w-9 h-9 rounded-xl bg-rose-500/10 border border-rose-500/20 flex items-center justify-center text-rose-400 mb-3">
                 <Database className="w-5 h-5" />
               </div>
               <h4 className="text-sm font-bold text-white mb-1">Option A Bounded System</h4>
@@ -1201,20 +1201,20 @@ export default function AlgorithmShowcase() {
         {/* ALGORITHM 6: NEXUSDISPATCH */}
         <div className="space-y-6">
           <div className="flex items-center gap-3">
-            <div className="px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-300 font-mono-code text-xs font-bold uppercase tracking-wider">
-              Algorithm 06 · Safe MARL &amp; Cyber-Physical Logistics
+            <div className="px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/30 text-blue-300 font-mono-code text-xs font-bold uppercase tracking-wider">
+              Algorithm 06 : Safe MARL &amp; Cyber-Physical Logistics
             </div>
-            <div className="h-px flex-1 bg-gradient-to-r from-cyan-500/30 to-transparent"></div>
+            <div className="h-px flex-1 bg-gradient-to-r from-blue-500/30 to-transparent"></div>
           </div>
 
-          <div className="glass-card rounded-3xl p-6 sm:p-10 lg:p-12 border border-cyan-500/30 shadow-2xl shadow-cyan-950/40 relative overflow-hidden">
+          <div className="glass-card rounded-3xl p-6 sm:p-10 lg:p-12 border border-blue-500/30 shadow-2xl shadow-blue-950/40 relative overflow-hidden">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
               
               {/* Left Column: Theory & Invariants */}
               <div className="lg:col-span-7 space-y-6">
                 <div>
                   <h3 className="text-2xl sm:text-3xl font-extrabold text-white font-heading">
-                    NexusDispatch: <span className="bg-gradient-to-r from-cyan-400 via-teal-300 to-emerald-400 bg-clip-text text-transparent">Multi-Agent Fleet Safety Filtering</span>
+                    NexusDispatch: <span className="bg-gradient-to-r from-blue-400 via-indigo-300 to-sky-400 bg-clip-text text-transparent">Multi-Agent Fleet Safety Filtering</span>
                   </h3>
                   <p className="text-slate-300 text-sm mt-1 leading-relaxed">
                     A dual-timescale multi-agent dispatch architecture combining primal-dual constrained learning with distributed control-barrier safety filtering for collision-free, energy-aware fleet coordination.
@@ -1233,11 +1233,11 @@ export default function AlgorithmShowcase() {
                     </p>
                   </div>
 
-                  <div className="p-4 rounded-2xl bg-slate-900/80 border border-cyan-500/30">
-                    <span className="text-[11px] font-bold text-cyan-400 uppercase tracking-wider block mb-1">NexusDispatch Two-Mode CBF</span>
+                  <div className="p-4 rounded-2xl bg-slate-900/80 border border-blue-500/30">
+                    <span className="text-[11px] font-bold text-blue-400 uppercase tracking-wider block mb-1">NexusDispatch Two-Mode CBF</span>
                     <p className="text-xs text-slate-300 leading-relaxed">
                       Mode 1 projects velocity onto safe forward-invariant polytopes; Mode 2 triggers emergency deceleration along barrier gradients under severe bottlenecks:
-                      <code className="block mt-1 text-[11px] text-cyan-300 font-mono-code bg-slate-950 p-1.5 rounded border border-cyan-500/20">
+                      <code className="block mt-1 text-[11px] text-blue-300 font-mono-code bg-slate-950 p-1.5 rounded border border-blue-500/20">
                         Simulated Collisions = 0 &amp; Stranded = 0.0% (p50 = 0.14 ms)
                       </code>
                     </p>
@@ -1245,14 +1245,14 @@ export default function AlgorithmShowcase() {
                 </div>
 
                 {/* Mathematical Invariant Box */}
-                <div className="p-4 rounded-2xl bg-slate-950/80 border border-cyan-500/20">
+                <div className="p-4 rounded-2xl bg-slate-950/80 border border-blue-500/20">
                   <div className="flex items-center gap-2 mb-1.5">
-                    <ShieldCheck className="w-4 h-4 text-cyan-400" />
+                    <ShieldCheck className="w-4 h-4 text-blue-400" />
                     <span className="text-xs font-bold text-slate-200 uppercase tracking-wider">
                       Theoretical Invariant: Two-Mode Forward Invariance &amp; Certified Non-Stranding
                     </span>
                   </div>
-                  <p className="font-mono-code text-xs text-cyan-300 bg-slate-900/90 p-2.5 rounded-lg border border-cyan-500/30 overflow-x-auto">
+                  <p className="font-mono-code text-xs text-blue-300 bg-slate-900/90 p-2.5 rounded-lg border border-blue-500/30 overflow-x-auto">
                     h&#775;_ij + &alpha;(h_ij) &ge; 0 &nbsp;&amp;&nbsp; h_E(E_i, p_i) = E_i - E_min - &kappa;||p_i - p_chg||(1 + &mu; m) &ge; 0
                   </p>
                   <p className="text-xs text-slate-400 mt-1">
@@ -1266,7 +1266,7 @@ export default function AlgorithmShowcase() {
                     href="https://rswarke1972-art.github.io/NexusDispatch/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-cyan-400 via-teal-400 to-emerald-400 hover:from-cyan-300 hover:to-emerald-300 text-slate-950 font-bold text-xs sm:text-sm shadow-md shadow-cyan-500/25 hover:shadow-cyan-500/40 hover:-translate-y-0.5 active:translate-y-0 transition flex items-center gap-2 group"
+                    className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-blue-400 via-teal-400 to-emerald-400 hover:from-blue-300 hover:to-emerald-300 text-white font-bold text-xs sm:text-sm shadow-md shadow-blue-500/25 hover:shadow-blue-500/40 hover:-translate-y-0.5 active:translate-y-0 transition flex items-center gap-2 group"
                   >
                     <Activity className="w-4 h-4" />
                     <span>Launch 60 FPS Simulation</span>
@@ -1277,9 +1277,9 @@ export default function AlgorithmShowcase() {
                     href="https://github.com/rswarke1972-art/NexusDispatch/blob/main/paper/IEEE_NexusDispatch_Manuscript.md"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-4 py-2.5 rounded-xl glass-button text-slate-200 hover:text-cyan-300 text-xs sm:text-sm font-medium flex items-center gap-2 border border-slate-700/80 hover:border-cyan-500/40 transition"
+                    className="px-4 py-2.5 rounded-xl glass-button text-slate-200 hover:text-blue-300 text-xs sm:text-sm font-medium flex items-center gap-2 border border-slate-700/80 hover:border-blue-500/40 transition"
                   >
-                    <FileText className="w-4 h-4 text-cyan-400" />
+                    <FileText className="w-4 h-4 text-blue-400" />
                     <span>IEEE Manuscript</span>
                     <ExternalLink className="w-3 h-3 text-slate-400" />
                   </a>
@@ -1288,7 +1288,7 @@ export default function AlgorithmShowcase() {
                     href="https://github.com/rswarke1972-art/NexusDispatch/blob/main/paper/patentability_and_prior_art_review.md"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-4 py-2.5 rounded-xl glass-button text-slate-200 hover:text-cyan-300 text-xs sm:text-sm font-medium flex items-center gap-2 border border-slate-700/80 hover:border-cyan-500/40 transition"
+                    className="px-4 py-2.5 rounded-xl glass-button text-slate-200 hover:text-blue-300 text-xs sm:text-sm font-medium flex items-center gap-2 border border-slate-700/80 hover:border-blue-500/40 transition"
                   >
                     <Sparkles className="w-4 h-4 text-emerald-400" />
                     <span>Prior Art &amp; Claims</span>
@@ -1299,7 +1299,7 @@ export default function AlgorithmShowcase() {
                     href="https://github.com/rswarke1972-art/NexusDispatch"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-4 py-2.5 rounded-xl glass-button text-slate-200 hover:text-cyan-300 text-xs sm:text-sm font-medium flex items-center gap-2 border border-slate-700/80 hover:border-cyan-500/40 transition"
+                    className="px-4 py-2.5 rounded-xl glass-button text-slate-200 hover:text-blue-300 text-xs sm:text-sm font-medium flex items-center gap-2 border border-slate-700/80 hover:border-blue-500/40 transition"
                   >
                     <GitBranch className="w-4 h-4 text-slate-400" />
                     <span>GitHub (v1.0.0)</span>
@@ -1313,7 +1313,7 @@ export default function AlgorithmShowcase() {
                 <div className="p-5 rounded-2xl bg-slate-900/90 border border-slate-800 shadow-xl">
                   <div className="flex items-center justify-between mb-4">
                     <span className="text-xs font-mono-code text-slate-400 uppercase tracking-wider flex items-center gap-2">
-                      <Terminal className="w-3.5 h-3.5 text-cyan-400" />
+                      <Terminal className="w-3.5 h-3.5 text-blue-400" />
                       Empirical Logistics Telemetry
                     </span>
                     <span className="text-[10px] font-mono-code px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-300 border border-emerald-500/30">
@@ -1334,7 +1334,7 @@ export default function AlgorithmShowcase() {
                     </div>
                     <div className="p-3 rounded-xl bg-slate-950/70 border border-slate-800/80">
                       <span className="text-[10px] text-slate-400 block font-mono-code">QP Latency (p50)</span>
-                      <span className="text-xl font-extrabold text-cyan-400 font-mono-code">0.14 ms</span>
+                      <span className="text-xl font-extrabold text-blue-400 font-mono-code">0.14 ms</span>
                       <span className="text-[10px] text-slate-400 block mt-0.5">p95 = 0.38 ms</span>
                     </div>
                     <div className="p-3 rounded-xl bg-slate-950/70 border border-slate-800/80">
@@ -1351,7 +1351,7 @@ export default function AlgorithmShowcase() {
                     </div>
                     <div className="flex justify-between text-slate-300">
                       <span>Mode 2 Emergency Safe-Stop</span>
-                      <span className="text-cyan-400 font-bold">Braking + Repulsion Gradient</span>
+                      <span className="text-blue-400 font-bold">Braking + Repulsion Gradient</span>
                     </div>
                     <div className="flex justify-between text-slate-300">
                       <span>Corridor Bottleneck Safety</span>
@@ -1364,7 +1364,7 @@ export default function AlgorithmShowcase() {
                   </div>
                 </div>
 
-                <div className="p-4 rounded-2xl bg-cyan-500/5 border border-cyan-500/20 text-xs text-cyan-200/90 leading-relaxed">
+                <div className="p-4 rounded-2xl bg-blue-500/5 border border-blue-500/20 text-xs text-blue-200/90 leading-relaxed">
                   <strong>Autonomous Fleet Logistics:</strong> Built and benchmarked a multi-agent fleet simulator with distributed CBF-QP safety filtering and battery barriers; achieved 0 simulated collisions and 0 stranded vehicles across five synthetic logistics scenarios, with 0.11-0.18 ms median safety-filter latency.
                 </div>
               </div>
@@ -1374,8 +1374,8 @@ export default function AlgorithmShowcase() {
 
           {/* 4 Pillars for NexusDispatch */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            <div className="glass-panel p-5 rounded-2xl border border-slate-800 hover:border-cyan-500/40 transition">
-              <div className="w-9 h-9 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 mb-3">
+            <div className="glass-panel p-5 rounded-2xl border border-slate-800 hover:border-blue-500/40 transition">
+              <div className="w-9 h-9 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400 mb-3">
                 <Shield className="w-5 h-5" />
               </div>
               <h4 className="text-sm font-bold text-white mb-1">Two-Mode D-CBF-QP</h4>
@@ -1419,20 +1419,20 @@ export default function AlgorithmShowcase() {
           {/* ALGORITHM 7: AETHERBFT */}
         <div className="space-y-6 pt-12 border-t border-slate-900">
           <div className="flex items-center gap-3">
-            <div className="px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-300 font-mono-code text-xs font-bold uppercase tracking-wider">
-              Algorithm 07 · Distributed Systems &amp; Byzantine Consensus
+            <div className="px-3 py-1 rounded-full bg-fuchsia-500/10 border border-fuchsia-500/30 text-fuchsia-300 font-mono-code text-xs font-bold uppercase tracking-wider">
+              Algorithm 07 : Distributed Systems &amp; Byzantine Consensus
             </div>
-            <div className="h-px flex-1 bg-gradient-to-r from-cyan-500/30 to-transparent"></div>
+            <div className="h-px flex-1 bg-gradient-to-r from-fuchsia-500/30 to-transparent"></div>
           </div>
 
-          <div className="glass-card rounded-3xl p-6 sm:p-10 lg:p-12 border border-cyan-500/30 shadow-2xl shadow-cyan-950/40 relative overflow-hidden">
+          <div className="glass-card rounded-3xl p-6 sm:p-10 lg:p-12 border border-fuchsia-500/30 shadow-2xl shadow-fuchsia-950/40 relative overflow-hidden">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
               
               {/* Left Column: Theory & Invariants */}
               <div className="lg:col-span-7 space-y-6">
                 <div>
                   <h3 className="text-2xl sm:text-3xl font-extrabold text-white font-heading">
-                    AetherBFT: <span className="bg-gradient-to-r from-cyan-400 via-teal-300 to-blue-500 bg-clip-text text-transparent">Dual-Path Consensus &amp; MVCC Rollback</span>
+                    AetherBFT: <span className="bg-gradient-to-r from-fuchsia-400 via-pink-300 to-purple-400 bg-clip-text text-transparent">Dual-Path Consensus &amp; MVCC Rollback</span>
                   </h3>
                   <p className="text-slate-300 text-sm mt-1 leading-relaxed">
                     Eliminating the 2-3 RTT consensus penalty in geo-distributed state machines via optimistic unanimous fast quorums ($3f+1$), certified dependency contexts, and qualified $O(1)$ logical version-tree rollback.
@@ -1451,11 +1451,11 @@ export default function AlgorithmShowcase() {
                     </p>
                   </div>
 
-                  <div className="p-4 rounded-2xl bg-slate-900/80 border border-cyan-500/30">
-                    <span className="text-[11px] font-bold text-cyan-400 uppercase tracking-wider block mb-1">AetherBFT Innovation</span>
+                  <div className="p-4 rounded-2xl bg-slate-900/80 border border-fuchsia-500/30">
+                    <span className="text-[11px] font-bold text-fuchsia-400 uppercase tracking-wider block mb-1">AetherBFT Innovation</span>
                     <p className="text-xs text-slate-300 leading-relaxed">
                       Dual-path routing grants 1-RTT commits to non-conflicting proposals, with ephemeral MVCC branch trees for instant rollback:
-                      <code className="block mt-1 text-[11px] text-cyan-300 font-mono-code bg-slate-950 p-1.5 rounded border border-cyan-500/20">
+                      <code className="block mt-1 text-[11px] text-fuchsia-300 font-mono-code bg-slate-950 p-1.5 rounded border border-fuchsia-500/20">
                         Q_fast = 3f+1 &rarr; 1 RTT (3.0x Speedup)
                       </code>
                     </p>
@@ -1463,16 +1463,16 @@ export default function AlgorithmShowcase() {
                 </div>
 
                 {/* Safety Invariant */}
-                <div className="p-4 sm:p-5 rounded-2xl bg-cyan-950/20 border border-cyan-500/30 relative">
-                  <div className="flex items-center gap-2 text-cyan-300 text-xs font-semibold uppercase tracking-wider mb-1">
-                    <ShieldCheck className="w-4 h-4 text-cyan-400" />
+                <div className="p-4 sm:p-5 rounded-2xl bg-fuchsia-950/20 border border-fuchsia-500/30 relative">
+                  <div className="flex items-center gap-2 text-fuchsia-300 text-xs font-semibold uppercase tracking-wider mb-1">
+                    <ShieldCheck className="w-4 h-4 text-fuchsia-400" />
                     <span>The Fundamental Safety Invariant</span>
                   </div>
                   <p className="text-slate-200 text-sm font-mono-code leading-relaxed">
                     Unconditional Safety Under Asynchrony: |Q_fast &cap; Q_slow| &ge; f + 1 honest nodes, mathematically precluding concurrent conflicting finality under arbitrary delay (n &ge; 3f + 1). Liveness guaranteed after GST under partial synchrony.
                   </p>
                   <p className="text-slate-400 text-xs mt-2 leading-relaxed">
-                    Speculative execution results returned during 1-RTT flight windows are explicitly tagged <code className="text-cyan-300">TENTATIVE</code>; linearizable client reads query strictly the canonical finalized state tree.
+                    Speculative execution results returned during 1-RTT flight windows are explicitly tagged <code className="text-fuchsia-300">TENTATIVE</code>; linearizable client reads query strictly the canonical finalized state tree.
                   </p>
                 </div>
 
@@ -1482,7 +1482,7 @@ export default function AlgorithmShowcase() {
                     href="https://rswarke1972-art.github.io/AetherBFT/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-cyan-400 via-teal-400 to-emerald-400 hover:from-cyan-300 hover:to-emerald-300 text-slate-950 font-bold text-xs sm:text-sm shadow-md shadow-cyan-500/25 hover:shadow-cyan-500/40 hover:-translate-y-0.5 active:translate-y-0 transition flex items-center gap-2 group"
+                    className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-fuchsia-400 via-teal-400 to-emerald-400 hover:from-fuchsia-300 hover:to-emerald-300 text-white font-bold text-xs sm:text-sm shadow-md shadow-fuchsia-500/25 hover:shadow-fuchsia-500/40 hover:-translate-y-0.5 active:translate-y-0 transition flex items-center gap-2 group"
                   >
                     <Activity className="w-4 h-4" />
                     <span>Launch 60 FPS Simulation</span>
@@ -1493,9 +1493,9 @@ export default function AlgorithmShowcase() {
                     href="https://github.com/rswarke1972-art/AetherBFT/blob/main/paper/IEEE_AetherBFT_Manuscript.md"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-4 py-2.5 rounded-xl glass-button text-slate-200 hover:text-cyan-300 text-xs sm:text-sm font-medium flex items-center gap-2 border border-slate-700/80 hover:border-cyan-500/40 transition"
+                    className="px-4 py-2.5 rounded-xl glass-button text-slate-200 hover:text-fuchsia-300 text-xs sm:text-sm font-medium flex items-center gap-2 border border-slate-700/80 hover:border-fuchsia-500/40 transition"
                   >
-                    <FileText className="w-4 h-4 text-cyan-400" />
+                    <FileText className="w-4 h-4 text-fuchsia-400" />
                     <span>IEEE Manuscript</span>
                     <ExternalLink className="w-3 h-3 text-slate-400" />
                   </a>
@@ -1504,7 +1504,7 @@ export default function AlgorithmShowcase() {
                     href="https://github.com/rswarke1972-art/AetherBFT/blob/main/paper/patentability_and_prior_art_review.md"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-4 py-2.5 rounded-xl glass-button text-slate-200 hover:text-cyan-300 text-xs sm:text-sm font-medium flex items-center gap-2 border border-slate-700/80 hover:border-cyan-500/40 transition"
+                    className="px-4 py-2.5 rounded-xl glass-button text-slate-200 hover:text-fuchsia-300 text-xs sm:text-sm font-medium flex items-center gap-2 border border-slate-700/80 hover:border-fuchsia-500/40 transition"
                   >
                     <Sparkles className="w-4 h-4 text-emerald-400" />
                     <span>Prior Art &amp; Claims</span>
@@ -1515,7 +1515,7 @@ export default function AlgorithmShowcase() {
                     href="https://github.com/rswarke1972-art/AetherBFT"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-4 py-2.5 rounded-xl glass-button text-slate-200 hover:text-cyan-300 text-xs sm:text-sm font-medium flex items-center gap-2 border border-slate-700/80 hover:border-cyan-500/40 transition"
+                    className="px-4 py-2.5 rounded-xl glass-button text-slate-200 hover:text-fuchsia-300 text-xs sm:text-sm font-medium flex items-center gap-2 border border-slate-700/80 hover:border-fuchsia-500/40 transition"
                   >
                     <GitBranch className="w-4 h-4 text-slate-400" />
                     <span>GitHub (v1.0.0)</span>
@@ -1529,7 +1529,7 @@ export default function AlgorithmShowcase() {
                 <div className="p-5 rounded-2xl bg-slate-900/90 border border-slate-800 shadow-xl">
                   <div className="flex items-center justify-between mb-4">
                     <span className="text-xs font-mono-code text-slate-400 uppercase tracking-wider flex items-center gap-2">
-                      <Terminal className="w-3.5 h-3.5 text-cyan-400" />
+                      <Terminal className="w-3.5 h-3.5 text-fuchsia-400" />
                       Modeled Consensus Telemetry
                     </span>
                     <span className="text-[10px] font-mono-code px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-300 border border-emerald-500/30">
@@ -1545,7 +1545,7 @@ export default function AlgorithmShowcase() {
                     </div>
                     <div className="p-3 rounded-xl bg-slate-950/70 border border-slate-800/80">
                       <span className="text-[10px] text-slate-400 block font-mono-code">Modeled Advantage</span>
-                      <span className="text-xl font-extrabold text-cyan-400 font-mono-code">3.00x</span>
+                      <span className="text-xl font-extrabold text-fuchsia-400 font-mono-code">3.00x</span>
                       <span className="text-[10px] text-slate-400 block mt-0.5">vs PBFT Simulated Ref.</span>
                     </div>
                     <div className="p-3 rounded-xl bg-slate-950/70 border border-slate-800/80">
@@ -1571,7 +1571,7 @@ export default function AlgorithmShowcase() {
                     </div>
                     <div className="flex justify-between text-slate-300">
                       <span>Ephemeral Rollback Cost</span>
-                      <span className="text-cyan-400 font-bold">Qualified O(1) Pointer Reset</span>
+                      <span className="text-fuchsia-400 font-bold">Qualified O(1) Pointer Reset</span>
                     </div>
                     <div className="flex justify-between text-slate-300">
                       <span>Pacemaker View Change</span>
@@ -1580,7 +1580,7 @@ export default function AlgorithmShowcase() {
                   </div>
                 </div>
 
-                <div className="p-4 rounded-2xl bg-cyan-500/5 border border-cyan-500/20 text-xs text-cyan-200/90 leading-relaxed">
+                <div className="p-4 rounded-2xl bg-fuchsia-500/5 border border-fuchsia-500/20 text-xs text-fuchsia-200/90 leading-relaxed">
                   <strong>Protocol-Delay Benchmark:</strong> Evaluated across 4 multi-region network profiles; demonstrates the low-contention speculative trade-off against Classical PBFT, Modern HotStuff, and Raft CFT reference under synthetic network delay with 15/15 protocol invariant and adversarial tests passed.
                 </div>
               </div>
@@ -1590,8 +1590,8 @@ export default function AlgorithmShowcase() {
 
           {/* 4 Pillars for AetherBFT */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            <div className="glass-panel p-5 rounded-2xl border border-slate-800 hover:border-cyan-500/40 transition">
-              <div className="w-9 h-9 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 mb-3">
+            <div className="glass-panel p-5 rounded-2xl border border-slate-800 hover:border-fuchsia-500/40 transition">
+              <div className="w-9 h-9 rounded-xl bg-fuchsia-500/10 border border-fuchsia-500/20 flex items-center justify-center text-fuchsia-400 mb-3">
                 <Network className="w-5 h-5" />
               </div>
               <h4 className="text-sm font-bold text-white mb-1">Certified Dependency Context</h4>
@@ -1635,19 +1635,19 @@ export default function AlgorithmShowcase() {
         {/* ALGORITHM 8: RESONAENGINE */}
         <div className="space-y-6 pt-12 border-t border-slate-900">
           <div className="flex items-center gap-3">
-            <div className="px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-300 font-mono-code text-xs font-bold uppercase tracking-wider">
-              Algorithm 08 · Digital Signal Processing &amp; Bioacoustics
+            <div className="px-3 py-1 rounded-full bg-teal-500/10 border border-teal-500/30 text-teal-300 font-mono-code text-xs font-bold uppercase tracking-wider">
+              Algorithm 08 : Digital Signal Processing &amp; Bioacoustics
             </div>
-            <div className="h-px flex-1 bg-gradient-to-r from-cyan-500/30 to-transparent"></div>
+            <div className="h-px flex-1 bg-gradient-to-r from-teal-500/30 to-transparent"></div>
           </div>
 
-          <div className="glass-card rounded-3xl p-6 sm:p-10 lg:p-12 border border-cyan-500/30 shadow-2xl shadow-cyan-950/40 relative overflow-hidden">
+          <div className="glass-card rounded-3xl p-6 sm:p-10 lg:p-12 border border-teal-500/30 shadow-2xl shadow-teal-950/40 relative overflow-hidden">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
               
               {/* Left Column: Theory & Invariants */}
               <div className="lg:col-span-7 space-y-6">
                 <div>
-                  <div className="inline-flex items-center gap-2 px-3 py-1 rounded-lg bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-semibold mb-3">
+                  <div className="inline-flex items-center gap-2 px-3 py-1 rounded-lg bg-teal-500/10 border border-teal-500/20 text-teal-400 text-xs font-semibold mb-3">
                     <Music className="w-3.5 h-3.5" />
                     <span>Sub-Millisecond Unified Continuous Feature Decomposition</span>
                   </div>
@@ -1657,7 +1657,7 @@ export default function AlgorithmShowcase() {
                 </div>
 
                 <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
-                  A streaming digital signal processing engine that bridges musical intonation tracking and clinical vocal perturbation profiling. In controlled synthetic evaluation across 1,200 trials (55 to 1760 Hz, 0 to 100 dB SNR), ResonaEngine achieves <strong className="text-white">0.45-cent median absolute pitch error</strong> (P95 = 11.65 c; 0.04 c in clean tone) and a <strong className="text-white">0.00% octave error rate</strong>. It extracts an augmented 7-tuple acoustic vector <code className="text-cyan-300 font-mono-code text-xs bg-slate-900 px-1.5 py-0.5 rounded border border-cyan-500/30">R(t) = [f_0, HNR, Jitter, Shimmer, μ_spectral, Ψ_HF/LF, CPP]</code> every 10.0 ms with an average per-frame CPU compute time of <strong className="text-white">0.886 ms</strong> (P95 = 1.198 ms; 8.86% duty cycle per 10-ms update), leaving &gt;88% CPU capacity for interactive UI rendering and audio synthesis.
+                  A streaming digital signal processing engine that bridges musical intonation tracking and clinical vocal perturbation profiling. In controlled synthetic evaluation across 1,200 trials (55 to 1760 Hz, 0 to 100 dB SNR), ResonaEngine achieves <strong className="text-white">0.45-cent median absolute pitch error</strong> (P95 = 11.65 c; 0.04 c in clean tone) and a <strong className="text-white">0.00% octave error rate</strong>. It extracts an augmented 7-tuple acoustic vector <code className="text-teal-300 font-mono-code text-xs bg-slate-900 px-1.5 py-0.5 rounded border border-teal-500/30">R(t) = [f_0, HNR, Jitter, Shimmer, μ_spectral, Ψ_HF/LF, CPP]</code> every 10.0 ms with an average per-frame CPU compute time of <strong className="text-white">0.886 ms</strong> (P95 = 1.198 ms; 8.86% duty cycle per 10-ms update), leaving &gt;88% CPU capacity for interactive UI rendering and audio synthesis.
                 </p>
 
                 {/* Problem vs Breakthrough Grid */}
@@ -1672,9 +1672,9 @@ export default function AlgorithmShowcase() {
                     </p>
                   </div>
 
-                  <div className="p-4 rounded-2xl bg-cyan-950/30 border border-cyan-500/30">
-                    <div className="text-xs font-bold text-cyan-300 uppercase tracking-wider mb-1 flex items-center gap-1.5">
-                      <span className="w-2 h-2 rounded-full bg-cyan-400"></span>
+                  <div className="p-4 rounded-2xl bg-teal-950/30 border border-teal-500/30">
+                    <div className="text-xs font-bold text-teal-300 uppercase tracking-wider mb-1 flex items-center gap-1.5">
+                      <span className="w-2 h-2 rounded-full bg-teal-400"></span>
                       The Unified Streaming Core
                     </div>
                     <p className="text-xs text-slate-300 leading-relaxed">
@@ -1684,9 +1684,9 @@ export default function AlgorithmShowcase() {
                 </div>
 
                 {/* Safety Invariant */}
-                <div className="p-4 sm:p-5 rounded-2xl bg-cyan-950/20 border border-cyan-500/30 relative">
-                  <div className="flex items-center gap-2 text-cyan-300 text-xs font-semibold uppercase tracking-wider mb-1">
-                    <ShieldCheck className="w-4 h-4 text-cyan-400" />
+                <div className="p-4 sm:p-5 rounded-2xl bg-teal-950/20 border border-teal-500/30 relative">
+                  <div className="flex items-center gap-2 text-teal-300 text-xs font-semibold uppercase tracking-wider mb-1">
+                    <ShieldCheck className="w-4 h-4 text-teal-400" />
                     <span>The Latency Separation &amp; Non-Diagnostic Invariant</span>
                   </div>
                   <p className="text-slate-200 text-sm font-mono-code leading-relaxed">
@@ -1703,7 +1703,7 @@ export default function AlgorithmShowcase() {
                     href="https://rswarke1972-art.github.io/ResonaEngine/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-cyan-400 via-teal-400 to-emerald-400 hover:from-cyan-300 hover:to-emerald-300 text-slate-950 font-bold text-xs sm:text-sm shadow-md shadow-cyan-500/25 hover:shadow-cyan-500/40 hover:-translate-y-0.5 active:translate-y-0 transition flex items-center gap-2 group"
+                    className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-teal-400 via-teal-400 to-cyan-500 hover:from-teal-300 hover:to-emerald-300 text-slate-950 font-bold text-xs sm:text-sm shadow-md shadow-teal-500/25 hover:shadow-teal-500/40 hover:-translate-y-0.5 active:translate-y-0 transition flex items-center gap-2 group"
                   >
                     <Activity className="w-4 h-4" />
                     <span>Launch 60 FPS Simulation</span>
@@ -1714,9 +1714,9 @@ export default function AlgorithmShowcase() {
                     href="https://github.com/rswarke1972-art/ResonaEngine/blob/main/paper/IEEE_ResonaEngine_Manuscript.md"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-4 py-2.5 rounded-xl glass-button text-slate-200 hover:text-cyan-300 text-xs sm:text-sm font-medium flex items-center gap-2 border border-slate-700/80 hover:border-cyan-500/40 transition"
+                    className="px-4 py-2.5 rounded-xl glass-button text-slate-200 hover:text-teal-300 text-xs sm:text-sm font-medium flex items-center gap-2 border border-slate-700/80 hover:border-teal-500/40 transition"
                   >
-                    <FileText className="w-4 h-4 text-cyan-400" />
+                    <FileText className="w-4 h-4 text-teal-400" />
                     <span>IEEE Manuscript</span>
                     <ExternalLink className="w-3 h-3 text-slate-400" />
                   </a>
@@ -1725,7 +1725,7 @@ export default function AlgorithmShowcase() {
                     href="https://github.com/rswarke1972-art/ResonaEngine/blob/main/paper/patentability_and_prior_art_review.md"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-4 py-2.5 rounded-xl glass-button text-slate-200 hover:text-cyan-300 text-xs sm:text-sm font-medium flex items-center gap-2 border border-slate-700/80 hover:border-cyan-500/40 transition"
+                    className="px-4 py-2.5 rounded-xl glass-button text-slate-200 hover:text-teal-300 text-xs sm:text-sm font-medium flex items-center gap-2 border border-slate-700/80 hover:border-teal-500/40 transition"
                   >
                     <Sparkles className="w-4 h-4 text-emerald-400" />
                     <span>Prior Art &amp; Claims</span>
@@ -1736,7 +1736,7 @@ export default function AlgorithmShowcase() {
                     href="https://github.com/rswarke1972-art/ResonaEngine"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-4 py-2.5 rounded-xl glass-button text-slate-200 hover:text-cyan-300 text-xs sm:text-sm font-medium flex items-center gap-2 border border-slate-700/80 hover:border-cyan-500/40 transition"
+                    className="px-4 py-2.5 rounded-xl glass-button text-slate-200 hover:text-teal-300 text-xs sm:text-sm font-medium flex items-center gap-2 border border-slate-700/80 hover:border-teal-500/40 transition"
                   >
                     <GitBranch className="w-4 h-4 text-slate-400" />
                     <span>GitHub (v1.0.0)</span>
@@ -1747,9 +1747,9 @@ export default function AlgorithmShowcase() {
 
               {/* Right Column: Live Benchmark Telemetry Card */}
               <div className="lg:col-span-5 space-y-4">
-                <div className="glass-panel p-6 rounded-3xl border border-cyan-500/20 bg-slate-900/80 shadow-inner space-y-4">
+                <div className="glass-panel p-6 rounded-3xl border border-teal-500/20 bg-slate-900/80 shadow-inner space-y-4">
                   <div className="flex items-center justify-between border-b border-slate-800 pb-3">
-                    <span className="text-xs font-mono-code uppercase tracking-wider text-cyan-400 font-bold flex items-center gap-2">
+                    <span className="text-xs font-mono-code uppercase tracking-wider text-teal-400 font-bold flex items-center gap-2">
                       <BarChart3 className="w-4 h-4" />
                       Empirical DSP Telemetry
                     </span>
@@ -1761,7 +1761,7 @@ export default function AlgorithmShowcase() {
                   <div className="grid grid-cols-2 gap-3">
                     <div className="p-3 rounded-xl bg-slate-950/60 border border-slate-800/80">
                       <span className="text-[11px] text-slate-400 block mb-1">Median Pitch Error</span>
-                      <span className="text-2xl font-extrabold text-cyan-400 font-mono-code">0.45 c</span>
+                      <span className="text-2xl font-extrabold text-teal-400 font-mono-code">0.45 c</span>
                       <span className="text-[10px] text-slate-500 block mt-0.5">11.65 c P95 (1,200 trials)</span>
                     </div>
                     <div className="p-3 rounded-xl bg-slate-950/60 border border-slate-800/80">
@@ -1771,7 +1771,7 @@ export default function AlgorithmShowcase() {
                     </div>
                     <div className="p-3 rounded-xl bg-slate-950/60 border border-slate-800/80">
                       <span className="text-[11px] text-slate-400 block mb-1">Mean CPU Compute</span>
-                      <span className="text-2xl font-extrabold text-cyan-400 font-mono-code">0.886 ms</span>
+                      <span className="text-2xl font-extrabold text-teal-400 font-mono-code">0.886 ms</span>
                       <span className="text-[10px] text-slate-500 block mt-0.5">P95 = 1.198 ms / 10 ms hop</span>
                     </div>
                     <div className="p-3 rounded-xl bg-slate-950/60 border border-slate-800/80">
@@ -1784,7 +1784,7 @@ export default function AlgorithmShowcase() {
                   <div className="space-y-2 pt-2 border-t border-slate-800/80 font-mono-code text-[11px]">
                     <div className="flex justify-between text-slate-300">
                       <span>CMNDF Pitch Tracking</span>
-                      <span className="text-cyan-400 font-bold">p50 = 0.490 ms (0.45 c med, 0% oct)</span>
+                      <span className="text-teal-400 font-bold">p50 = 0.490 ms (0.45 c med, 0% oct)</span>
                     </div>
                     <div className="flex justify-between text-slate-300">
                       <span>Trailing Perturbation Queue</span>
@@ -1801,7 +1801,7 @@ export default function AlgorithmShowcase() {
                   </div>
                 </div>
 
-                <div className="p-4 rounded-2xl bg-cyan-500/5 border border-cyan-500/20 text-xs text-cyan-200/90 leading-relaxed">
+                <div className="p-4 rounded-2xl bg-teal-500/5 border border-teal-500/20 text-xs text-teal-200/90 leading-relaxed">
                   <strong>Dual-App Ecosystem:</strong> Powers <em>SwaraTune AI</em> (instrument intonation and 60 FPS phase-locked strobe tuning) and <em>PranaResonance AI</em> (non-diagnostic vocal phonation biofeedback) from a single shared streaming DSP pipeline.
                 </div>
               </div>
@@ -1811,8 +1811,8 @@ export default function AlgorithmShowcase() {
 
           {/* 4 Pillars for ResonaEngine */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            <div className="glass-panel p-5 rounded-2xl border border-slate-800 hover:border-cyan-500/40 transition">
-              <div className="w-9 h-9 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 mb-3">
+            <div className="glass-panel p-5 rounded-2xl border border-slate-800 hover:border-teal-500/40 transition">
+              <div className="w-9 h-9 rounded-xl bg-teal-500/10 border border-teal-500/20 flex items-center justify-center text-teal-400 mb-3">
                 <Music className="w-5 h-5" />
               </div>
               <h4 className="text-sm font-bold text-white mb-1">CMNDF Parabolic Lag Refinement</h4>
@@ -1856,19 +1856,19 @@ export default function AlgorithmShowcase() {
         {/* ALGORITHM 9: PROSODICORE */}
         <div className="space-y-6 pt-12 border-t border-slate-900">
           <div className="flex items-center gap-3">
-            <div className="px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-300 font-mono-code text-xs font-bold uppercase tracking-wider">
-              Algorithm 09 · Computational Poetics &amp; Metrical Phonology
+            <div className="px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-300 font-mono-code text-xs font-bold uppercase tracking-wider">
+              Algorithm 09 : Computational Poetics &amp; Metrical Phonology
             </div>
-            <div className="h-px flex-1 bg-gradient-to-r from-cyan-500/30 to-transparent"></div>
+            <div className="h-px flex-1 bg-gradient-to-r from-amber-500/30 to-transparent"></div>
           </div>
 
-          <div className="glass-card rounded-3xl p-6 sm:p-10 lg:p-12 border border-cyan-500/30 shadow-2xl shadow-cyan-950/40 relative overflow-hidden">
+          <div className="glass-card rounded-3xl p-6 sm:p-10 lg:p-12 border border-amber-500/30 shadow-2xl shadow-amber-950/40 relative overflow-hidden">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
               
               {/* Left Column: Theory & Invariants */}
               <div className="lg:col-span-7 space-y-6">
                 <div>
-                  <div className="inline-flex items-center gap-2 px-3 py-1 rounded-lg bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-semibold mb-3">
+                  <div className="inline-flex items-center gap-2 px-3 py-1 rounded-lg bg-amber-500/10 border border-amber-500/20 text-amber-400 text-xs font-semibold mb-3">
                     <Feather className="w-3.5 h-3.5" />
                     <span>Multi-Objective Pareto Lattice Search with Tradition-Specific Scansion</span>
                   </div>
@@ -1893,9 +1893,9 @@ export default function AlgorithmShowcase() {
                     </p>
                   </div>
 
-                  <div className="p-4 rounded-2xl bg-cyan-950/30 border border-cyan-500/30">
-                    <div className="text-xs font-bold text-cyan-300 uppercase tracking-wider mb-1 flex items-center gap-1.5">
-                      <span className="w-2 h-2 rounded-full bg-cyan-400"></span>
+                  <div className="p-4 rounded-2xl bg-amber-950/30 border border-amber-500/30">
+                    <div className="text-xs font-bold text-amber-300 uppercase tracking-wider mb-1 flex items-center gap-1.5">
+                      <span className="w-2 h-2 rounded-full bg-amber-400"></span>
                       The Multi-Objective Pareto Core
                     </div>
                     <p className="text-xs text-slate-300 leading-relaxed">
@@ -1905,9 +1905,9 @@ export default function AlgorithmShowcase() {
                 </div>
 
                 {/* Safety / Methodological Invariant */}
-                <div className="p-4 sm:p-5 rounded-2xl bg-cyan-950/20 border border-cyan-500/30 relative">
-                  <div className="flex items-center gap-2 text-cyan-300 text-xs font-semibold uppercase tracking-wider mb-1">
-                    <ShieldCheck className="w-4 h-4 text-cyan-400" />
+                <div className="p-4 sm:p-5 rounded-2xl bg-amber-950/20 border border-amber-500/30 relative">
+                  <div className="flex items-center gap-2 text-amber-300 text-xs font-semibold uppercase tracking-wider mb-1">
+                    <ShieldCheck className="w-4 h-4 text-amber-400" />
                     <span>Tradition-Specific Scansion &amp; Semantic Bounds Invariant</span>
                   </div>
                   <p className="text-slate-200 text-sm font-mono-code leading-relaxed">
@@ -1924,7 +1924,7 @@ export default function AlgorithmShowcase() {
                     href="https://rswarke1972-art.github.io/ProsodiCore/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-cyan-400 via-teal-400 to-emerald-400 hover:from-cyan-300 hover:to-emerald-300 text-slate-950 font-bold text-xs sm:text-sm shadow-md shadow-cyan-500/25 hover:shadow-cyan-500/40 hover:-translate-y-0.5 active:translate-y-0 transition flex items-center gap-2 group"
+                    className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-amber-400 via-teal-400 to-orange-500 hover:from-amber-300 hover:to-emerald-300 text-slate-950 font-bold text-xs sm:text-sm shadow-md shadow-amber-500/25 hover:shadow-amber-500/40 hover:-translate-y-0.5 active:translate-y-0 transition flex items-center gap-2 group"
                   >
                     <Activity className="w-4 h-4" />
                     <span>Launch 60 FPS Simulation</span>
@@ -1935,9 +1935,9 @@ export default function AlgorithmShowcase() {
                     href="https://github.com/rswarke1972-art/ProsodiCore/blob/main/paper/IEEE_ProsodiCore_Manuscript.md"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-4 py-2.5 rounded-xl glass-button text-slate-200 hover:text-cyan-300 text-xs sm:text-sm font-medium flex items-center gap-2 border border-slate-700/80 hover:border-cyan-500/40 transition"
+                    className="px-4 py-2.5 rounded-xl glass-button text-slate-200 hover:text-amber-300 text-xs sm:text-sm font-medium flex items-center gap-2 border border-slate-700/80 hover:border-amber-500/40 transition"
                   >
-                    <FileText className="w-4 h-4 text-cyan-400" />
+                    <FileText className="w-4 h-4 text-amber-400" />
                     <span>IEEE Manuscript</span>
                     <ExternalLink className="w-3 h-3 text-slate-400" />
                   </a>
@@ -1946,7 +1946,7 @@ export default function AlgorithmShowcase() {
                     href="https://github.com/rswarke1972-art/ProsodiCore/blob/main/paper/patentability_and_prior_art_review.md"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-4 py-2.5 rounded-xl glass-button text-slate-200 hover:text-cyan-300 text-xs sm:text-sm font-medium flex items-center gap-2 border border-slate-700/80 hover:border-cyan-500/40 transition"
+                    className="px-4 py-2.5 rounded-xl glass-button text-slate-200 hover:text-amber-300 text-xs sm:text-sm font-medium flex items-center gap-2 border border-slate-700/80 hover:border-amber-500/40 transition"
                   >
                     <Sparkles className="w-4 h-4 text-emerald-400" />
                     <span>Prior Art &amp; Claims</span>
@@ -1957,7 +1957,7 @@ export default function AlgorithmShowcase() {
                     href="https://github.com/rswarke1972-art/ProsodiCore"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-4 py-2.5 rounded-xl glass-button text-slate-200 hover:text-cyan-300 text-xs sm:text-sm font-medium flex items-center gap-2 border border-slate-700/80 hover:border-cyan-500/40 transition"
+                    className="px-4 py-2.5 rounded-xl glass-button text-slate-200 hover:text-amber-300 text-xs sm:text-sm font-medium flex items-center gap-2 border border-slate-700/80 hover:border-amber-500/40 transition"
                   >
                     <GitBranch className="w-4 h-4 text-slate-400" />
                     <span>GitHub (v1.0.0)</span>
@@ -1968,9 +1968,9 @@ export default function AlgorithmShowcase() {
 
               {/* Right Column: Live Benchmark Telemetry Card */}
               <div className="lg:col-span-5 space-y-4">
-                <div className="glass-panel p-6 rounded-3xl border border-cyan-500/20 bg-slate-900/80 shadow-inner space-y-4">
+                <div className="glass-panel p-6 rounded-3xl border border-amber-500/20 bg-slate-900/80 shadow-inner space-y-4">
                   <div className="flex items-center justify-between border-b border-slate-800 pb-3">
-                    <span className="text-xs font-mono-code uppercase tracking-wider text-cyan-400 font-bold flex items-center gap-2">
+                    <span className="text-xs font-mono-code uppercase tracking-wider text-amber-400 font-bold flex items-center gap-2">
                       <BarChart3 className="w-4 h-4" />
                       Empirical Poetic Telemetry
                     </span>
@@ -1982,7 +1982,7 @@ export default function AlgorithmShowcase() {
                   <div className="grid grid-cols-2 gap-3">
                     <div className="p-3 rounded-xl bg-slate-950/60 border border-slate-800/80">
                       <span className="text-[11px] text-slate-400 block mb-1">Metrical Validity</span>
-                      <span className="text-2xl font-extrabold text-cyan-400 font-mono-code">100.0%</span>
+                      <span className="text-2xl font-extrabold text-amber-400 font-mono-code">100.0%</span>
                       <span className="text-[10px] text-slate-500 block mt-0.5">0% for LLM &amp; Syllable tiers</span>
                     </div>
                     <div className="p-3 rounded-xl bg-slate-950/60 border border-slate-800/80">
@@ -1992,7 +1992,7 @@ export default function AlgorithmShowcase() {
                     </div>
                     <div className="p-3 rounded-xl bg-slate-950/60 border border-slate-800/80">
                       <span className="text-[11px] text-slate-400 block mb-1">Median Search Latency</span>
-                      <span className="text-2xl font-extrabold text-cyan-400 font-mono-code">7.7 ms</span>
+                      <span className="text-2xl font-extrabold text-amber-400 font-mono-code">7.7 ms</span>
                       <span className="text-[10px] text-slate-500 block mt-0.5">P95 = 13.4 ms (1,000 trials)</span>
                     </div>
                     <div className="p-3 rounded-xl bg-slate-950/60 border border-slate-800/80">
@@ -2005,7 +2005,7 @@ export default function AlgorithmShowcase() {
                   <div className="space-y-2 pt-2 border-t border-slate-800/80 font-mono-code text-[11px]">
                     <div className="flex justify-between text-slate-300">
                       <span>Sanskrit Anushtubh (Pathyā)</span>
-                      <span className="text-cyan-400 font-bold">100% Valid (LLM = 0%, Syllable = 0%)</span>
+                      <span className="text-amber-400 font-bold">100% Valid (LLM = 0%, Syllable = 0%)</span>
                     </div>
                     <div className="flex justify-between text-slate-300">
                       <span>Persian 'Arūż (Hazaj &amp; Akhrab)</span>
@@ -2022,7 +2022,7 @@ export default function AlgorithmShowcase() {
                   </div>
                 </div>
 
-                <div className="p-4 rounded-2xl bg-cyan-500/5 border border-cyan-500/20 text-xs text-cyan-200/90 leading-relaxed">
+                <div className="p-4 rounded-2xl bg-amber-500/5 border border-amber-500/20 text-xs text-amber-200/90 leading-relaxed">
                   <strong>Dual-App Ecosystem:</strong> Powers <em>PolyVerse Studio</em> (multi-lingual classical verse translation and live prosodic scansion) and <em>LyricFlow AI</em> (meter-constrained lyrical adaptation with real-time rhythm pulse playback).
                 </div>
               </div>
@@ -2032,8 +2032,8 @@ export default function AlgorithmShowcase() {
 
           {/* 4 Pillars for ProsodiCore */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            <div className="glass-panel p-5 rounded-2xl border border-slate-800 hover:border-cyan-500/40 transition">
-              <div className="w-9 h-9 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 mb-3">
+            <div className="glass-panel p-5 rounded-2xl border border-slate-800 hover:border-amber-500/40 transition">
+              <div className="w-9 h-9 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400 mb-3">
                 <BookOpen className="w-5 h-5" />
               </div>
               <h4 className="text-sm font-bold text-white mb-1">Ontology-Specific Scansion</h4>
@@ -2077,19 +2077,19 @@ export default function AlgorithmShowcase() {
         {/* ALGORITHM 10: NEUROATTRACTOR */}
         <div className="space-y-6 pt-12 border-t border-slate-900">
           <div className="flex items-center gap-3">
-            <div className="px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-300 font-mono-code text-xs font-bold uppercase tracking-wider">
-              Algorithm 10 · Nonlinear Dynamical Systems &amp; Critical Slowing Down
+            <div className="px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/30 text-indigo-300 font-mono-code text-xs font-bold uppercase tracking-wider">
+              Algorithm 10 : Nonlinear Dynamical Systems &amp; Critical Slowing Down
             </div>
-            <div className="h-px flex-1 bg-gradient-to-r from-cyan-500/30 to-transparent"></div>
+            <div className="h-px flex-1 bg-gradient-to-r from-indigo-500/30 to-transparent"></div>
           </div>
 
-          <div className="glass-card rounded-3xl p-6 sm:p-10 lg:p-12 border border-cyan-500/30 shadow-2xl shadow-cyan-950/40 relative overflow-hidden">
+          <div className="glass-card rounded-3xl p-6 sm:p-10 lg:p-12 border border-indigo-500/30 shadow-2xl shadow-indigo-950/40 relative overflow-hidden">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
               
               {/* Left Column: Theory & Invariants */}
               <div className="lg:col-span-7 space-y-6">
                 <div>
-                  <div className="inline-flex items-center gap-2 px-3 py-1 rounded-lg bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-semibold mb-3">
+                  <div className="inline-flex items-center gap-2 px-3 py-1 rounded-lg bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-semibold mb-3">
                     <TrendingUp className="w-3.5 h-3.5" />
                     <span>Three-Tiered Dynamical Analysis with Autocorrelation-Gated CSD</span>
                   </div>
@@ -2114,9 +2114,9 @@ export default function AlgorithmShowcase() {
                     </p>
                   </div>
 
-                  <div className="p-4 rounded-2xl bg-cyan-950/30 border border-cyan-500/30">
-                    <div className="text-xs font-bold text-cyan-300 uppercase tracking-wider mb-1 flex items-center gap-1.5">
-                      <span className="w-2 h-2 rounded-full bg-cyan-400"></span>
+                  <div className="p-4 rounded-2xl bg-indigo-950/30 border border-indigo-500/30">
+                    <div className="text-xs font-bold text-indigo-300 uppercase tracking-wider mb-1 flex items-center gap-1.5">
+                      <span className="w-2 h-2 rounded-full bg-indigo-400"></span>
                       The Autocorrelation-Gated CSD Core
                     </div>
                     <p className="text-xs text-slate-300 leading-relaxed">
@@ -2126,9 +2126,9 @@ export default function AlgorithmShowcase() {
                 </div>
 
                 {/* Safety / Methodological Invariant */}
-                <div className="p-4 sm:p-5 rounded-2xl bg-cyan-950/20 border border-cyan-500/30 relative">
-                  <div className="flex items-center gap-2 text-cyan-300 text-xs font-semibold uppercase tracking-wider mb-1">
-                    <ShieldCheck className="w-4 h-4 text-cyan-400" />
+                <div className="p-4 sm:p-5 rounded-2xl bg-indigo-950/20 border border-indigo-500/30 relative">
+                  <div className="flex items-center gap-2 text-indigo-300 text-xs font-semibold uppercase tracking-wider mb-1">
+                    <ShieldCheck className="w-4 h-4 text-indigo-400" />
                     <span>Disciplined Claim Hierarchy &amp; Non-Diagnostic Invariant</span>
                   </div>
                   <p className="text-slate-200 text-sm font-mono-code leading-relaxed">
@@ -2142,7 +2142,7 @@ export default function AlgorithmShowcase() {
                     href="https://rswarke1972-art.github.io/NeuroAttractor/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-cyan-400 via-teal-400 to-emerald-400 hover:from-cyan-300 hover:to-emerald-300 text-slate-950 font-bold text-xs sm:text-sm shadow-md shadow-cyan-500/25 hover:shadow-cyan-500/40 hover:-translate-y-0.5 active:translate-y-0 transition flex items-center gap-2 group"
+                    className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-indigo-400 via-teal-400 to-sky-400 hover:from-indigo-300 hover:to-emerald-300 text-white font-bold text-xs sm:text-sm shadow-md shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:-translate-y-0.5 active:translate-y-0 transition flex items-center gap-2 group"
                   >
                     <Activity className="w-4 h-4" />
                     <span>Launch 60 FPS Simulation</span>
@@ -2153,9 +2153,9 @@ export default function AlgorithmShowcase() {
                     href="https://github.com/rswarke1972-art/NeuroAttractor/blob/main/paper/IEEE_NeuroAttractor_Manuscript.md"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-4 py-2.5 rounded-xl glass-button text-slate-200 hover:text-cyan-300 text-xs sm:text-sm font-medium flex items-center gap-2 border border-slate-700/80 hover:border-cyan-500/40 transition"
+                    className="px-4 py-2.5 rounded-xl glass-button text-slate-200 hover:text-indigo-300 text-xs sm:text-sm font-medium flex items-center gap-2 border border-slate-700/80 hover:border-indigo-500/40 transition"
                   >
-                    <FileText className="w-4 h-4 text-cyan-400" />
+                    <FileText className="w-4 h-4 text-indigo-400" />
                     <span>IEEE Manuscript</span>
                     <ExternalLink className="w-3 h-3 text-slate-400" />
                   </a>
@@ -2164,7 +2164,7 @@ export default function AlgorithmShowcase() {
                     href="https://github.com/rswarke1972-art/NeuroAttractor/blob/main/paper/patentability_and_prior_art_review.md"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-4 py-2.5 rounded-xl glass-button text-slate-200 hover:text-cyan-300 text-xs sm:text-sm font-medium flex items-center gap-2 border border-slate-700/80 hover:border-cyan-500/40 transition"
+                    className="px-4 py-2.5 rounded-xl glass-button text-slate-200 hover:text-indigo-300 text-xs sm:text-sm font-medium flex items-center gap-2 border border-slate-700/80 hover:border-indigo-500/40 transition"
                   >
                     <Sparkles className="w-4 h-4 text-emerald-400" />
                     <span>Prior Art &amp; Claims</span>
@@ -2175,7 +2175,7 @@ export default function AlgorithmShowcase() {
                     href="https://github.com/rswarke1972-art/NeuroAttractor"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-4 py-2.5 rounded-xl glass-button text-slate-200 hover:text-cyan-300 text-xs sm:text-sm font-medium flex items-center gap-2 border border-slate-700/80 hover:border-cyan-500/40 transition"
+                    className="px-4 py-2.5 rounded-xl glass-button text-slate-200 hover:text-indigo-300 text-xs sm:text-sm font-medium flex items-center gap-2 border border-slate-700/80 hover:border-indigo-500/40 transition"
                   >
                     <GitBranch className="w-4 h-4 text-slate-400" />
                     <span>GitHub (v1.0.0)</span>
@@ -2186,9 +2186,9 @@ export default function AlgorithmShowcase() {
 
               {/* Right Column: Live Benchmark Telemetry Card */}
               <div className="lg:col-span-5 space-y-4">
-                <div className="glass-panel p-6 rounded-3xl border border-cyan-500/20 bg-slate-900/80 shadow-inner space-y-4">
+                <div className="glass-panel p-6 rounded-3xl border border-indigo-500/20 bg-slate-900/80 shadow-inner space-y-4">
                   <div className="flex items-center justify-between border-b border-slate-800 pb-3">
-                    <span className="text-xs font-mono-code uppercase tracking-wider text-cyan-400 font-bold flex items-center gap-2">
+                    <span className="text-xs font-mono-code uppercase tracking-wider text-indigo-400 font-bold flex items-center gap-2">
                       <BarChart3 className="w-4 h-4" />
                       Empirical Dynamical Telemetry
                     </span>
@@ -2200,7 +2200,7 @@ export default function AlgorithmShowcase() {
                   <div className="grid grid-cols-2 gap-3">
                     <div className="p-3 rounded-xl bg-slate-950/60 border border-slate-800/80">
                       <span className="text-[11px] text-slate-400 block mb-1">Mean ROC-AUC</span>
-                      <span className="text-2xl font-extrabold text-cyan-400 font-mono-code">0.6685</span>
+                      <span className="text-2xl font-extrabold text-indigo-400 font-mono-code">0.6685</span>
                       <span className="text-[10px] text-slate-500 block mt-0.5">P95 Trial AUC: 0.8658 (N=1,000)</span>
                     </div>
                     <div className="p-3 rounded-xl bg-slate-950/60 border border-slate-800/80">
@@ -2215,7 +2215,7 @@ export default function AlgorithmShowcase() {
                     </div>
                     <div className="p-3 rounded-xl bg-slate-950/60 border border-slate-800/80">
                       <span className="text-[11px] text-slate-400 block mb-1">Normalized Lead</span>
-                      <span className="text-2xl font-extrabold text-cyan-400 font-mono-code">L = 0.055</span>
+                      <span className="text-2xl font-extrabold text-indigo-400 font-mono-code">L = 0.055</span>
                       <span className="text-[10px] text-slate-500 block mt-0.5">Causal anticipatory horizon</span>
                     </div>
                   </div>
@@ -2223,7 +2223,7 @@ export default function AlgorithmShowcase() {
                   <div className="space-y-2 pt-2 border-t border-slate-800/80 font-mono-code text-[11px]">
                     <div className="flex justify-between text-slate-300">
                       <span>Fold / Saddle-Node Transition</span>
-                      <span className="text-cyan-400 font-bold">AUC = 0.7038 (P95: 0.8240)</span>
+                      <span className="text-indigo-400 font-bold">AUC = 0.7038 (P95: 0.8240)</span>
                     </div>
                     <div className="flex justify-between text-slate-300">
                       <span>Supercritical Hopf (Limit Cycle)</span>
@@ -2240,7 +2240,7 @@ export default function AlgorithmShowcase() {
                   </div>
                 </div>
 
-                <div className="p-4 rounded-2xl bg-cyan-500/5 border border-cyan-500/20 text-xs text-cyan-200/90 leading-relaxed">
+                <div className="p-4 rounded-2xl bg-indigo-500/5 border border-indigo-500/20 text-xs text-indigo-200/90 leading-relaxed">
                   <strong>Dual-Mode Architecture:</strong> Powers <em>Dynamical Systems Lab</em> (interactive 60 FPS phase-portrait orbit &amp; Poincaré section analysis) and <em>CogniPhase</em> (non-diagnostic behavioral telemetry resampler).
                 </div>
               </div>
@@ -2250,8 +2250,8 @@ export default function AlgorithmShowcase() {
 
           {/* 4 Pillars for NeuroAttractor */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            <div className="glass-panel p-5 rounded-2xl border border-slate-800 hover:border-cyan-500/40 transition">
-              <div className="w-9 h-9 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 mb-3">
+            <div className="glass-panel p-5 rounded-2xl border border-slate-800 hover:border-indigo-500/40 transition">
+              <div className="w-9 h-9 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 mb-3">
                 <TrendingUp className="w-5 h-5" />
               </div>
               <h4 className="text-sm font-bold text-white mb-1">Normal-Form Testbeds</h4>
